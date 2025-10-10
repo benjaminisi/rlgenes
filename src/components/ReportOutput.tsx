@@ -26,7 +26,7 @@ export const ReportOutput: React.FC<ReportOutputProps> = ({
         iframeDoc.open();
         iframeDoc.write(`
           <!DOCTYPE html>
-          <html>
+          <html lang="en">
           <head>
             <meta charset="UTF-8">
             <style>
@@ -36,7 +36,30 @@ export const ReportOutput: React.FC<ReportOutputProps> = ({
                 line-height: 1.6;
               }
               /* Preserve original template styling */
+              li {
+                margin-bottom: 15px;
+              }
+              strong {
+                font-weight: bold;
+              }
+              /* Ensure bolded text stays bold */
+              b, strong, .bold {
+                font-weight: bold !important;
+              }
             </style>
+            <script>
+              // Handle clicks on Return to Grand Summary links
+              document.addEventListener('DOMContentLoaded', function() {
+                document.addEventListener('click', function(e) {
+                  var target = e.target;
+                  if (target && target.tagName === 'A' && target.getAttribute('href') === '#grand-summary') {
+                    e.preventDefault();
+                    // Scroll parent window to grand summary
+                    window.parent.document.getElementById('grand-summary').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                });
+              });
+            </script>
           </head>
           <body>
             ${transformedHtml}

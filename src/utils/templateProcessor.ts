@@ -167,11 +167,11 @@ export function transformTemplate(
         const { zygosity } = result;
 
         if (zygosity === 'Homozygous') {
-          // Red text with cloud outline icon (☁ using outline style)
-          return `${match} <span style="color: red; font-weight: bold;">☁ Homozygous</span>`;
+          // Red text with filled cloud icon for Homozygous
+          return `${match} <span style="color: red; font-weight: bold;">☁️ Homozygous</span>`;
         } else if (zygosity === 'Heterozygous') {
-          // Yellow text (#d4a000 - medium yellow that works on white) with filled cloud icon
-          return `${match} <span style="color: #d4a000; font-weight: normal;">☁ Heterozygous</span>`;
+          // Darker yellow text (#b8860b - dark goldenrod) with outline cloud icon for Heterozygous
+          return `${match} <span style="color: #b8860b; font-weight: normal;">☁ Heterozygous</span>`;
         } else if (zygosity === 'Wild') {
           return `${match} <span style="color: black;">Wild</span>`;
         } else if (zygosity === 'Data Missing') {
