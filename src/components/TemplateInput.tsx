@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { countSNPSubsections } from '../utils/snpCounter';
+import { countMajorSections } from '../utils/snpCounter';
 import { extractRSIds } from '../utils/templateProcessor';
 
 interface TemplateInputProps {
@@ -11,7 +11,7 @@ export const TemplateInput: React.FC<TemplateInputProps> = ({
   onTemplateLoad,
   currentTemplate
 }) => {
-  const [snpSubsectionCount, setSnpSubsectionCount] = useState<number>(0);
+  const [majorSectionCount, setMajorSectionCount] = useState<number>(0);
   const [totalSnpCount, setTotalSnpCount] = useState<number>(0);
 
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -20,9 +20,9 @@ export const TemplateInput: React.FC<TemplateInputProps> = ({
       const reader = new FileReader();
       reader.onload = (e) => {
         const content = e.target?.result as string;
-        const subsectionCount = countSNPSubsections(content);
+        const sectionCount = countMajorSections(content);
         const rsIds = extractRSIds(content);
-        setSnpSubsectionCount(subsectionCount);
+        setMajorSectionCount(sectionCount);
         setTotalSnpCount(rsIds.length);
         onTemplateLoad(content);
       };
@@ -56,7 +56,7 @@ export const TemplateInput: React.FC<TemplateInputProps> = ({
 
       {currentTemplate && totalSnpCount > 0 && (
         <div className="template-status">
-          ✓ Template loaded: <strong>{totalSnpCount} total SNPs</strong> in <strong>{snpSubsectionCount} SNP subsection{snpSubsectionCount !== 1 ? 's' : ''}</strong>
+          ✓ Template loaded: <strong>{totalSnpCount} total SNPs</strong> in <strong>{majorSectionCount} major section{majorSectionCount !== 1 ? 's' : ''}</strong>
         </div>
       )}
     </div>

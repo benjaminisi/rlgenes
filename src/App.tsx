@@ -266,6 +266,7 @@ function App() {
             <ReportOutput
               transformedHtml={transformedHtml}
               summaries={summaries}
+              templateTitle={templateTitle}
               onDownload={handleDownload}
               onCopy={handleCopy}
             />

@@ -124,16 +124,24 @@ export function transformTemplate(
     return 'section-' + sectionName.toLowerCase().replace(/[^a-z0-9]+/g, '-');
   };
 
-  // Add IDs to all h3 section headings for linking
+  // Add IDs to all h3 section headings for linking and insert "Return to Grand Summary" buttons
   const headings = doc.querySelectorAll('h3');
-  headings.forEach(heading => {
+  headings.forEach((heading, index) => {
     const sectionName = heading.textContent?.trim() || '';
     if (sectionName && !sectionName.toLowerCase().includes('intro')) {
       heading.setAttribute('id', getSectionId(sectionName));
+
+      // Insert "Return to Grand Summary" button before each section (except the first)
+      if (index > 0) {
+        const returnButton = doc.createElement('div');
+        returnButton.style.cssText = 'text-align: center; margin: 20px 0;';
+        returnButton.innerHTML = '<a href="#grand-summary" style="display: inline-block; padding: 10px 20px; background: #667eea; color: white; text-decoration: none; border-radius: 5px; font-weight: 600;">↑ Return to Grand Summary</a>';
+        heading.parentNode?.insertBefore(returnButton, heading);
+      }
     }
   });
 
-  // Process all text nodes to replace RS IDs
+  // Process all text nodes to replace RS IDs with formatted results including icons
   const walker = document.createTreeWalker(
     doc.body,
     NodeFilter.SHOW_TEXT,
@@ -157,18 +165,20 @@ export function transformTemplate(
         }
 
         const { zygosity } = result;
-        let color = 'black';
-        let displayText = zygosity;
 
         if (zygosity === 'Homozygous') {
-          color = 'red';
+          // Red text with cloud outline icon (☁ using outline style)
+          return `${match} <span style="color: red; font-weight: bold;">☁ Homozygous</span>`;
+        } else if (zygosity === 'Heterozygous') {
+          // Yellow text (#d4a000 - medium yellow that works on white) with filled cloud icon
+          return `${match} <span style="color: #d4a000; font-weight: normal;">☁ Heterozygous</span>`;
         } else if (zygosity === 'Wild') {
-          displayText = 'Wild';
+          return `${match} <span style="color: black;">Wild</span>`;
         } else if (zygosity === 'Data Missing') {
-          color = 'grey';
+          return `<span style="color: grey;">${match} [Data Missing]</span>`;
         }
 
-        return `${match} <span style="color: ${color}; font-weight: ${zygosity === 'Homozygous' ? 'bold' : 'normal'};">[${displayText}]</span>`;
+        return match;
       });
 
       nodesToReplace.push({ node: currentNode, newHTML });

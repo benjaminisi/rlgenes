@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import type { SectionSummary } from '../types';
 
 interface ReportOutputProps {
   transformedHtml: string;
   summaries: SectionSummary[];
+  templateTitle: string;
   onDownload: () => void;
   onCopy: () => void;
 }
@@ -11,9 +12,42 @@ interface ReportOutputProps {
 export const ReportOutput: React.FC<ReportOutputProps> = ({
   transformedHtml,
   summaries,
+  templateTitle,
   onDownload,
   onCopy
 }) => {
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+
+  // Update iframe content when HTML changes
+  useEffect(() => {
+    if (iframeRef.current && transformedHtml) {
+      const iframeDoc = iframeRef.current.contentDocument || iframeRef.current.contentWindow?.document;
+      if (iframeDoc) {
+        iframeDoc.open();
+        iframeDoc.write(`
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta charset="UTF-8">
+            <style>
+              body {
+                margin: 20px;
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+              }
+              /* Preserve original template styling */
+            </style>
+          </head>
+          <body>
+            ${transformedHtml}
+          </body>
+          </html>
+        `);
+        iframeDoc.close();
+      }
+    }
+  }, [transformedHtml]);
+
   // Sort summaries by homozygous percentage (highest first)
   const sortedSummaries = [...summaries].sort((a, b) => b.homozygousPercent - a.homozygousPercent);
 
@@ -38,19 +72,24 @@ export const ReportOutput: React.FC<ReportOutputProps> = ({
     return 'section-' + sectionName.toLowerCase().replace(/[^a-z0-9]+/g, '-');
   };
 
-  // Helper function to scroll to section
+  // Helper function to scroll to section in iframe
   const scrollToSection = (sectionName: string) => {
-    const sectionId = getSectionId(sectionName);
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (iframeRef.current) {
+      const iframeDoc = iframeRef.current.contentDocument || iframeRef.current.contentWindow?.document;
+      if (iframeDoc) {
+        const sectionId = getSectionId(sectionName);
+        const element = iframeDoc.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
     }
   };
 
   return (
     <div className="report-output">
       <div className="report-header">
-        <h2>Generated Report</h2>
+        <h2>{templateTitle}</h2>
         <div className="report-actions">
           <button onClick={onCopy} className="btn-copy">
             📋 Copy to Clipboard
@@ -62,7 +101,7 @@ export const ReportOutput: React.FC<ReportOutputProps> = ({
       </div>
 
       {sortedSummaries.length > 0 && (
-        <div className="grand-summary">
+        <div className="grand-summary" id="grand-summary">
           <h3>Grand Summary</h3>
           <div className="summary-stats">
             <p>
@@ -116,9 +155,11 @@ export const ReportOutput: React.FC<ReportOutputProps> = ({
         </div>
       )}
 
-      <div className="report-content">
-        <div
-          dangerouslySetInnerHTML={{ __html: transformedHtml }}
+      <div className="report-content-iframe">
+        <iframe
+          ref={iframeRef}
+          title="Report Preview"
+          className="report-iframe"
         />
       </div>
     </div>

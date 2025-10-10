@@ -543,6 +543,22 @@ main {
   /* Keep our custom colors for zygosity indicators */
 }
 
+/* Report Content Iframe */
+.report-content-iframe {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.report-iframe {
+  width: 100%;
+  min-height: 800px;
+  border: none;
+  display: block;
+}
+
 /* Footer */
 footer {
   text-align: center;

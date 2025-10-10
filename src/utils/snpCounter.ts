@@ -1,4 +1,26 @@
 /**
+ * Counts major sections (h3 headings) in an HTML template
+ */
+export function countMajorSections(htmlContent: string): number {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(htmlContent, 'text/html');
+
+  // Count all h3 elements (major sections)
+  const headings = doc.querySelectorAll('h3');
+  let count = 0;
+
+  headings.forEach((heading) => {
+    const text = heading.textContent?.trim() || '';
+    // Skip intro sections
+    if (!text.toLowerCase().includes('intro')) {
+      count++;
+    }
+  });
+
+  return count;
+}
+
+/**
  * Counts SNP subsections in an HTML template
  *
  * SNP subsections are defined as:

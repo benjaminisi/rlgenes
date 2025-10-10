@@ -248,7 +248,7 @@ describe('transformTemplate', () => {
     const result = transformTemplate(htmlContent, snpResults);
 
     expect(result).toContain('RS4880');
-    expect(result).toContain('[Homozygous]');
+    expect(result).toContain('☁ Homozygous');
     expect(result).toContain('color: red');
     expect(result).toContain('font-weight: bold');
   });
@@ -261,8 +261,8 @@ describe('transformTemplate', () => {
 
     const result = transformTemplate(htmlContent, snpResults);
 
-    expect(result).toContain('[Heterozygous]');
-    expect(result).toContain('color: black');
+    expect(result).toContain('☁ Heterozygous');
+    expect(result).toContain('color: #d4a000');
   });
 
   it('should format Wild type results correctly', () => {
@@ -273,7 +273,8 @@ describe('transformTemplate', () => {
 
     const result = transformTemplate(htmlContent, snpResults);
 
-    expect(result).toContain('[Wild]');
+    expect(result).toContain('Wild');
+    expect(result).not.toContain('☁');
   });
 
   it('should format Data Missing results correctly', () => {
