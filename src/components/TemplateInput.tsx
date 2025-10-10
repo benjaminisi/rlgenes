@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { countSNPSubsections } from '../utils/snpCounter';
+import { extractRSIds } from '../utils/templateProcessor';
 
 interface TemplateInputProps {
   onTemplateLoad: (content: string) => void;
@@ -9,9 +11,8 @@ export const TemplateInput: React.FC<TemplateInputProps> = ({
   onTemplateLoad,
   currentTemplate
 }) => {
-  const [inputMode, setInputMode] = useState<'file' | 'text' | 'url'>('file');
-  const [textContent, setTextContent] = useState('');
-  const [urlContent, setUrlContent] = useState('');
+  const [snpSubsectionCount, setSnpSubsectionCount] = useState<number>(0);
+  const [totalSnpCount, setTotalSnpCount] = useState<number>(0);
 
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -19,94 +20,43 @@ export const TemplateInput: React.FC<TemplateInputProps> = ({
       const reader = new FileReader();
       reader.onload = (e) => {
         const content = e.target?.result as string;
+        const subsectionCount = countSNPSubsections(content);
+        const rsIds = extractRSIds(content);
+        setSnpSubsectionCount(subsectionCount);
+        setTotalSnpCount(rsIds.length);
         onTemplateLoad(content);
       };
       reader.readAsText(file);
     }
   };
 
-  const handleTextSubmit = () => {
-    if (textContent.trim()) {
-      onTemplateLoad(textContent);
-    }
-  };
-
-  const handleUrlSubmit = async () => {
-    if (urlContent.trim()) {
-      try {
-        const response = await fetch(urlContent);
-        const content = await response.text();
-        onTemplateLoad(content);
-      } catch {
-        alert('Failed to fetch content from URL. Make sure the URL is accessible and CORS is enabled.');
-      }
-    }
-  };
-
   return (
     <div className="template-input">
-      <h3>Template Input</h3>
+      <div className="file-input-section">
+        <input
+          type="file"
+          accept=".html,.htm"
+          onChange={handleFileUpload}
+          id="template-file-input"
+        />
+        <label htmlFor="template-file-input" className="file-input-label">
+          Choose HTML File
+        </label>
 
-      <div className="input-mode-selector">
-        <button
-          className={inputMode === 'file' ? 'active' : ''}
-          onClick={() => setInputMode('file')}
-        >
-          Upload File
-        </button>
-        <button
-          className={inputMode === 'text' ? 'active' : ''}
-          onClick={() => setInputMode('text')}
-        >
-          Paste HTML
-        </button>
-        <button
-          className={inputMode === 'url' ? 'active' : ''}
-          onClick={() => setInputMode('url')}
-        >
-          Google Doc URL
-        </button>
+        <div className="instructions">
+          <h4>📝 How to get the HTML file from Google Docs:</h4>
+          <ol>
+            <li>Open your template document in Google Docs</li>
+            <li>Click <strong>File</strong> → <strong>Download</strong> → <strong>Web Page (.html, zipped)</strong></li>
+            <li>Unzip the downloaded file</li>
+            <li>Upload the <code>.html</code> file here</li>
+          </ol>
+        </div>
       </div>
 
-      {inputMode === 'file' && (
-        <div className="file-input-section">
-          <input
-            type="file"
-            accept=".html,.htm"
-            onChange={handleFileUpload}
-          />
-          <p className="hint">Upload the HTML file exported from Google Docs (File → Download → Web Page)</p>
-        </div>
-      )}
-
-      {inputMode === 'text' && (
-        <div className="text-input-section">
-          <textarea
-            value={textContent}
-            onChange={(e) => setTextContent(e.target.value)}
-            placeholder="Paste your HTML template content here..."
-            rows={10}
-          />
-          <button onClick={handleTextSubmit}>Load Template</button>
-        </div>
-      )}
-
-      {inputMode === 'url' && (
-        <div className="url-input-section">
-          <input
-            type="text"
-            value={urlContent}
-            onChange={(e) => setUrlContent(e.target.value)}
-            placeholder="Enter Google Doc URL..."
-          />
-          <button onClick={handleUrlSubmit}>Fetch Template</button>
-          <p className="hint">Note: The document must be publicly accessible</p>
-        </div>
-      )}
-
-      {currentTemplate && (
+      {currentTemplate && totalSnpCount > 0 && (
         <div className="template-status">
-          ✓ Template loaded ({currentTemplate.length} characters)
+          ✓ Template loaded: <strong>{totalSnpCount} total SNPs</strong> in <strong>{snpSubsectionCount} SNP subsection{snpSubsectionCount !== 1 ? 's' : ''}</strong>
         </div>
       )}
     </div>

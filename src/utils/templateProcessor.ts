@@ -2,6 +2,24 @@ import DOMPurify from 'dompurify';
 import type { GeneticData, AlleleData, SNPResult, Zygosity, SectionSummary } from '../types';
 
 /**
+ * Extracts the first header (h1, h2, etc.) from HTML content to use as the report title
+ */
+export function extractTemplateTitle(htmlContent: string): string {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(htmlContent, 'text/html');
+
+  // Try to find the first heading (h1, h2, h3, h4, h5, h6)
+  for (let i = 1; i <= 6; i++) {
+    const heading = doc.querySelector(`h${i}`);
+    if (heading && heading.textContent) {
+      return heading.textContent.trim();
+    }
+  }
+
+  return 'Genetic Report'; // Default fallback
+}
+
+/**
  * Extracts all RS IDs from template content
  */
 export function extractRSIds(content: string): string[] {
@@ -28,20 +46,24 @@ export function determineZygosity(
     return 'Data Missing';
   }
 
-  // Find reference data for this RS ID
-  const reference = alleleReference.find(ref => ref["RS ID"].toUpperCase() === rsId.toUpperCase());
+  // Normalize alleles to uppercase for comparison
+  const normalizedAllele1 = allele1.toUpperCase();
+  const normalizedAllele2 = allele2.toUpperCase();
 
-  // Check if wild type (neither allele matches the effect allele)
+  // Find reference data for this RS ID
+  const reference = alleleReference.find(ref => ref.rsId.toUpperCase() === rsId.toUpperCase());
+
+  // Check if wild type (neither allele matches the problem allele)
   if (reference) {
-    const effectAllele = reference["Effect Allele"].toUpperCase();
-    // Wild type: neither allele is the effect allele
-    if (allele1 !== effectAllele && allele2 !== effectAllele) {
+    const problemAllele = reference.problemAllele.toUpperCase();
+    // Wild type: neither allele is the problem allele
+    if (normalizedAllele1 !== problemAllele && normalizedAllele2 !== problemAllele) {
       return 'Wild';
     }
   }
 
   // Determine homo/heterozygous based on alleles
-  if (allele1 === allele2) {
+  if (normalizedAllele1 === normalizedAllele2) {
     return 'Homozygous';
   } else {
     return 'Heterozygous';
@@ -331,8 +353,88 @@ export function insertSummaries(
  */
 export function sanitizeHTML(html: string): string {
   return DOMPurify.sanitize(html, {
-    ALLOWED_TAGS: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'span', 'div', 'ul', 'ol', 'li', 'br', 'hr', 'strong', 'em', 'u', 'a', 'b', 'i'],
+    ALLOWED_TAGS: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'span', 'div', 'ul', 'ol', 'li', 'br', 'hr', 'strong', 'em', 'u', 'a', 'b', 'i', 'table', 'thead', 'tbody', 'tr', 'th', 'td'],
     ALLOWED_ATTR: ['style', 'class', 'id', 'href', 'target'],
     ALLOW_DATA_ATTR: false
   });
+}
+
+/**
+ * Generates Grand Summary HTML table with section links
+ */
+export function generateGrandSummaryHTML(summaries: SectionSummary[]): string {
+  // Sort summaries by homozygous percentage (highest first)
+  const sortedSummaries = [...summaries].sort((a, b) => b.homozygousPercent - a.homozygousPercent);
+
+  // Calculate grand totals
+  const grandTotals = summaries.reduce(
+    (acc, summary) => ({
+      totalSNPs: acc.totalSNPs + summary.totalCount,
+      homozygousCount: acc.homozygousCount + summary.homozygousCount,
+      heterozygousCount: acc.heterozygousCount + summary.heterozygousCount,
+      wildCount: acc.wildCount + summary.wildCount,
+      missingCount: acc.missingCount + summary.missingCount,
+    }),
+    { totalSNPs: 0, homozygousCount: 0, heterozygousCount: 0, wildCount: 0, missingCount: 0 }
+  );
+
+  const snpsWithData = grandTotals.totalSNPs - grandTotals.missingCount;
+  const homozygousPercent = grandTotals.totalSNPs > 0 ? (grandTotals.homozygousCount / grandTotals.totalSNPs) * 100 : 0;
+  const heterozygousPercent = grandTotals.totalSNPs > 0 ? (grandTotals.heterozygousCount / grandTotals.totalSNPs) * 100 : 0;
+
+  // Helper function to create section ID from section name
+  const getSectionId = (sectionName: string) => {
+    return 'section-' + sectionName.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  };
+
+  const rows = sortedSummaries.map(summary => {
+    const sectionId = getSectionId(summary.sectionName);
+    return `
+      <tr>
+        <td>
+          <a href="#${sectionId}" style="color: #667eea; text-decoration: none; font-weight: bold;">
+            ${summary.sectionName}
+          </a>
+        </td>
+        <td>${summary.totalCount}</td>
+        <td style="color: red; font-weight: bold;">
+          ${summary.homozygousCount} (${summary.homozygousPercent.toFixed(1)}%)
+        </td>
+        <td>${summary.heterozygousCount} (${summary.heterozygousPercent.toFixed(1)}%)</td>
+        <td style="color: green;">
+          ${summary.wildCount} (${summary.wildPercent.toFixed(1)}%)
+        </td>
+        <td style="color: grey;">
+          ${summary.missingCount} (${summary.missingPercent.toFixed(1)}%)
+        </td>
+      </tr>
+    `;
+  }).join('');
+
+  return `
+    <div style="background-color: #f9fafb; padding: 20px; margin: 20px 0; border-radius: 8px; border: 1px solid #e5e7eb;">
+      <h2 style="margin-top: 0; color: #1f2937;">Grand Summary</h2>
+      <p style="margin: 10px 0; padding: 15px; background-color: white; border-radius: 5px; border-left: 4px solid #667eea;">
+        <strong>Total SNPs in template:</strong> ${grandTotals.totalSNPs} | 
+        <strong>SNPs with data:</strong> ${snpsWithData} | 
+        <strong style="color: red;">Homozygous:</strong> ${grandTotals.homozygousCount} (${homozygousPercent.toFixed(1)}%) | 
+        <strong>Heterozygous:</strong> ${grandTotals.heterozygousCount} (${heterozygousPercent.toFixed(1)}%)
+      </p>
+      <table style="width: 100%; border-collapse: collapse; background-color: white; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+        <thead>
+          <tr style="background-color: #f3f4f6;">
+            <th style="padding: 12px; text-align: left; border-bottom: 2px solid #e5e7eb; font-weight: 600;">Section</th>
+            <th style="padding: 12px; text-align: left; border-bottom: 2px solid #e5e7eb; font-weight: 600;">Total SNPs</th>
+            <th style="padding: 12px; text-align: left; border-bottom: 2px solid #e5e7eb; font-weight: 600;">Homozygous</th>
+            <th style="padding: 12px; text-align: left; border-bottom: 2px solid #e5e7eb; font-weight: 600;">Heterozygous</th>
+            <th style="padding: 12px; text-align: left; border-bottom: 2px solid #e5e7eb; font-weight: 600;">Wild Type</th>
+            <th style="padding: 12px; text-align: left; border-bottom: 2px solid #e5e7eb; font-weight: 600;">Data Missing</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows}
+        </tbody>
+      </table>
+    </div>
+  `;
 }

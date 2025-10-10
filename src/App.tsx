@@ -10,14 +10,18 @@ import {
   transformTemplate,
   calculateSectionSummaries,
   insertSummaries,
-  sanitizeHTML
+  sanitizeHTML,
+  generateGrandSummaryHTML,
+  extractTemplateTitle
 } from './utils/templateProcessor';
 import type { GeneticData, AlleleData, SectionSummary } from './types';
 
 function App() {
   const [geneticDataFile, setGeneticDataFile] = useState<File | null>(null);
   const [geneticData, setGeneticData] = useState<GeneticData | null>(null);
+  const [geneticDataDate, setGeneticDataDate] = useState<string | undefined>(undefined);
   const [templateContent, setTemplateContent] = useState<string>('');
+  const [templateTitle, setTemplateTitle] = useState<string>('Genetic Report');
   const [alleleReference, setAlleleReference] = useState<AlleleData[]>([]);
   const [transformedHtml, setTransformedHtml] = useState<string>('');
   const [summaries, setSummaries] = useState<SectionSummary[]>([]);
@@ -26,20 +30,27 @@ function App() {
 
   // Load allele reference data on mount
   useEffect(() => {
-    fetch('/genes_rs_effect.json')
+    fetch('/allele_data.json')
       .then(res => res.json())
       .then(data => setAlleleReference(data))
-      .catch(err => console.error('Failed to load gene effect data:', err));
+      .catch(err => console.error('Failed to load allele reference data:', err));
   }, []);
 
   const handleGeneticFileSelect = async (file: File) => {
     setGeneticDataFile(file);
     setError('');
+    // Clear previous report when new file is uploaded
+    setTransformedHtml('');
+    setSummaries([]);
 
     try {
-      const data = await parseGeneticDataFile(file);
-      setGeneticData(data);
-      console.log(`Loaded ${Object.keys(data).length} genetic markers`);
+      const result = await parseGeneticDataFile(file);
+      setGeneticData(result.data);
+      setGeneticDataDate(result.date);
+      console.log(`Loaded ${Object.keys(result.data).length} genetic markers`);
+      if (result.date) {
+        console.log(`Genome dated: ${result.date}`);
+      }
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Failed to parse genetic data file';
       setError(errorMessage);
@@ -50,6 +61,12 @@ function App() {
   const handleTemplateLoad = (content: string) => {
     setTemplateContent(content);
     setError('');
+    // Clear previous report when new template is uploaded
+    setTransformedHtml('');
+    setSummaries([]);
+    // Extract title from template
+    const title = extractTemplateTitle(content);
+    setTemplateTitle(title);
     console.log('Template loaded');
   };
 
@@ -101,7 +118,63 @@ function App() {
   };
 
   const handleDownload = () => {
-    const blob = new Blob([transformedHtml], { type: 'text/html' });
+    // Create a complete HTML document with Grand Summary at the top
+    const grandSummaryHTML = generateGrandSummaryHTML(summaries);
+    const dateInfo = geneticDataDate ? `<p><strong>Client raw genome dated:</strong> ${geneticDataDate}</p>` : '';
+    const completeHTML = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${templateTitle} - ${new Date().toLocaleDateString()}</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+    h1, h2, h3, h4 {
+      color: #1f2937;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 10px 0;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    th {
+      background-color: #f3f4f6;
+      font-weight: 600;
+    }
+    tr:hover {
+      background-color: #f9fafb;
+    }
+    a {
+      color: #667eea;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧬 ${templateTitle}</h1>
+  <p><strong>Generated:</strong> ${new Date().toLocaleString()}</p>
+  ${dateInfo}
+  ${grandSummaryHTML}
+  <hr style="margin: 30px 0; border: none; border-top: 2px solid #e5e7eb;">
+  ${transformedHtml}
+</body>
+</html>`;
+
+    const blob = new Blob([completeHTML], { type: 'text/html' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
@@ -115,6 +188,9 @@ function App() {
       .then(() => alert('Report copied to clipboard!'))
       .catch(() => alert('Failed to copy to clipboard'));
   };
+
+  // Determine if Generate button should be enabled
+  const canGenerate = geneticData && Object.keys(geneticData).length > 0 && templateContent && !isProcessing;
 
   return (
     <div className="app">
@@ -144,6 +220,7 @@ function App() {
             {geneticData && (
               <div className="data-status">
                 ✓ Loaded {Object.keys(geneticData).length} genetic markers
+                {geneticDataDate && ` (dated: ${geneticDataDate})`}
               </div>
             )}
           </div>
@@ -153,11 +230,27 @@ function App() {
             <div className="generate-section">
               <button
                 onClick={handleGenerateReport}
-                disabled={!geneticData || !templateContent || isProcessing}
+                disabled={!canGenerate}
                 className="btn-generate"
               >
                 {isProcessing ? 'Generating...' : '🧬 Generate Report'}
               </button>
+              {!canGenerate && !isProcessing && (
+                <div className="requirements-message">
+                  {!templateContent && !geneticData && (
+                    <p>📋 Please upload both a template file and a genetic data file to generate a report.</p>
+                  )}
+                  {!templateContent && geneticData && (
+                    <p>📋 Please upload a template file to generate a report.</p>
+                  )}
+                  {templateContent && !geneticData && (
+                    <p>🧬 Please upload a genetic data file to generate a report.</p>
+                  )}
+                  {templateContent && geneticData && Object.keys(geneticData).length === 0 && (
+                    <p>⚠️ The uploaded genetic data file contains no valid markers. Please check your file.</p>
+                  )}
+                </div>
+              )}
             </div>
           </div>
 

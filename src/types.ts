@@ -12,11 +12,16 @@ export interface GeneticData {
   };
 }
 
+export interface GeneticDataInfo {
+  data: GeneticData;
+  date?: string; // Date from the first line of the file
+}
+
 export interface FileFormatInfo {
   rsIdColumn: number;
   allele1Column: number;
   allele2Column?: number; // Optional for formats where alleles are combined
-  delimiter: string;
+  delimiter: string | RegExp;
   skipLines: number;
 }
 

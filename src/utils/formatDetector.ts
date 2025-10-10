@@ -18,7 +18,7 @@ export function detectFileFormat(fileContent: string): FileFormatInfo | null {
     // Check if this is a comment line that contains column headers
     if (line.startsWith('#') && (line.includes('rsid') || line.includes('chromosome'))) {
       const headerCheck = line.substring(1).trim().toLowerCase();
-      if (headerCheck.startsWith('rsid') || headerCheck.includes('\trsid') || headerCheck.includes(',rsid')) {
+      if (headerCheck.startsWith('rsid') || headerCheck.includes('\trsid' ) || headerCheck.includes(',rsid')) {
         headerLineIndex = i;
         isCommentHeader = true;
         break;
@@ -44,12 +44,17 @@ export function detectFileFormat(fileContent: string): FileFormatInfo | null {
   }
 
   // Determine delimiter
-  let delimiter = '\t';
+  let delimiter: string | RegExp = '\t';
   if (headerLine.includes(',') && !headerLine.includes('\t')) {
     delimiter = ',';
+  } else if (!headerLine.includes('\t') && !headerLine.includes(',')) {
+    // If no tabs or commas, assume space-delimited (common in 23andMe files)
+    delimiter = /\s+/; // Use regex for multiple spaces
   }
 
-  const headerParts = headerLine.split(delimiter).map(p => p.trim().toLowerCase());
+  const headerParts = typeof delimiter === 'string'
+    ? headerLine.split(delimiter).map(p => p.trim().toLowerCase())
+    : headerLine.split(delimiter).map(p => p.trim().toLowerCase());
 
   // Look for rsid column
   const rsIdColumnIndex = headerParts.findIndex(h =>
@@ -78,7 +83,7 @@ export function detectFileFormat(fileContent: string): FileFormatInfo | null {
     return {
       rsIdColumn: rsIdColumnIndex,
       allele1Column: genotypeIndex,
-      delimiter,
+      delimiter: typeof delimiter === 'string' ? delimiter : /\s+/,
       skipLines: headerLineIndex + 1
     };
   }
@@ -89,7 +94,7 @@ export function detectFileFormat(fileContent: string): FileFormatInfo | null {
       rsIdColumn: rsIdColumnIndex,
       allele1Column: allele1Index,
       allele2Column: allele2Index,
-      delimiter,
+      delimiter: typeof delimiter === 'string' ? delimiter : /\s+/,
       skipLines: headerLineIndex + 1
     };
   }
@@ -99,7 +104,9 @@ export function detectFileFormat(fileContent: string): FileFormatInfo | null {
   if (dataLineIndex < lines.length) {
     const dataLine = lines[dataLineIndex].trim();
     if (dataLine && !dataLine.startsWith('#')) {
-      const dataParts = dataLine.split(delimiter);
+      const dataParts = typeof delimiter === 'string'
+        ? dataLine.split(delimiter)
+        : dataLine.split(delimiter);
 
       // Check if the rsId column contains valid RS ID or internal id
       const rsIdValue = dataParts[rsIdColumnIndex]?.trim();
@@ -111,7 +118,7 @@ export function detectFileFormat(fileContent: string): FileFormatInfo | null {
         return {
           rsIdColumn: rsIdColumnIndex,
           allele1Column: genotypeCol,
-          delimiter,
+          delimiter: typeof delimiter === 'string' ? delimiter : /\s+/,
           skipLines: headerLineIndex + 1
         };
       }
