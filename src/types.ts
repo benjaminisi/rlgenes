@@ -40,4 +40,3 @@ export interface SectionSummary {
   wildPercent: number;
   missingPercent: number;
 }
-

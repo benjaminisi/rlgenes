@@ -1,0 +1,9423 @@
+
+[
+  {
+    "Gene": "MTRR",
+    "RS ID": "rs1801394",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "FUT2",
+    "RS ID": "rs601338",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TCN1",
+    "RS ID": "rs526934",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TCN2",
+    "RS ID": "rs9606756",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MTHFR",
+    "RS ID": "rs1801133",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FMO3",
+    "RS ID": "rs1736557",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FMO3",
+    "RS ID": "rs3832024",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "FMO3",
+    "RS ID": "rs2266782",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FMO3",
+    "RS ID": "rs909531",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "FMO3",
+    "RS ID": "rs2266780",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "FMO3",
+    "RS ID": "rs61753344",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FMO3",
+    "RS ID": "rs909530",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ETFDH",
+    "RS ID": "i5007876",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC52A3",
+    "RS ID": "i5008314",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC25A32",
+    "RS ID": "rs147014855",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC52A3",
+    "RS ID": "rs267606684",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC52A2",
+    "RS ID": "rs782345472",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC52A2",
+    "RS ID": "rs375088539",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ETFDH",
+    "RS ID": "rs121964954",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ALPL",
+    "RS ID": "rs1256335",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ALPL",
+    "RS ID": "rs1697421",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ALPL",
+    "RS ID": "rs1780316",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NBPF3",
+    "RS ID": "rs4654748",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ALDH7A1",
+    "RS ID": "rs121912707",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ALDH7A1",
+    "RS ID": "rs121912708",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PDXK",
+    "RS ID": "rs2010795",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PNPO",
+    "RS ID": "rs17679445",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PNPO",
+    "RS ID": "rs370243877",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PNPO",
+    "RS ID": "rs550423482",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PNPO",
+    "RS ID": "rs773450573",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PNPO",
+    "RS ID": "rs796052869",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PNPO",
+    "RS ID": "rs796052870",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SLC23A2",
+    "RS ID": "rs6133175",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SLC23A1",
+    "RS ID": "rs12479919",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC23A1",
+    "RS ID": "rs6053005",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC23A1",
+    "RS ID": "rs10063949",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SLC23A1",
+    "RS ID": "rs33972313",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC23A2",
+    "RS ID": "rs1279683",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "BTD",
+    "RS ID": "rs13078881",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "BTD",
+    "RS ID": "rs28934601",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "BTD",
+    "RS ID": "rs13073139",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "BTD",
+    "RS ID": "rs80338684",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "BTD",
+    "RS ID": "rs34885143",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IL-6",
+    "RS ID": "rs1800795",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SLC30A8",
+    "RS ID": "rs13266634",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC30A8",
+    "RS ID": "rs11558471",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC30A2",
+    "RS ID": "rs587776926",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SLC30A2",
+    "RS ID": "rs185398527",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC30A2",
+    "RS ID": "rs117153535",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC39A2",
+    "RS ID": "rs2234632",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC39A13",
+    "RS ID": "rs121434363",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CA1",
+    "RS ID": "rs1532423",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC19A2",
+    "RS ID": "rs2038024",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SLC19A2",
+    "RS ID": "rs28937595",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC19A2",
+    "RS ID": "rs121908540",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC19A2",
+    "RS ID": "rs74315373",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC19A2",
+    "RS ID": "rs74315374",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC19A2",
+    "RS ID": "rs74315375",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC19A3",
+    "RS ID": "rs121917884",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SLC19A3",
+    "RS ID": "rs121917882",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC22A1",
+    "RS ID": "rs72552763",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "TPK1",
+    "RS ID": "rs371271054",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SLC25A19",
+    "RS ID": "rs119473030",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PHDC",
+    "RS ID": "rs28933391",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PHDC",
+    "RS ID": "rs28935769",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "BCKDHB",
+    "RS ID": "i3002808",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "BCKDHB",
+    "RS ID": "rs386834233",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "BCKDHB",
+    "RS ID": "rs74103423",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC25A19",
+    "RS ID": "rs387906944",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "BCKDHB",
+    "RS ID": "i4000422",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PEMT",
+    "RS ID": "rs7946",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CHKA",
+    "RS ID": "rs10791957",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "BHMT",
+    "RS ID": "rs3733890",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MTHFD1",
+    "RS ID": "rs2236225",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PEMT",
+    "RS ID": "rs12325817",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "BCO1",
+    "RS ID": "rs7501331",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "BCO1",
+    "RS ID": "rs12934922",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "BCO1",
+    "RS ID": "rs11645428",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "BCO1",
+    "RS ID": "rs6420424",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "BCO1",
+    "RS ID": "rs6564851",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CYP2R1",
+    "RS ID": "rs2060793",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP2R1",
+    "RS ID": "rs1562902",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP27B1",
+    "RS ID": "rs28934607",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP27B1",
+    "RS ID": "rs28934605",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP27B1",
+    "RS ID": "rs28934604",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GC",
+    "RS ID": "rs2282679",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GC",
+    "RS ID": "rs7041",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "VDR",
+    "RS ID": "rs1544410",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "VDR",
+    "RS ID": "rs2228570",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "VDR",
+    "RS ID": "rs7975232",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GC",
+    "RS ID": "rs12512631",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GC",
+    "RS ID": "rs1155563",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "VDR",
+    "RS ID": "rs10783219",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP2R1",
+    "RS ID": "rs10741657",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "DHFR",
+    "RS ID": "rs70991108",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "DHFR",
+    "RS ID": "rs1677693",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "DHFR",
+    "RS ID": "rs1650697",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SEP15",
+    "RS ID": "rs5845",
+    "Effect Allele": "ADecreased"
+  },
+  {
+    "Gene": "SEP15",
+    "RS ID": "rs561104",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SEPP1",
+    "RS ID": "rs7579",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SEPP1",
+    "RS ID": "rs3877899",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SELENOS",
+    "RS ID": "rs34713741",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GPX4",
+    "RS ID": "rs713041",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GPX1",
+    "RS ID": "rs1050450",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MTHFR",
+    "RS ID": "rs2274976",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MTHFR",
+    "RS ID": "rs9651118",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MTHFR",
+    "RS ID": "rs13306560",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MTHFR",
+    "RS ID": "rs17367504",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MTHFR",
+    "RS ID": "rs4846049",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MTR",
+    "RS ID": "rs1805087",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MTR",
+    "RS ID": "rs1050993",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MTR",
+    "RS ID": "rs2275565",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP4F2",
+    "RS ID": "rs2108622",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "VKORC1",
+    "RS ID": "rs9934438",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "VKORC1",
+    "RS ID": "rs9923231",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "VKORC1",
+    "RS ID": "rs8050894",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GGCX",
+    "RS ID": "rs699664",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GGCX",
+    "RS ID": "rs11676382",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "VKORC1",
+    "RS ID": "rs7294",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TRPM6",
+    "RS ID": "rs3750425",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TRPM6",
+    "RS ID": "rs2274924",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TRPM6",
+    "RS ID": "rs121912625",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TRPM7",
+    "RS ID": "rs8042919",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CNNM2",
+    "RS ID": "rs12413409",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CNNM2",
+    "RS ID": "rs11191548",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CNNM2",
+    "RS ID": "rs7914558",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GATM",
+    "RS ID": "rs1346268",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GATM",
+    "RS ID": "rs80338737",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CKM",
+    "RS ID": "rs8111989",
+    "Effect Allele": "Cfound"
+  },
+  {
+    "Gene": "CKM",
+    "RS ID": "rs11559024",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CKM",
+    "RS ID": "rs4884",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PDSS1",
+    "RS ID": "rs863224162",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PDSS1",
+    "RS ID": "rs863224163",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "CoQ9",
+    "RS ID": "rs786205897",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "COQ8A",
+    "RS ID": "rs771578775",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "COQ8A",
+    "RS ID": "rs578189699",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "COQ8A",
+    "RS ID": "rs119468004",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "COQ2",
+    "RS ID": "rs121918233",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "COQ2",
+    "RS ID": "rs121918232",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "COQ2",
+    "RS ID": "rs121918231",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "COQ2",
+    "RS ID": "rs121918230",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CoQ3",
+    "RS ID": "rs6925344",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NQO1",
+    "RS ID": "rs1800566",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CD36",
+    "RS ID": "rs1761667",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP7A1",
+    "RS ID": "rs3808607",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NPC1L1",
+    "RS ID": "rs2072183",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SLC30A1",
+    "RS ID": "rs2275707",
+    "Effect Allele": "Cincreased"
+  },
+  {
+    "Gene": "SLC39A8",
+    "RS ID": "rs13107325",
+    "Effect Allele": "Tlower"
+  },
+  {
+    "Gene": "SLC39A8",
+    "RS ID": "rs11097773",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "HFE",
+    "RS ID": "rs1800562",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TMPRSS6",
+    "RS ID": "rs855791",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "LYRM4",
+    "RS ID": "rs467304",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FECH",
+    "RS ID": "rs2272783",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "FAM210B",
+    "RS ID": "rs6099115",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SOD2",
+    "RS ID": "rs5746136",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC11A2",
+    "RS ID": "rs224589",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HFE",
+    "RS ID": "rs1799945",
+    "Effect Allele": "Gpossibly"
+  },
+  {
+    "Gene": "LCT",
+    "RS ID": "rs4988235",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MCM6",
+    "RS ID": "rs145946881",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CYP1A2",
+    "RS ID": "rs762551",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ADORA2A",
+    "RS ID": "rs2298383",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ADORA2A",
+    "RS ID": "rs5751876",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FADS1",
+    "RS ID": "rs174546",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FADS2",
+    "RS ID": "rs1535",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "AOC1",
+    "RS ID": "rs10156191",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "AOC1",
+    "RS ID": "rs2052129",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "AOC1",
+    "RS ID": "rs1049742",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "AOC1",
+    "RS ID": "rs1049793",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "AOC1",
+    "RS ID": "rs2071514",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HMNT",
+    "RS ID": "rs1050891",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HMNT",
+    "RS ID": "i3000469",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HMNT",
+    "RS ID": "rs2071048",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HMNT",
+    "RS ID": "rs11558538",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HDC",
+    "RS ID": "rs2073440",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HDC",
+    "RS ID": "rs267606861",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HRH1",
+    "RS ID": "rs901865",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HRH2",
+    "RS ID": "rs2067474",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HRH4",
+    "RS ID": "rs11662595",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MTHFR",
+    "RS ID": "rs1801131",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CASR",
+    "RS ID": "rs1501899",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "UMOD",
+    "RS ID": "rs4293393",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "DGKH",
+    "RS ID": "rs4142110",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CLND14",
+    "RS ID": "rs219780",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "AGXT",
+    "RS ID": "rs34116584",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GRHPR",
+    "RS ID": "i5012629",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "GRHPR",
+    "RS ID": "i5012628",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "GRHPR",
+    "RS ID": "rs180177309",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "GRHPR",
+    "RS ID": "rs80356708",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "GOX1",
+    "RS ID": "rs2235250",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "AGTX",
+    "RS ID": "rs121908524",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "AGTX",
+    "RS ID": "i5012625",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "AGTX",
+    "RS ID": "rs121908527",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "AGTX",
+    "RS ID": "i5001077",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ACE",
+    "RS ID": "rs4343",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "APOA2",
+    "RS ID": "rs5082",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TCF7L2",
+    "RS ID": "rs7903146",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MAOA",
+    "RS ID": "rs6323",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP2D6",
+    "RS ID": "rs3892097",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP2D6",
+    "RS ID": "rs5030655",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "CYP2D6",
+    "RS ID": "rs1065852",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP2D6",
+    "RS ID": "rs16947",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP2D6",
+    "RS ID": "rs5030867",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CYP2D6",
+    "RS ID": "rs5030656",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "CYP2D6",
+    "RS ID": "rs28371706",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ADH1B",
+    "RS ID": "rs1229984",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ADH1B",
+    "RS ID": "rs2066702",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ADH1C",
+    "RS ID": "rs698",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ALDH2",
+    "RS ID": "rs671",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "AMY1",
+    "RS ID": "rs11185098",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC22A4",
+    "RS ID": "rs1050152",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CBS",
+    "RS ID": "rs234706",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CBS",
+    "RS ID": "rs1801181",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CBS",
+    "RS ID": "rs4920037",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CBS",
+    "RS ID": "rs234709",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CBS",
+    "RS ID": "rs5742905",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HLA-DQB1",
+    "RS ID": "rs9275596",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "HLA-DRA",
+    "RS ID": "rs7192",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FLG",
+    "RS ID": "rs61816761",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FLG",
+    "RS ID": "i4000499",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "FLG",
+    "RS ID": "rs558269137",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "RBFOX1",
+    "RS ID": "rs74575857",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "HLA-DQA1",
+    "RS ID": "rs9271588",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IL18",
+    "RS ID": "rs1946518",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HLA-DQ",
+    "RS ID": "rs9275596",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IL13",
+    "RS ID": "rs20541",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IL13",
+    "RS ID": "rs1800925",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TMPRSS6",
+    "RS ID": "rs855791",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IL10",
+    "RS ID": "rs1800896",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IL13",
+    "RS ID": "rs1295686",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IL4",
+    "RS ID": "rs2243250",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CCL26",
+    "RS ID": "rs2302009",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "BHMT",
+    "RS ID": "rs651852",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "BHMT",
+    "RS ID": "rs567754",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HNMT",
+    "RS ID": "rs1050891",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HNMT",
+    "RS ID": "rs11558538",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HNMT",
+    "RS ID": "i3000469",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TNF",
+    "RS ID": "rs1800629",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CLDN1",
+    "RS ID": "rs17501010",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NTN4",
+    "RS ID": "rs2367563",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ALDOB",
+    "RS ID": "rs78340951",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ALDOB",
+    "RS ID": "rs76917243",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ALDOB",
+    "RS ID": "rs1800546",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ALDOB",
+    "RS ID": "i5012664",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ALDOB",
+    "RS ID": "i5008215",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ALDOB",
+    "RS ID": "rs387906225",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "ALDOB",
+    "RS ID": "i5012665",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "ALDOB",
+    "RS ID": "rs118204428",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ATP7B",
+    "RS ID": "rs76151636",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ATP7B",
+    "RS ID": "rs28942074",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ATP7B",
+    "RS ID": "rs137853283",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ATP7B",
+    "RS ID": "rs72552255",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ATP7B",
+    "RS ID": "rs60431989",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ATP7B",
+    "RS ID": "rs28942076",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SOD2",
+    "RS ID": "rs4880",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PER3",
+    "RS ID": "rs139315125",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PER3",
+    "RS ID": "rs150812083",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PER3",
+    "RS ID": "rs228697",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "OPN4",
+    "RS ID": "rs2675703",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "OPN4",
+    "RS ID": "rs1079610",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CLOCK",
+    "RS ID": "rs1801260",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HTR2A",
+    "RS ID": "rs731779",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "OXTR",
+    "RS ID": "rs53576",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "OXT",
+    "RS ID": "rs1042778",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CRHR1",
+    "RS ID": "rs242924",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CRHR1",
+    "RS ID": "rs110402",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "BDNF",
+    "RS ID": "rs6265",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "BDNF",
+    "RS ID": "rs56164415",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "BDNF",
+    "RS ID": "rs11030101",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "BDNF",
+    "RS ID": "rs7103411",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "HTR1A",
+    "RS ID": "rs6295",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "COMT",
+    "RS ID": "rs4680",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ACCN1",
+    "RS ID": "rs11969731",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CACNG2",
+    "RS ID": "rs2284018",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GADL1",
+    "RS ID": "rs17026688",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "COMT",
+    "RS ID": "rs4633",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "COMT",
+    "RS ID": "rs6267",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "COMT",
+    "RS ID": "rs165599",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "COMT",
+    "RS ID": "rs165774",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GAD1",
+    "RS ID": "rs3749034",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GAD1",
+    "RS ID": "rs1978340",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GAD1",
+    "RS ID": "rs769390",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GAD1",
+    "RS ID": "rs3791878",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GABRA1",
+    "RS ID": "rs2279020",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GABRA1",
+    "RS ID": "rs121434579",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GABRG2",
+    "RS ID": "rs211037",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ALDH5A1",
+    "RS ID": "rs3765310",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ALDH5A1",
+    "RS ID": "rs2760118",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ALDH5A1",
+    "RS ID": "rs62621664",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GABRA2",
+    "RS ID": "rs279858",
+    "Effect Allele": "Cincreased"
+  },
+  {
+    "Gene": "GABRG2",
+    "RS ID": "rs796052504",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GABRA2",
+    "RS ID": "rs279871",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NR3C1",
+    "RS ID": "rs6189",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NR3C1",
+    "RS ID": "rs6190",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NR3C1",
+    "RS ID": "rs6198",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "NR3C1",
+    "RS ID": "rs56149945",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "NR3C1",
+    "RS ID": "rs41423247",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "NR3C1",
+    "RS ID": "rs6191",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NR3C1",
+    "RS ID": "rs10052957",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NR3C2",
+    "RS ID": "rs5522",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CRHR1",
+    "RS ID": "rs242941",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CRHR1",
+    "RS ID": "rs242939",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "FKBP5",
+    "RS ID": "rs1360780",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FKBP5",
+    "RS ID": "rs3800373",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MC2R",
+    "RS ID": "rs1941088",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MC2R",
+    "RS ID": "rs28940892",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SERPINA6",
+    "RS ID": "rs11621961",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SERPINA6",
+    "RS ID": "rs941601",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NR3C1",
+    "RS ID": "i4990006",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GNB3",
+    "RS ID": "rs5443",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC6A4",
+    "RS ID": "rs140701",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CHCR1",
+    "RS ID": "rs110402",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ACCN2",
+    "RS ID": "rs10875995",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ACCN2",
+    "RS ID": "rs685012",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IL6",
+    "RS ID": "rs1800796",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IL6",
+    "RS ID": "rs1800795",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IL6",
+    "RS ID": "rs1800797",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IL6R",
+    "RS ID": "rs4129267",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IL1B",
+    "RS ID": "rs16944",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IDO1",
+    "RS ID": "rs9657182",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "KMO",
+    "RS ID": "rs1053230",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "OPRM1",
+    "RS ID": "rs1799971",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SNCA",
+    "RS ID": "rs17015982",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SLC6A4",
+    "RS ID": "rs1042173",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "DRD2",
+    "RS ID": "rs1076560",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "DRD3",
+    "RS ID": "rs2134655",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GCKR",
+    "RS ID": "rs1260326",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "KLB",
+    "RS ID": "rs11940694",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CNR1",
+    "RS ID": "rs806368",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CNR1",
+    "RS ID": "rs1049353",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CNR1",
+    "RS ID": "rs1406977",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CNR2",
+    "RS ID": "rs2501432",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FAAH",
+    "RS ID": "rs324420",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ABCB1",
+    "RS ID": "rs1045642",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FAAH",
+    "RS ID": "rs4141964",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CNR1",
+    "RS ID": "rs806380",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "AKT1",
+    "RS ID": "rs2494732",
+    "Effect Allele": "Cmore"
+  },
+  {
+    "Gene": "SLC18A2",
+    "RS ID": "rs363276",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC18A2",
+    "RS ID": "rs363387",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC18A2",
+    "RS ID": "rs363324",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC18A2",
+    "RS ID": "rs363227",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "KIAA0319",
+    "RS ID": "rs4504469",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "KIAA0319",
+    "RS ID": "rs9461045",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "KIAA0319",
+    "RS ID": "rs2038137",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "KIAA0319",
+    "RS ID": "rs761100",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "KIAA0319",
+    "RS ID": "rs6935076",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "DCDC2",
+    "RS ID": "rs793862",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "DCDC2",
+    "RS ID": "rs807701",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GRIA1",
+    "RS ID": "rs548294",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HIF1A",
+    "RS ID": "rs11549465",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NPTN",
+    "RS ID": "rs7171755",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TNF",
+    "RS ID": "rs361525",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NLRP3",
+    "RS ID": "rs35829419",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GSTM1",
+    "RS ID": "rs366631",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HIF1A",
+    "RS ID": "rs11549467",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ANK3",
+    "RS ID": "rs10994336",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ANK3",
+    "RS ID": "rs1938526",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ANK3",
+    "RS ID": "rs9804190",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ANK3",
+    "RS ID": "rs10761482",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ANK3",
+    "RS ID": "rs41283526",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "DRD1",
+    "RS ID": "rs4532",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "DRD1",
+    "RS ID": "rs5326",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "DRD1",
+    "RS ID": "rs686",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "DRD2",
+    "RS ID": "rs6277",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "DRD2",
+    "RS ID": "rs1801028",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ANKK1",
+    "RS ID": "rs1800497",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "DRD3",
+    "RS ID": "rs6280",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "DRD4",
+    "RS ID": "rs1800955",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SLC6A3",
+    "RS ID": "rs27072",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MAO",
+    "RS ID": "rs6323",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "LINC00951",
+    "RS ID": "rs4714329",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HTR2B",
+    "RS ID": "rs79874540",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "OXTR",
+    "RS ID": "rs237887",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "OXTR",
+    "RS ID": "rs237885",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "OXTR",
+    "RS ID": "rs1042778",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SNAP25",
+    "RS ID": "rs3746544",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GSTA1",
+    "RS ID": "rs3957357",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MTHFD1L",
+    "RS ID": "rs11754661",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ATP6V1B2",
+    "RS ID": "rs1106634",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IDO1",
+    "RS ID": "rs3808606",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TPH2",
+    "RS ID": "rs4570625",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TPH2",
+    "RS ID": "rs11178997",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TPH2",
+    "RS ID": "rs1843809",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TPH2",
+    "RS ID": "rs4290270",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IDO2",
+    "RS ID": "rs10109853",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IDO2",
+    "RS ID": "rs4503083",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IDO1",
+    "RS ID": "rs7820268",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "FGA",
+    "RS ID": "rs121909612",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SERPINF",
+    "RS ID": "rs8074026",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TLR4",
+    "RS ID": "rs10759931",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HFE",
+    "RS ID": "rs1799945",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TRPM8",
+    "RS ID": "rs10166942",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "NNMT",
+    "RS ID": "rs694539",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "C7orf10",
+    "RS ID": "rs4379368",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC6A4",
+    "RS ID": "rs2066713",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TNF",
+    "RS ID": "rs3093664",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TNF",
+    "RS ID": "rs1800750",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IL1A",
+    "RS ID": "rs17561",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "KCNK18",
+    "RS ID": "rs869025175",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "MTDH",
+    "RS ID": "rs1835740",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "LRP1",
+    "RS ID": "rs11172113",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "NRP1",
+    "RS ID": "rs2506142",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PHACTR1",
+    "RS ID": "rs9349379",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TRPV1",
+    "RS ID": "rs8065080",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "HTR1A",
+    "RS ID": "rs6295",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "HTR1B",
+    "RS ID": "rs6296",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HTR2A",
+    "RS ID": "rs6314",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PDE1C",
+    "RS ID": "rs10236197",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "LINC01104",
+    "RS ID": "rs13010010",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "LINC01104",
+    "RS ID": "rs12206087",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ADAMS12",
+    "RS ID": "rs4962322",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ADAMS12",
+    "RS ID": "rs10794073",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CHRM2",
+    "RS ID": "rs324640",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CHRM2",
+    "RS ID": "rs2061174",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "LRRN2",
+    "RS ID": "rs11584700",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "DTNBP1",
+    "RS ID": "rs2619522",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "DTNBP1",
+    "RS ID": "rs1018381",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "REC114",
+    "RS ID": "rs7171755",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HMGA2",
+    "RS ID": "rs10784502",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "VRK2",
+    "RS ID": "rs848293",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MAPT",
+    "RS ID": "rs4792891",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MAOA",
+    "RS ID": "rs1137070",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MAOB",
+    "RS ID": "rs3027452",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MAOB",
+    "RS ID": "rs1799836",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MAOA",
+    "RS ID": "rs979605",
+    "Effect Allele": "Afor"
+  },
+  {
+    "Gene": "HTR1B1",
+    "RS ID": "rs6296",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SLC6A2",
+    "RS ID": "rs36021",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "DRD4",
+    "RS ID": "rs916455",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ARNTL2",
+    "RS ID": "rs2306074",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PER1",
+    "RS ID": "rs2518023",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HMGCR",
+    "RS ID": "rs17244841",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HMGCR",
+    "RS ID": "rs12916",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "HMGCR",
+    "RS ID": "rs17238540",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HMGCR",
+    "RS ID": "rs3846662",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "FADS1/2",
+    "RS ID": "rs174535",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "PEDS1",
+    "RS ID": "rs6020298",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GNPAT",
+    "RS ID": "rs11558492",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GCKR",
+    "RS ID": "rs780094",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ITGA9",
+    "RS ID": "rs197770",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TH",
+    "RS ID": "rs10770141",
+    "Effect Allele": "Aigher"
+  },
+  {
+    "Gene": "TH",
+    "RS ID": "rs10770140",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "DDC",
+    "RS ID": "rs3735273",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "DDC",
+    "RS ID": "rs921451",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GLS2",
+    "RS ID": "rs2657879",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GLS2",
+    "RS ID": "rs2638315",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GLUL",
+    "RS ID": "rs80358215",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GLUD1",
+    "RS ID": "rs121909730",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GLUD1",
+    "RS ID": "rs121909731",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GLUD1",
+    "RS ID": "rs797045597",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC1A1",
+    "RS ID": "rs2228622",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC1A1",
+    "RS ID": "rs301430",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SLC1A2",
+    "RS ID": "rs3794087",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC1A2",
+    "RS ID": "rs12294045",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CRHBP",
+    "RS ID": "rs10062367",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NTSR2",
+    "RS ID": "rs12612207",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "DRD2",
+    "RS ID": "rs7131056",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TH",
+    "RS ID": "rs4929966",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TH",
+    "RS ID": "rs3842748",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "DISC1",
+    "RS ID": "rs821616",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "DISC1",
+    "RS ID": "rs3738401",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "DISC1",
+    "RS ID": "rs6675281",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "RELN",
+    "RS ID": "rs7341475",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NRG1",
+    "RS ID": "rs35753505",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CACNA1C",
+    "RS ID": "rs1006737",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CACNA1C",
+    "RS ID": "rs4765905",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GRIN2A",
+    "RS ID": "rs9922678",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC39A8",
+    "RS ID": "rs13107325",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "C4A",
+    "RS ID": "rs13194505",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GCH1",
+    "RS ID": "rs10137071",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IL-18",
+    "RS ID": "rs2272127",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "RELN",
+    "RS ID": "rs736707",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC1A1",
+    "RS ID": "rs301430",
+    "Effect Allele": "Chigher"
+  },
+  {
+    "Gene": "PTPRD",
+    "RS ID": "rs7856850",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NSG2",
+    "RS ID": "rs4868342",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GRIN2B",
+    "RS ID": "rs1805476",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GRID2",
+    "RS ID": "rs1030757",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GRID2",
+    "RS ID": "rs5019028",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HTR3B",
+    "RS ID": "rs1176744",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "BTBD3",
+    "RS ID": "rs6131295",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HTR3E",
+    "RS ID": "rs7627615",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "F2",
+    "RS ID": "i3002432",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "F2",
+    "RS ID": "rs3136516",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "F2",
+    "RS ID": "rs1799963",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP11B2",
+    "RS ID": "rs1799998",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CYP11B2",
+    "RS ID": "rs61757294",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CYP11B2",
+    "RS ID": "rs104894072",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CYP11B2",
+    "RS ID": "rs28931609",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "AGTR1",
+    "RS ID": "rs5186",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "AGTR1",
+    "RS ID": "rs3772622",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "AGTR1",
+    "RS ID": "rs1492078",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FGA",
+    "RS ID": "rs6050",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "FGA",
+    "RS ID": "rs2070022",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FGB",
+    "RS ID": "rs1800787",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FGB",
+    "RS ID": "rs1800789",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FGB",
+    "RS ID": "rs1800790",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FGG",
+    "RS ID": "rs2066865",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FGG",
+    "RS ID": "rs2066860",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ITGB3",
+    "RS ID": "rs5918",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "F5",
+    "RS ID": "rs6025",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CDKN2B-AS1",
+    "RS ID": "rs2383206",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CDKN2B-AS1",
+    "RS ID": "rs10757274",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ALOX5AP",
+    "RS ID": "rs17222842",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ALOX5AP",
+    "RS ID": "rs4769874",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "LRP8",
+    "RS ID": "rs5174",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "LOX1",
+    "RS ID": "rs11053646",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "NOS3",
+    "RS ID": "rs891512",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NOS3",
+    "RS ID": "rs1800779",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PCSK9",
+    "RS ID": "rs11591147",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PCSK9",
+    "RS ID": "rs28362286",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PCSK9",
+    "RS ID": "rs67608943",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PCSK9",
+    "RS ID": "rs72646508",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PCSK9",
+    "RS ID": "rs505151",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PCSK9",
+    "RS ID": "i5000370",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "PCSK9",
+    "RS ID": "rs28942111",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "LPA",
+    "RS ID": "rs3798220",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "LPA",
+    "RS ID": "rs10455872",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "LDLR",
+    "RS ID": "rs6511720",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "LDLRAP1",
+    "RS ID": "rs121908324",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "LDLRAP1",
+    "RS ID": "rs121908325",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ABCA1",
+    "RS ID": "rs2230806",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MEF2A",
+    "RS ID": "rs121918529",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "APOB",
+    "RS ID": "rs144467873",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "APOB",
+    "RS ID": "i4000339",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "APOB",
+    "RS ID": "rs5742904",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PCSK9",
+    "RS ID": "rs28942112",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "APOB",
+    "RS ID": "rs12713559",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MEF2A",
+    "RS ID": "i5003637",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FTL",
+    "RS ID": "rs104894685",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FTL",
+    "RS ID": "rs397514540",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC40A1",
+    "RS ID": "rs11568350",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TF",
+    "RS ID": "rs1799852",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TF",
+    "RS ID": "rs3811647",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC17A1",
+    "RS ID": "rs17342717",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "BTBD9",
+    "RS ID": "rs9296249",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "BTBD9",
+    "RS ID": "rs3923809",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs1800386",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GUCY1A3",
+    "RS ID": "rs7692387",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IGTB3",
+    "RS ID": "rs5918",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "LPA",
+    "RS ID": "rs3798220",
+    "Effect Allele": "Crisk"
+  },
+  {
+    "Gene": "CETP",
+    "RS ID": "rs1800777",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CETP",
+    "RS ID": "rs5882",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CETP",
+    "RS ID": "rs708272",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CETP",
+    "RS ID": "rs3764261",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "LIPC",
+    "RS ID": "rs4775065",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ABCG8",
+    "RS ID": "rs41360247",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ABCG8",
+    "RS ID": "rs4148217",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ABCG8",
+    "RS ID": "rs4245791",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ABCG8",
+    "RS ID": "rs4299376",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ABCG8",
+    "RS ID": "rs11887534",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ABCG8",
+    "RS ID": "rs137854891",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ABCG8",
+    "RS ID": "rs199689137",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ABCG8",
+    "RS ID": "rs119479065",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ABCG8",
+    "RS ID": "rs137852987",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ABCG5",
+    "RS ID": "rs6720173",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "APOA5",
+    "RS ID": "rs662799",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "APOA5",
+    "RS ID": "rs2075291",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "APOA5",
+    "RS ID": "rs3135506",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "APOA5",
+    "RS ID": "rs651821",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "LPL",
+    "RS ID": "rs328",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "LPL",
+    "RS ID": "rs320",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "LPL",
+    "RS ID": "rs268",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "APOC2",
+    "RS ID": "rs5126",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "APOC2",
+    "RS ID": "rs120074114",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GPD1",
+    "RS ID": "rs199673455",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MLXIPL",
+    "RS ID": "rs3812316",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "APOB",
+    "RS ID": "rs693",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "APOB",
+    "RS ID": "rs6752026",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GPER1",
+    "RS ID": "rs11544331",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CRP",
+    "RS ID": "rs1205",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CRP",
+    "RS ID": "rs3091244",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CRP",
+    "RS ID": "rs1800947",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CRP",
+    "RS ID": "rs3093058",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CRP",
+    "RS ID": "rs3093059",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "NOS3",
+    "RS ID": "rs4496877",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NOS3",
+    "RS ID": "rs2070744",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SLCO1B1",
+    "RS ID": "rs4149056",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "i3002455",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "i3002797",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "i5004518",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "i5049115",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "i5049338",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs61750591",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs61748477",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs61750584",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs61750579",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs121964894",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs62643630",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs267607353",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs41276738",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs61748478",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs61748497",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs61750612",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs61750630",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs61754002",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs61748495",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs61749372",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs61749380",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs61749384",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs61749392",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs121964895",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs61748511",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "i5039483",
+    "Effect Allele": "I"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "i5039448",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs62643632",
+    "Effect Allele": "I"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "i5049057",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "i5049076",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "i5049266",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "BCHE",
+    "RS ID": "rs1799807",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "AGXT",
+    "RS ID": "rs180177309",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "AGXT",
+    "RS ID": "rs80356708",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "SERPINA1",
+    "RS ID": "rs28929474",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SERPINA1",
+    "RS ID": "rs17580",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MEFV",
+    "RS ID": "rs61732874",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MEFV",
+    "RS ID": "rs3743930",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MEFV",
+    "RS ID": "rs104895083",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MEFV",
+    "RS ID": "i4000403",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MEFV",
+    "RS ID": "rs104895094",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MEFV",
+    "RS ID": "i4000407",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MEFV",
+    "RS ID": "rs28940580",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MEFV",
+    "RS ID": "rs28940578",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MEFV",
+    "RS ID": "i4000406",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MEFV",
+    "RS ID": "rs11466023",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MEFV",
+    "RS ID": "i4000410",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MEFV",
+    "RS ID": "rs28940579",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ADAMTS13",
+    "RS ID": "rs28647808",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ADAMTS13",
+    "RS ID": "rs685523",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ADAMTS13",
+    "RS ID": "rs142572218",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ADAMTS13",
+    "RS ID": "rs148312697",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs1063856",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "VWF",
+    "RS ID": "rs1063857",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "LPA",
+    "RS ID": "rs6919346",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "LPA",
+    "RS ID": "rs41272114",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "LPA",
+    "RS ID": "rs143431368",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GP6",
+    "RS ID": "rs1613662",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "F11",
+    "RS ID": "rs2036914",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ADRA1A",
+    "RS ID": "rs486179",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ADRA1A",
+    "RS ID": "rs3730287",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ADRA1A",
+    "RS ID": "rs17426222",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NRP1",
+    "RS ID": "rs2228638",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NRP1",
+    "RS ID": "rs10080",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "NRP2",
+    "RS ID": "rs849563",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "NRP2",
+    "RS ID": "rs849530",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MYBPC3",
+    "RS ID": "rs397516074",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MYBPC3",
+    "RS ID": "i5046177",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MYBPC3",
+    "RS ID": "rs375882485",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MYBPC3",
+    "RS ID": "i5046172",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MYBPC3",
+    "RS ID": "rs397515963",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MYBPC3",
+    "RS ID": "i5046245",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MYH7",
+    "RS ID": "rs3218713",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MYH7",
+    "RS ID": "rs3218714",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MYH7",
+    "RS ID": "rs121913626",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SERPINE1",
+    "RS ID": "rs1799768",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "SERPINE1",
+    "RS ID": "rs2227631",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SERPINE1",
+    "RS ID": "rs7242",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SERPINE1",
+    "RS ID": "rs6092",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SERPINE1",
+    "RS ID": "rs2227692",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PITX2",
+    "RS ID": "rs2200733",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PITX2",
+    "RS ID": "rs10033464",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PITX2",
+    "RS ID": "rs13143308",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PITX2",
+    "RS ID": "rs3853445",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ZFHX3",
+    "RS ID": "rs2106261",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CAV1",
+    "RS ID": "rs11773845",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CAV1",
+    "RS ID": "rs3807989",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SCN5A",
+    "RS ID": "rs6599230",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SCN5A",
+    "RS ID": "rs6843082",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SCN10A",
+    "RS ID": "rs6801957",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "KCNN3",
+    "RS ID": "rs13376333",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HCN4",
+    "RS ID": "rs7164883",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PRRX1",
+    "RS ID": "rs3903239",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ACMSD",
+    "RS ID": "rs10496731",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ACMSD",
+    "RS ID": "rs6430553",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ACMSD",
+    "RS ID": "rs6729702",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "AGTR1",
+    "RS ID": "rs4524238",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC4A5",
+    "RS ID": "rs7571842",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC4A5",
+    "RS ID": "rs10177833",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "LSS",
+    "RS ID": "rs2254524",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NPPA",
+    "RS ID": "rs5063",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ADD1",
+    "RS ID": "rs4961",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SGK1",
+    "RS ID": "rs2758151",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "LSD1",
+    "RS ID": "rs587168",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "UMOD",
+    "RS ID": "rs13333226",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "BMP2",
+    "RS ID": "rs235756",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC40A1",
+    "RS ID": "rs1439816",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "HFE2",
+    "RS ID": "rs121434375",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC40A1",
+    "RS ID": "rs28939076",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HFE2",
+    "RS ID": "i5001498",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HFE2",
+    "RS ID": "i5001502",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HFE2",
+    "RS ID": "i5001501",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MC1R",
+    "RS ID": "rs1805008",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MC1R",
+    "RS ID": "rs1805007",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MC1R",
+    "RS ID": "rs1805006",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MC1R",
+    "RS ID": "rs1805009",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ASIP",
+    "RS ID": "rs1015362",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ASIP",
+    "RS ID": "rs4911414",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "EXOC2",
+    "RS ID": "rs12210050",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC45A2",
+    "RS ID": "rs16891982",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PADI6",
+    "RS ID": "rs7538876",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IRF4",
+    "RS ID": "rs12203592",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MC1R",
+    "RS ID": "i3002507",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TNFSF11",
+    "RS ID": "rs2277438",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TNFSF11",
+    "RS ID": "rs2277439",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TNFSF11",
+    "RS ID": "rs12585014",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "OPG",
+    "RS ID": "rs3102735",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "LRP5",
+    "RS ID": "rs3736228",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SQRDL",
+    "RS ID": "rs1044032",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ESR2",
+    "RS ID": "rs4986938",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TGFB1",
+    "RS ID": "rs1800470",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "COL1A1",
+    "RS ID": "rs1800012",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "LGR6",
+    "RS ID": "rs10920362",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ABCG8",
+    "RS ID": "rs6756629",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ABCB4",
+    "RS ID": "rs2230028",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IL1B",
+    "RS ID": "rs1143634",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PTPN22",
+    "RS ID": "rs33996649",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MUC1",
+    "RS ID": "rs4072037",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TACR1",
+    "RS ID": "rs3771863",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "THBS1",
+    "RS ID": "rs2228262",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "THBS1",
+    "RS ID": "rs2292305",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "FGF10",
+    "RS ID": "rs104893889",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CFH",
+    "RS ID": "rs1061170",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CFH",
+    "RS ID": "rs1410996",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CFH",
+    "RS ID": "rs800292",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CFH",
+    "RS ID": "rs10922109",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CFI",
+    "RS ID": "rs10033900",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "C3",
+    "RS ID": "rs147859257",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ARMS2",
+    "RS ID": "rs10490924",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "LIPC",
+    "RS ID": "rs10468017",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "C2",
+    "RS ID": "rs547154",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "C2",
+    "RS ID": "rs4151667",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "C2",
+    "RS ID": "rs641153",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "C2",
+    "RS ID": "rs9332739",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "G6PD",
+    "RS ID": "rs5030868",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "G6PD",
+    "RS ID": "rs72554664",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "G6PD",
+    "RS ID": "rs1050828",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "G6PD",
+    "RS ID": "rs72554665",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "G6PD",
+    "RS ID": "rs5030869",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "G6PD",
+    "RS ID": "rs137852327",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "G6PD",
+    "RS ID": "rs137852330",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "G6PD",
+    "RS ID": "i5012739",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "G6PD",
+    "RS ID": "i3003411",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "G6PD",
+    "RS ID": "i5008436",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "G6PD",
+    "RS ID": "i5008440",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HIF1A",
+    "RS ID": "rs2057482",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FMO3",
+    "RS ID": "rs72549332",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FMO3",
+    "RS ID": "rs72549326",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FMO3",
+    "RS ID": "rs72549322",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SERPINA1",
+    "RS ID": "rs28929473",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SERPINA1",
+    "RS ID": "rs199422211",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SERPINA1",
+    "RS ID": "rs28931572",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SERPINA1",
+    "RS ID": "rs28931568",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SERPINA1",
+    "RS ID": "rs61761869",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GSTP1",
+    "RS ID": "rs1695",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TREM2",
+    "RS ID": "rs75932628",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TREM2",
+    "RS ID": "rs143332484",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "APP",
+    "RS ID": "rs63750847",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MAPT",
+    "RS ID": "rs8070723",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ZCWPW1",
+    "RS ID": "rs1476679",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CLU",
+    "RS ID": "rs11136000",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "PICALM",
+    "RS ID": "rs3851179",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "APOE",
+    "RS ID": "rs7412",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "APOE",
+    "RS ID": "rs199768005",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "APOE",
+    "RS ID": "i5000207",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "APOE",
+    "RS ID": "rs267606661",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "APOE",
+    "RS ID": "i5000206",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CHI3L1",
+    "RS ID": "rs4950928",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "APOE",
+    "RS ID": "rs429358",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MSH3",
+    "RS ID": "rs26279",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MSH3",
+    "RS ID": "rs863221",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SCN9A",
+    "RS ID": "rs6746030",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SCN9A",
+    "RS ID": "rs4369876",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SCN9A",
+    "RS ID": "rs74449889",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SCN9A",
+    "RS ID": "rs80356470",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SCN9A",
+    "RS ID": "rs182650126",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SCN10A",
+    "RS ID": "rs6795970",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SCN10A",
+    "RS ID": "rs12632942",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SCN10A",
+    "RS ID": "rs151090729",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SCN11A",
+    "RS ID": "rs138607170",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SCN11A",
+    "RS ID": "rs483352921",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SCN11A",
+    "RS ID": "rs483352920",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SCN11A",
+    "RS ID": "rs141686175",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "rs5030861",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "rs5030858",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "rs5030857",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "rs5030855",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "rs5030853",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "rs5030852",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "rs5030849",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "rs5030841",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "rs28934899",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "rs62508588",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "i4000479",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "i4000478",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "rs62514953",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "rs62516092",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "rs62642933",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "rs62642932",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "rs76296470",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "rs75193786",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "i4000470",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "i4000467",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "rs5030860",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "rs5030856",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "i3003401",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "i4000472",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "i4000473",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "i3003397",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "i4000481",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "i3003398",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "i3003399",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "i3003400",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PAH",
+    "RS ID": "i4000476",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "HTR2A",
+    "RS ID": "rs6313",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HTR2A",
+    "RS ID": "rs6314",
+    "Effect Allele": "AReduced"
+  },
+  {
+    "Gene": "PRNP",
+    "RS ID": "rs1799990",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PRNP",
+    "RS ID": "rs11538758",
+    "Effect Allele": "Tpossible"
+  },
+  {
+    "Gene": "PRNP",
+    "RS ID": "rs28933385",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PRNP",
+    "RS ID": "i5004356",
+    "Effect Allele": "Cpossible"
+  },
+  {
+    "Gene": "ZBTB38",
+    "RS ID": "rs9857275",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SEMA3A",
+    "RS ID": "rs488333",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PRNP",
+    "RS ID": "rs74315405",
+    "Effect Allele": "CPossible"
+  },
+  {
+    "Gene": "CTNNA3",
+    "RS ID": "rs12764057",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CTNNA3",
+    "RS ID": "rs7903491",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FUS",
+    "RS ID": "rs186547381",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "LINGO1",
+    "RS ID": "rs11856808",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "LINGO1",
+    "RS ID": "rs9652490",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MAPT",
+    "RS ID": "rs1052553",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HTRA2",
+    "RS ID": "rs72470545",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MTHFR",
+    "RS ID": "rs1801133",
+    "Effect Allele": "AIncreased"
+  },
+  {
+    "Gene": "VDR",
+    "RS ID": "rs2228570",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP2C19",
+    "RS ID": "rs4244285",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "8q24",
+    "RS ID": "rs188140481",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HOXB13",
+    "RS ID": "rs138213197",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FGFR4",
+    "RS ID": "rs2011077",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "HNF1B",
+    "RS ID": "rs4430796",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CASC17",
+    "RS ID": "rs1859962",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "8q24",
+    "RS ID": "rs16901979",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "DAB2IP",
+    "RS ID": "rs1571801",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "17p12",
+    "RS ID": "rs4054823",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CASC8",
+    "RS ID": "rs1447295",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "11q13",
+    "RS ID": "rs11228565",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ESR2",
+    "RS ID": "rs2987983",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "COX2",
+    "RS ID": "rs5275",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GSTP1",
+    "RS ID": "rs1138272",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP3A4",
+    "RS ID": "rs2740574",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CYP1B1",
+    "RS ID": "rs1056836",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CYP19A1",
+    "RS ID": "rs700518",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "EHBP1",
+    "RS ID": "rs721048",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "LRRK2",
+    "RS ID": "rs34637584",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "LRRK2",
+    "RS ID": "rs34778348",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "LRRK2",
+    "RS ID": "rs33995883",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SNCA",
+    "RS ID": "rs2736990",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SNCA",
+    "RS ID": "rs356218",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PER1",
+    "RS ID": "rs2253820",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SLC2A13",
+    "RS ID": "rs1994090",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ALDH",
+    "RS ID": "rs671",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GBA",
+    "RS ID": "rs421016",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GBA",
+    "RS ID": "i4000417",
+    "Effect Allele": "I"
+  },
+  {
+    "Gene": "GBA",
+    "RS ID": "rs2230288",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "BChE",
+    "RS ID": "rs1803274",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "BChE",
+    "RS ID": "rs1126680",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GBA",
+    "RS ID": "i4000415",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GBA",
+    "RS ID": "rs387906315",
+    "Effect Allele": "I"
+  },
+  {
+    "Gene": "GBA",
+    "RS ID": "rs76763715",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SNCA",
+    "RS ID": "rs356219",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SNCA",
+    "RS ID": "rs104893875",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SNCA",
+    "RS ID": "i5002552",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HLA-DRB1",
+    "RS ID": "rs2187668",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HLA-B",
+    "RS ID": "rs3099844",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HLA-B",
+    "RS ID": "rs2844559",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PNPLA3",
+    "RS ID": "rs738409",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "NR1I2",
+    "RS ID": "rs1054190",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CRHR1",
+    "RS ID": "rs242924",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IL17A",
+    "RS ID": "rs2275913",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IL28",
+    "RS ID": "rs8099917",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CCR5",
+    "RS ID": "i3003626",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "FOXO3A",
+    "RS ID": "rs2802292",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "FOXO3A",
+    "RS ID": "rs1935949",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FOXO3A",
+    "RS ID": "rs479744",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FUT2",
+    "RS ID": "rs1047781",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FOXC2",
+    "RS ID": "rs121909106",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FOXC2",
+    "RS ID": "rs121909107",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TAS2R38",
+    "RS ID": "rs713598",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TAS2R38",
+    "RS ID": "rs10246939",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TAS2R16",
+    "RS ID": "rs846672",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TAS2R16",
+    "RS ID": "rs846664",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TAS2R16",
+    "RS ID": "rs978739",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "DEC2",
+    "RS ID": "rs121912617",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CCR5",
+    "RS ID": "rs333",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "FOXC2",
+    "RS ID": "i5002816",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "UGT1A1",
+    "RS ID": "rs887829",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "UGT1A1",
+    "RS ID": "rs4148323",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "UGT1A1",
+    "RS ID": "rs4124874",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "UGT1A1",
+    "RS ID": "rs6742078",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "UGT1A1",
+    "RS ID": "rs35003977",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "VDR",
+    "RS ID": "rs2228570",
+    "Effect Allele": "GCarrier"
+  },
+  {
+    "Gene": "SOD2",
+    "RS ID": "rs10370",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CREB1",
+    "RS ID": "rs2253206",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CREB1",
+    "RS ID": "rs6740584",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IL1A",
+    "RS ID": "rs1800587",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IL1B",
+    "RS ID": "rs16944",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CD14",
+    "RS ID": "rs2569190",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IL4",
+    "RS ID": "rs2070874",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TLR4",
+    "RS ID": "rs4986790",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TLR4",
+    "RS ID": "rs4986791",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CCL2",
+    "RS ID": "rs1024611",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IL-8",
+    "RS ID": "rs4073",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MORC4",
+    "RS ID": "rs12688220",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TPH1",
+    "RS ID": "rs211105",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CLDN2",
+    "RS ID": "rs7057398",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "PRSS1",
+    "RS ID": "rs111033565",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PRSS1",
+    "RS ID": "rs111033568",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PRSS1",
+    "RS ID": "rs144422014",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SPINK1",
+    "RS ID": "rs17107315",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CTCR",
+    "RS ID": "rs121909293",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CPA2",
+    "RS ID": "rs199695765",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PRSS1",
+    "RS ID": "i5005351",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GCH1",
+    "RS ID": "rs3783641",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GCH1",
+    "RS ID": "rs8007267",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GCH1",
+    "RS ID": "rs10483639",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GCH1",
+    "RS ID": "rs17128077",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GCH1",
+    "RS ID": "rs104894433",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GCH1",
+    "RS ID": "rs137852633",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GCH1",
+    "RS ID": "i5000643",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GCH1",
+    "RS ID": "rs104894445",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GCH1",
+    "RS ID": "i5000644",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GCH1",
+    "RS ID": "rs104894434",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GCH1",
+    "RS ID": "i5000652",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GCH1",
+    "RS ID": "rs104894438",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GCH1",
+    "RS ID": "i5000654",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GCH1",
+    "RS ID": "rs104894437",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GCH1",
+    "RS ID": "i5000655",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SPR",
+    "RS ID": "rs1876487",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SPR",
+    "RS ID": "rs121917747",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SPR",
+    "RS ID": "i5004360",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SPR",
+    "RS ID": "rs121917746",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SPR",
+    "RS ID": "rs104893666",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SPR",
+    "RS ID": "i5004361",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "DHFR",
+    "RS ID": "rs70991108",
+    "Effect Allele": "Ddeletion"
+  },
+  {
+    "Gene": "AGMO",
+    "RS ID": "rs916943",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FN1",
+    "RS ID": "rs116558455",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FN1",
+    "RS ID": "rs140926439",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FN1",
+    "RS ID": "rs1250229",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ADA",
+    "RS ID": "rs73598374",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MEIS1",
+    "RS ID": "rs2300478",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GABRA",
+    "RS ID": "rs2229940",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "BTBD9",
+    "RS ID": "rs9357271",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MAP2K5",
+    "RS ID": "rs6494696",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PTPRD",
+    "RS ID": "rs1975197",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HLA-DRB",
+    "RS ID": "rs3135388",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HLA-DRB",
+    "RS ID": "rs1154155",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CLOCK",
+    "RS ID": "rs11932595",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PER2",
+    "RS ID": "rs35333999",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "AANAT",
+    "RS ID": "rs28936679",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GSK3B",
+    "RS ID": "rs334558",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PER2",
+    "RS ID": "rs7602358",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GABRA6",
+    "RS ID": "rs3219151",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MTNR1A",
+    "RS ID": "rs2375801",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MTNR1A",
+    "RS ID": "rs6553010",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MTNR1B",
+    "RS ID": "rs10830963",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MTNR1B",
+    "RS ID": "rs1387153",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MTNR1A",
+    "RS ID": "rs12506228",
+    "Effect Allele": "ALikely"
+  },
+  {
+    "Gene": "MTNR1A",
+    "RS ID": "rs12506228",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HTR2A",
+    "RS ID": "rs2770304",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ARNTL",
+    "RS ID": "rs6486122",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ARNTL",
+    "RS ID": "rs11022775",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ARNTL",
+    "RS ID": "rs969485",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ARNTL",
+    "RS ID": "rs2278749",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CRY1",
+    "RS ID": "rs10861688",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CRY2",
+    "RS ID": "rs10838524",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PER2",
+    "RS ID": "rs934945",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NPAS2",
+    "RS ID": "rs11123857",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "NR1D1",
+    "RS ID": "rs2314339",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MEIS1",
+    "RS ID": "rs12469063",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IL1B",
+    "RS ID": "rs1143643",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IL-17A",
+    "RS ID": "rs8193036",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "VDR",
+    "RS ID": "rs731236",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PER3",
+    "RS ID": "rs707467",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CRY2",
+    "RS ID": "rs3824872",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NPAS2",
+    "RS ID": "rs13025524",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PER2",
+    "RS ID": "rs4663868",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TPH2",
+    "RS ID": "rs12229394",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ARNTL1",
+    "RS ID": "rs969485",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ARNTL1",
+    "RS ID": "rs2278749",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CRY2",
+    "RS ID": "rs7123390",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PER1",
+    "RS ID": "rs7221412",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "OPN4",
+    "RS ID": "rs200099863",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "OPN3",
+    "RS ID": "rs6660991",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "OPN3",
+    "RS ID": "rs672477",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TNF",
+    "RS ID": "rs1799964",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TNF",
+    "RS ID": "rs1799724",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TNFRSF1A",
+    "RS ID": "rs1800693",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TNFRSF1A",
+    "RS ID": "rs767455",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TNFRSF1B",
+    "RS ID": "rs1061622",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TNF",
+    "RS ID": "rs1800610",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IL17A",
+    "RS ID": "rs279548",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IL17F",
+    "RS ID": "rs763780",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IL17A",
+    "RS ID": "rs8193037",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IL17F",
+    "RS ID": "rs3819025",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CIAS1",
+    "RS ID": "rs35829419",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CIAS1",
+    "RS ID": "rs1539019",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CIAS1",
+    "RS ID": "rs10754558",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CIAS1",
+    "RS ID": "rs3806265",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CIAS1",
+    "RS ID": "rs10733113",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CIAS1",
+    "RS ID": "rs12048215",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CIAS1",
+    "RS ID": "i5007539",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CIAS1",
+    "RS ID": "rs28937896",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CIAS1",
+    "RS ID": "rs121908147",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CIAS1",
+    "RS ID": "rs121908150",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CIAS1",
+    "RS ID": "rs121908148",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CILP",
+    "RS ID": "rs2073711",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "COL2A1",
+    "RS ID": "rs2276454",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "COL11A1",
+    "RS ID": "rs1676486",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "COL11A1",
+    "RS ID": "rs2076311",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CASP9",
+    "RS ID": "rs4645978",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "PARK2",
+    "RS ID": "rs926849",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IL8",
+    "RS ID": "rs4073",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IL2",
+    "RS ID": "rs2069763",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HMGB1",
+    "RS ID": "rs1045411",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "INFG",
+    "RS ID": "rs2430561",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MTHFR",
+    "RS ID": "rs1801133",
+    "Effect Allele": "ADecreased"
+  },
+  {
+    "Gene": "GSTO1",
+    "RS ID": "rs4925",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NFE2L2",
+    "RS ID": "rs6721961",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "AS3MT",
+    "RS ID": "rs11191439",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SOD1",
+    "RS ID": "rs1041740",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "KIT",
+    "RS ID": "i5007903",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "KIT",
+    "RS ID": "rs121913507",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IL-13",
+    "RS ID": "rs1800925",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IL4R",
+    "RS ID": "rs1801275",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FCER1A",
+    "RS ID": "rs2298805",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FCER1A",
+    "RS ID": "rs2251746",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "FCER1A",
+    "RS ID": "rs2427827",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CMA1",
+    "RS ID": "rs1800875",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PTPN22",
+    "RS ID": "rs2476601",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IL33",
+    "RS ID": "rs1342326",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IL33",
+    "RS ID": "rs3939286",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IL33",
+    "RS ID": "rs928413",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PTGS2",
+    "RS ID": "rs4140564",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CTLA4",
+    "RS ID": "rs3087243",
+    "Effect Allele": "Gincreased"
+  },
+  {
+    "Gene": "NLRP3",
+    "RS ID": "rs121908147",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TRPM8",
+    "RS ID": "rs11563204",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TRPM3",
+    "RS ID": "rs6560200",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TRPM3",
+    "RS ID": "rs1891301",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CFB",
+    "RS ID": "rs4151667",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "EDN1",
+    "RS ID": "rs5370",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SOD1",
+    "RS ID": "rs4998557",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IL1R2",
+    "RS ID": "rs4141134",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "UCP2",
+    "RS ID": "rs659366",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HSP70",
+    "RS ID": "rs2763979",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP1A1",
+    "RS ID": "rs1799814",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TYK2",
+    "RS ID": "rs33980500",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CTLA4",
+    "RS ID": "rs3087243",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IL6",
+    "RS ID": "rs1800796",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "RETN",
+    "RS ID": "rs3745367",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP17A1",
+    "RS ID": "rs743572",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HSD11B1",
+    "RS ID": "rs846910",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TGFB1",
+    "RS ID": "rs1159268",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TGFB1",
+    "RS ID": "rs38055",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "WNT10A",
+    "RS ID": "rs121908120",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ALOX5",
+    "RS ID": "rs4987105",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ELOVL2",
+    "RS ID": "rs3734398",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ALOX5AP",
+    "RS ID": "rs17216473",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ALOX12",
+    "RS ID": "rs1126667",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "COX2",
+    "RS ID": "rs4648310",
+    "Effect Allele": "CLow"
+  },
+  {
+    "Gene": "GPR18",
+    "RS ID": "rs3742130",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CMKLR1",
+    "RS ID": "rs1878022",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GPR37",
+    "RS ID": "rs149031046",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TRPV1",
+    "RS ID": "rs161364",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TRPV1",
+    "RS ID": "rs224534",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GPR55",
+    "RS ID": "rs3749073",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TNF",
+    "RS ID": "rs3093662",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IL1B",
+    "RS ID": "rs4848306",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "Il13",
+    "RS ID": "rs20541",
+    "Effect Allele": "Ahigher"
+  },
+  {
+    "Gene": "Il13",
+    "RS ID": "rs1800925",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "Il13",
+    "RS ID": "rs1295686",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "Il13",
+    "RS ID": "rs848",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NFKB1",
+    "RS ID": "rs3774937",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "NFKB1",
+    "RS ID": "rs4648011",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "Inter-gen",
+    "RS ID": "rs4947296",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "KCNE1",
+    "RS ID": "rs1805127",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "KCNE3",
+    "RS ID": "rs2270676",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MS4A2",
+    "RS ID": "rs569108",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HLAB",
+    "RS ID": "rs114892859",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HLA-DR",
+    "RS ID": "rs2395029",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HLA-DRB1",
+    "RS ID": "rs3135388",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HLAB",
+    "RS ID": "rs9263726",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HLAA",
+    "RS ID": "rs2523822",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "LGALS3",
+    "RS ID": "rs11125",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HNMT",
+    "RS ID": "rs2071048",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ESR1",
+    "RS ID": "rs9340799",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "POU5F1",
+    "RS ID": "rs885950",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "C21orf91",
+    "RS ID": "rs10446073",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "C21orf91",
+    "RS ID": "rs1062202",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IL1A",
+    "RS ID": "rs1304037",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HCP5",
+    "RS ID": "rs4360170",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "LTA4H",
+    "RS ID": "rs1978331",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "FOXC2",
+    "RS ID": "rs34221221",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "VEGFR3",
+    "RS ID": "rs10464063",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IL1RA",
+    "RS ID": "rs3917225",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IL-17F",
+    "RS ID": "rs763780",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ADAMTS14",
+    "RS ID": "rs4747096",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ADAM12",
+    "RS ID": "rs1871054",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "AANAT",
+    "RS ID": "rs3760138",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IL13",
+    "RS ID": "rs847",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HLA-DRA",
+    "RS ID": "rs763035",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NOD2",
+    "RS ID": "rs2066844",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "VEGF",
+    "RS ID": "rs2010963",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MCR1",
+    "RS ID": "rs1805007",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HERC2",
+    "RS ID": "rs1129038",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYCS",
+    "RS ID": "rs1861525",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "COX1",
+    "RS ID": "rs28461189",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "COX1",
+    "RS ID": "rs28679680",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TSLP",
+    "RS ID": "rs3806932",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TSLP",
+    "RS ID": "rs1837253",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IL33",
+    "RS ID": "rs7037276",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IL33",
+    "RS ID": "rs1342326",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TBX21",
+    "RS ID": "rs4794067",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TBX21",
+    "RS ID": "rs11650354",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IL17A",
+    "RS ID": "rs2275913",
+    "Effect Allele": "AHigher"
+  },
+  {
+    "Gene": "IFNG",
+    "RS ID": "rs2069705",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ILIR1",
+    "RS ID": "rs3771166",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NLRP3",
+    "RS ID": "rs10754558",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IL13",
+    "RS ID": "rs848",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GSDMB",
+    "RS ID": "rs7216389",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GSDMB",
+    "RS ID": "rs2305480",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CDHR3",
+    "RS ID": "rs6967330",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ADRB2",
+    "RS ID": "rs1042713",
+    "Effect Allele": "Amore"
+  },
+  {
+    "Gene": "ARG1",
+    "RS ID": "rs2781659",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HLA-DQ",
+    "RS ID": "rs9273349",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "COMT",
+    "RS ID": "rs2097903",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HTR3A",
+    "RS ID": "rs1062613",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ADRB2",
+    "RS ID": "rs1042713",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TRPV3",
+    "RS ID": "rs395357",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PLPP6",
+    "RS ID": "rs2295963",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MYDD8",
+    "RS ID": "rs6853",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SOX9",
+    "RS ID": "rs10512572",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GJB2",
+    "RS ID": "rs28931594",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GJB2",
+    "RS ID": "i6011365",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GJB2",
+    "RS ID": "rs104894408",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GJB2",
+    "RS ID": "i5001989",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PSTPIP1",
+    "RS ID": "rs121908130",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NCSTN",
+    "RS ID": "rs387906896",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HLA-DQ8",
+    "RS ID": "rs7454108",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "LPP",
+    "RS ID": "rs1464510",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "intergenic",
+    "RS ID": "rs842647",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "LOC105371664",
+    "RS ID": "rs2816316",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "intergenic",
+    "RS ID": "rs917997",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "intergenic",
+    "RS ID": "rs6441961",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SH2B3",
+    "RS ID": "rs3184504",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TAGAP",
+    "RS ID": "rs1738074",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HLA",
+    "RS ID": "rs4349859",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "Inter-gen",
+    "RS ID": "rs13202464",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CTLA4",
+    "RS ID": "rs231775",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HLA-C",
+    "RS ID": "rs10484554",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HLA-C",
+    "RS ID": "rs1265181",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IL23",
+    "RS ID": "rs11209026",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PTPN22",
+    "RS ID": "rs1217414",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "L12B",
+    "RS ID": "rs4085613",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HLADRB1",
+    "RS ID": "rs660895",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TRAF1",
+    "RS ID": "rs10818488",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TRAF1",
+    "RS ID": "rs2900180",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "STAT4",
+    "RS ID": "rs7574865",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TNFAIP3",
+    "RS ID": "rs6920220",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CCR6",
+    "RS ID": "rs3093024",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ANG2",
+    "RS ID": "rs12674822",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC6A2",
+    "RS ID": "rs7194256",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PTPN22",
+    "RS ID": "rs6679677",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PTPN22",
+    "RS ID": "rs1310182",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MEFV",
+    "RS ID": "rs104895097",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MEFV",
+    "RS ID": "i4000409",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MEFV",
+    "RS ID": "rs61752717",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "HLA-DQA1",
+    "RS ID": "rs2187668",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TNXB",
+    "RS ID": "rs1150754",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TNFAIP3",
+    "RS ID": "rs5029939",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "STAT4",
+    "RS ID": "rs10181656",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IRF5",
+    "RS ID": "rs3807306",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IRF8",
+    "RS ID": "rs2280381",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IFIH1",
+    "RS ID": "rs1990760",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "BLK",
+    "RS ID": "rs13277113",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "BLK",
+    "RS ID": "rs2248932",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IRF5",
+    "RS ID": "rs10954213",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TLR7",
+    "RS ID": "rs179010",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC15A4",
+    "RS ID": "rs1385374",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CTLA4",
+    "RS ID": "rs1024161",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HLA",
+    "RS ID": "rs660895",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IL17RA",
+    "RS ID": "rs879577",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IL2",
+    "RS ID": "rs7682241",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IL2RA",
+    "RS ID": "rs3118470",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MIF",
+    "RS ID": "rs755622",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "NOS1",
+    "RS ID": "rs527590",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IFNG",
+    "RS ID": "rs2069718",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TNF",
+    "RS ID": "rs1800630",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HTR1B",
+    "RS ID": "rs6297",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IRX1",
+    "RS ID": "rs11748327",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs863223483",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs863223478",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs863223475",
+    "Effect Allele": "I"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs863223466",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs863223469",
+    "Effect Allele": "I"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs863223470",
+    "Effect Allele": "I"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs863223471",
+    "Effect Allele": "I"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs863223472",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs863223473",
+    "Effect Allele": "I"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs863223474",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs794727114",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs794727760",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs80338764",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs863223444",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs863223445",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs863223448",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs863223452",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs863223453",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs863223454",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "COL5A2",
+    "RS ID": "rs863223501",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "COL5A2",
+    "RS ID": "rs863223495",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "COL5A2",
+    "RS ID": "rs863223491",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "COL3A1",
+    "RS ID": "rs397509369",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "COL3A1",
+    "RS ID": "rs553203474",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "COL3A1",
+    "RS ID": "rs397509377",
+    "Effect Allele": "I"
+  },
+  {
+    "Gene": "COL3A1",
+    "RS ID": "rs587779417",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "COL3A1",
+    "RS ID": "rs587779418",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "COL3A1",
+    "RS ID": "rs587779419",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "COL3A1",
+    "RS ID": "rs587779421",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "COL3A1",
+    "RS ID": "rs587779424",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "COL3A1",
+    "RS ID": "rs587779427",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "COL3A1",
+    "RS ID": "rs587779428",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "COL3A1",
+    "RS ID": "rs587779429",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "COL3A1",
+    "RS ID": "rs587779432",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "COL3A1",
+    "RS ID": "rs587779434",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs13946",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs61735045",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TNXB",
+    "RS ID": "rs368512272",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GNE",
+    "RS ID": "rs62541771",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GNE",
+    "RS ID": "rs28937594",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "VCP",
+    "RS ID": "rs121909331",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "VCP",
+    "RS ID": "rs121909330",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "VCP",
+    "RS ID": "rs121909334",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "VCP",
+    "RS ID": "rs121909335",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ICAM1",
+    "RS ID": "rs1799969",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CD1E",
+    "RS ID": "rs1065457",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "AIRE",
+    "RS ID": "rs74203920",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IL2RA",
+    "RS ID": "rs2476491",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CBLIF",
+    "RS ID": "rs150884181",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HLA-DRA",
+    "RS ID": "rs3135394",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HLA-DQB1",
+    "RS ID": "rs3129716",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IRF5",
+    "RS ID": "rs4728142",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IL12A",
+    "RS ID": "rs485497",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TNIP1",
+    "RS ID": "rs6579837",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "STAT4",
+    "RS ID": "rs10168266",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "STAT4",
+    "RS ID": "rs11889341",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "OAS1",
+    "RS ID": "rs10774671",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GTF2I",
+    "RS ID": "rs117026326",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TNFAIP3",
+    "RS ID": "rs2230926",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HLA-G",
+    "RS ID": "rs4959039",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "C6orf10",
+    "RS ID": "rs3129934",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IL2RA",
+    "RS ID": "rs12722489",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IL2RA",
+    "RS ID": "rs2104286",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IL7R",
+    "RS ID": "rs6897932",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IL7R",
+    "RS ID": "rs987107",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP27B1",
+    "RS ID": "rs703842",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CD6",
+    "RS ID": "rs17824933",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IRF8",
+    "RS ID": "rs17445836",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IL12B",
+    "RS ID": "rs2546890",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CD86",
+    "RS ID": "rs9282641",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "EVI5",
+    "RS ID": "rs11808092",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ARNTL",
+    "RS ID": "rs3789327",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CLOCK",
+    "RS ID": "rs6811520",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "FADS2",
+    "RS ID": "rs174611",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "FADS2",
+    "RS ID": "rs174618",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CD58",
+    "RS ID": "rs2300747",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "AKR1C4",
+    "RS ID": "rs3829125",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HLA-DRB1",
+    "RS ID": "rs660895",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HMGB1",
+    "RS ID": "rs1412125",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HMGB1",
+    "RS ID": "rs1360485",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CD209",
+    "RS ID": "rs4804803",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MBL2",
+    "RS ID": "rs1800450",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "OAS1",
+    "RS ID": "rs2660",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MX1",
+    "RS ID": "rs17000900",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CD55",
+    "RS ID": "rs2564978",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TLR3",
+    "RS ID": "rs3775291",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "intron",
+    "RS ID": "rs405103",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CSMD1",
+    "RS ID": "rs1482207",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "HLA-DQB1",
+    "RS ID": "rs9357152",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HLA-DQ2",
+    "RS ID": "rs2187668",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HLA-DPB1",
+    "RS ID": "rs3117230",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SLAM",
+    "RS ID": "rs3796504",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CD46",
+    "RS ID": "rs2724384",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TLR3",
+    "RS ID": "rs7657186",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IL12B",
+    "RS ID": "rs3212227",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IL-12RB2",
+    "RS ID": "rs2201584",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IL-28B",
+    "RS ID": "rs8099917",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "intergenic",
+    "RS ID": "rs10489759",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "VEGFA",
+    "RS ID": "rs3025039",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ANGPT2",
+    "RS ID": "rs2442608",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ANGPT2",
+    "RS ID": "rs2442630",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ANGPT2",
+    "RS ID": "rs2515475",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MYD88",
+    "RS ID": "rs7744",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IL17",
+    "RS ID": "rs2275913",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NAMPT",
+    "RS ID": "rs9770242",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TLR1",
+    "RS ID": "rs5743618",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TLR2",
+    "RS ID": "rs5743708",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ANO10",
+    "RS ID": "rs41289586",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ABCB1",
+    "RS ID": "rs1128503",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TLR1",
+    "RS ID": "rs4833095",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TLR1",
+    "RS ID": "rs5743708",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FCGR2A",
+    "RS ID": "rs1801274",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP27B1",
+    "RS ID": "rs10877012",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP27B1",
+    "RS ID": "rs4646536",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "VDR-Taql",
+    "RS ID": "rs731236",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "VDR-Bsml",
+    "RS ID": "rs1544410",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "VDR-Fokl",
+    "RS ID": "rs2228570",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "DEFB1",
+    "RS ID": "rs11362",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "DEFB1",
+    "RS ID": "rs1799946",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IL32",
+    "RS ID": "rs4786370",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GALK2",
+    "RS ID": "rs11635005",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "AMELX",
+    "RS ID": "rs946252",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "AQP6",
+    "RS ID": "rs1996315",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "C5orf66",
+    "RS ID": "rs1122171",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NFKB2",
+    "RS ID": "rs1056890",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TCL1A",
+    "RS ID": "rs2369049",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "COMT",
+    "RS ID": "rs6269",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HLA-DRB4",
+    "RS ID": "rs7775228",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IL2",
+    "RS ID": "rs2069762",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "NOS1",
+    "RS ID": "rs9658281",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ALOX15",
+    "RS ID": "rs34210653",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IL1RL1",
+    "RS ID": "rs13431828",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SERPINA1",
+    "RS ID": "rs1243168",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CES1",
+    "RS ID": "rs71647871",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CES1",
+    "RS ID": "rs121912777",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ABCB1",
+    "RS ID": "rs1045642",
+    "Effect Allele": "Areduced"
+  },
+  {
+    "Gene": "ITPKC",
+    "RS ID": "rs28493229",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "RAB4B",
+    "RS ID": "rs2233152",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "BLK",
+    "RS ID": "rs2736340",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CD40",
+    "RS ID": "rs1569723",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "INFG",
+    "RS ID": "rs1861493",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "APOBEC3G",
+    "RS ID": "rs8177832",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "APOBEC3F",
+    "RS ID": "rs2076101",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "APOBEC3A",
+    "RS ID": "rs12628403",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IFIH1",
+    "RS ID": "rs35667974",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MRGPRX2",
+    "RS ID": "rs10833049",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MRGPRX2",
+    "RS ID": "rs11024970",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TLR7",
+    "RS ID": "rs179012",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TLR7",
+    "RS ID": "rs179008",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TLR7",
+    "RS ID": "rs864058",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NADSYN1",
+    "RS ID": "rs12785878",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "LZTFL1",
+    "RS ID": "rs17713054",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC15A4",
+    "RS ID": "rs11059915",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CLOCK",
+    "RS ID": "rs62303689",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ATP9A",
+    "RS ID": "rs77771672",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GPC5",
+    "RS ID": "rs462954",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "INSR",
+    "RS ID": "rs8110533",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FOXP4",
+    "RS ID": "rs2496644",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "LZTFL1",
+    "RS ID": "rs10490770",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ABO",
+    "RS ID": "rs8176719",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "ABO",
+    "RS ID": "rs8176746",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "STAT6",
+    "RS ID": "rs1059513",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TCF7L2",
+    "RS ID": "rs12255372",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IRS1",
+    "RS ID": "rs2943641",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "WFS1",
+    "RS ID": "rs10010131",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HHEX",
+    "RS ID": "rs7923837",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HHEX",
+    "RS ID": "rs1111875",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "PPARG",
+    "RS ID": "rs1801282",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "KCNJ11",
+    "RS ID": "rs5219",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ABCC8",
+    "RS ID": "rs757110",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GCK",
+    "RS ID": "rs1799884",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CDKAL1",
+    "RS ID": "rs7754840",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IRS1",
+    "RS ID": "rs1801278",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ENPP1",
+    "RS ID": "rs1044498",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "KCNH2",
+    "RS ID": "rs1805123",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GLP1R",
+    "RS ID": "rs6923761",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TM6SF2",
+    "RS ID": "rs58542926",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HSD17B13",
+    "RS ID": "rs6834314",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MBOAT7",
+    "RS ID": "rs641738",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP2E1",
+    "RS ID": "rs2031920",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IFNL3",
+    "RS ID": "rs12979860",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "NCAN",
+    "RS ID": "rs2228603",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "LHCRG",
+    "RS ID": "rs13405728",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "LHCRG",
+    "RS ID": "rs2293275",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FSHB",
+    "RS ID": "rs11031006",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FSHR",
+    "RS ID": "rs6166",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ADIPOQ",
+    "RS ID": "rs2241766",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ADIPOQ",
+    "RS ID": "rs1501299",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TNF",
+    "RS ID": "rs4645843",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "INSR",
+    "RS ID": "rs2059807",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PLIN1",
+    "RS ID": "rs894160",
+    "Effect Allele": "Tincreased"
+  },
+  {
+    "Gene": "GLP1R",
+    "RS ID": "rs10305492",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GLP1R",
+    "RS ID": "rs1042044",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PCSK1",
+    "RS ID": "rs6232",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "PCSK1",
+    "RS ID": "rs6234",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GCG",
+    "RS ID": "rs4664447",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ADORA2A",
+    "RS ID": "rs5751876",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ACADM",
+    "RS ID": "rs77931234",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ACADM",
+    "RS ID": "rs121434280",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ACADM",
+    "RS ID": "rs373715782",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ACADM",
+    "RS ID": "i5012755",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ACADM",
+    "RS ID": "rs121434281",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ACADM",
+    "RS ID": "rs121434282",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ACADM",
+    "RS ID": "rs121434277",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ACADM",
+    "RS ID": "rs121434274",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ACADM",
+    "RS ID": "i5012759",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ACADM",
+    "RS ID": "i5012760",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ACADM",
+    "RS ID": "i5003117",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ACADS",
+    "RS ID": "rs1800556",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ACADS",
+    "RS ID": "rs28940874",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ACADS",
+    "RS ID": "rs61732144",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ACADS",
+    "RS ID": "rs28940872",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ACADS",
+    "RS ID": "rs121908006",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ACADS",
+    "RS ID": "i5007492",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ACADS",
+    "RS ID": "i5007490",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ACADS",
+    "RS ID": "rs28941773",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SCD",
+    "RS ID": "rs1393492",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SCD",
+    "RS ID": "rs2060792",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SCD",
+    "RS ID": "rs1502593",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SCD",
+    "RS ID": "rs7849",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "FTO",
+    "RS ID": "rs9939609",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SIRT1",
+    "RS ID": "rs12778366",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SIRT1",
+    "RS ID": "rs932658",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SIRT3",
+    "RS ID": "rs511744",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SIRT3",
+    "RS ID": "rs11246020",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SIRT3",
+    "RS ID": "rs185277566",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SIRT6",
+    "RS ID": "rs352493",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SIRT1",
+    "RS ID": "rs3758391",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "LEPR",
+    "RS ID": "rs1137101",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "LEPR",
+    "RS ID": "rs1137100",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "LEPR",
+    "RS ID": "rs7799039",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "LEPR",
+    "RS ID": "rs3790433",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MC4R",
+    "RS ID": "rs17782313",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MC4R",
+    "RS ID": "rs17700633",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MC4R",
+    "RS ID": "rs12970134",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MC4R",
+    "RS ID": "rs571312",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MC4R",
+    "RS ID": "rs2229616",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "UCP1",
+    "RS ID": "rs1800592",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "UCP1",
+    "RS ID": "rs6536991",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "UCP1",
+    "RS ID": "rs3811787",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ADIPOQ",
+    "RS ID": "rs17300539",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ADIPOQ",
+    "RS ID": "rs266729",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "FTO",
+    "RS ID": "rs1558902",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FTO",
+    "RS ID": "rs3751812",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP2C9",
+    "RS ID": "rs2185570",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TRIM4",
+    "RS ID": "rs17277546",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SULT2A1",
+    "RS ID": "rs182420",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SULT2A1",
+    "RS ID": "rs2637125",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SULT2A1",
+    "RS ID": "rs2910397",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "UCP2",
+    "RS ID": "rs660339",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GHRL",
+    "RS ID": "rs4684677",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GHRL",
+    "RS ID": "rs35683",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GHSR",
+    "RS ID": "rs572169",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GHRL",
+    "RS ID": "rs696217",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ABCG2",
+    "RS ID": "rs2231142",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ABCG2",
+    "RS ID": "rs72552713",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC2A9",
+    "RS ID": "rs6449213",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SLC2A9",
+    "RS ID": "rs7442295",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SLC2A9",
+    "RS ID": "rs12510549",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SLC2A9",
+    "RS ID": "rs12498742",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SLC2A9",
+    "RS ID": "rs16890979",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC2A9",
+    "RS ID": "rs1014290",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SLC2A9",
+    "RS ID": "rs10805346",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC22A12",
+    "RS ID": "rs475688",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SLC28A2",
+    "RS ID": "rs2271437",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "BDNF",
+    "RS ID": "rs4923461",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CXADR",
+    "RS ID": "rs2824292",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IL-10",
+    "RS ID": "rs1800871",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CXADR",
+    "RS ID": "rs437470",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "FTO",
+    "RS ID": "rs9939609",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "UCP3",
+    "RS ID": "rs1800849",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FGF21",
+    "RS ID": "rs838133",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MGLL",
+    "RS ID": "rs684358",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CNR1",
+    "RS ID": "rs806381",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CNR1",
+    "RS ID": "rs12720071",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CNR1",
+    "RS ID": "rs10485170",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "C12orf51",
+    "RS ID": "rs2074356",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ACAD10",
+    "RS ID": "rs11066015",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MYL2",
+    "RS ID": "rs12229654",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "NPY",
+    "RS ID": "rs16139",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "LEPR",
+    "RS ID": "rs1137101",
+    "Effect Allele": "GIncreased"
+  },
+  {
+    "Gene": "SH2B1",
+    "RS ID": "rs7359397",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC6A14",
+    "RS ID": "rs2011162",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "FTO",
+    "RS ID": "rs8044769",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FTO",
+    "RS ID": "rs121918214",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MYD88",
+    "RS ID": "rs4988453",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MYD88",
+    "RS ID": "i5000725",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MYD88",
+    "RS ID": "rs137853065",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MYD88",
+    "RS ID": "i5000726",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MYD88",
+    "RS ID": "rs137853064",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NOD1",
+    "RS ID": "rs2075822",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TLR4",
+    "RS ID": "rs10759932",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "HNF1A",
+    "RS ID": "rs7957197",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "DHCR7",
+    "RS ID": "rs12785878",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ADCY3",
+    "RS ID": "rs10182181",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PPM1K",
+    "RS ID": "rs1440581",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "PLIN1",
+    "RS ID": "rs2289487",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "LIPF",
+    "RS ID": "rs814628",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "NPY",
+    "RS ID": "rs16147",
+    "Effect Allele": "TT"
+  },
+  {
+    "Gene": "HBB",
+    "RS ID": "i3003137",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HK1",
+    "RS ID": "rs16926246",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ANK1",
+    "RS ID": "rs4737009",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MYO9B",
+    "RS ID": "rs11667918",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "FNK3",
+    "RS ID": "rs1046875",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HBB",
+    "RS ID": "rs334",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "POMC",
+    "RS ID": "rs202127120",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NR0B2",
+    "RS ID": "rs150160927",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "RSPO3",
+    "RS ID": "rs72959041",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "LHFPL6",
+    "RS ID": "rs1409440",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TMEM192",
+    "RS ID": "rs9308098",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SLC9B1P3",
+    "RS ID": "rs11511253",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PPARG",
+    "RS ID": "rs10865710",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PPARG",
+    "RS ID": "rs17036170",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PPARG",
+    "RS ID": "rs3856806",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PPARGC1A",
+    "RS ID": "rs8192678",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "LEPR",
+    "RS ID": "rs2025804",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TAS2R38",
+    "RS ID": "rs1726866",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GAD2",
+    "RS ID": "rs992990",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GAD2",
+    "RS ID": "rs7908975",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "PPM1K",
+    "RS ID": "rs9637599",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "BCAT1",
+    "RS ID": "rs2242400",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GPRC6A",
+    "RS ID": "rs2274911",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PCK1",
+    "RS ID": "rs2179706",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IGF1",
+    "RS ID": "rs35767",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "NAT2",
+    "RS ID": "rs1208",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PLIN1",
+    "RS ID": "rs894160",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PLIN1",
+    "RS ID": "rs6496589",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SI",
+    "RS ID": "rs9290264",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HTR3E",
+    "RS ID": "rs56109847",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "KLB",
+    "RS ID": "rs17618244",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SI",
+    "RS ID": "rs147207752",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SI",
+    "RS ID": "rs146785675",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SI",
+    "RS ID": "rs121912615",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SI",
+    "RS ID": "rs200451408",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SI",
+    "RS ID": "rs79717168",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "VDR",
+    "RS ID": "rs7974353",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "LCT",
+    "RS ID": "rs182549",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "ALDH1L1",
+    "RS ID": "rs2276731",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MBL2",
+    "RS ID": "rs7096206",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MBL2",
+    "RS ID": "rs1800451",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MBL2",
+    "RS ID": "rs5030737",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MASP2",
+    "RS ID": "rs72550870",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "UGT1A6",
+    "RS ID": "rs1105879",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SMAD7",
+    "RS ID": "rs4939827",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TCFL2",
+    "RS ID": "rs7903146",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CASC8",
+    "RS ID": "rs6983267",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "UGT1A6",
+    "RS ID": "rs2070959",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GATA3",
+    "RS ID": "rs1269486",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CCAT",
+    "RS ID": "rs6983267",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GATA3",
+    "RS ID": "rs4143094",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "AHR",
+    "RS ID": "rs2066853",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NOD2",
+    "RS ID": "rs2066845",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "NOD2",
+    "RS ID": "rs2066842",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NOD2",
+    "RS ID": "rs2066843",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IBD5",
+    "RS ID": "rs6596075",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IL10",
+    "RS ID": "rs1800871",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IL10",
+    "RS ID": "rs3024505",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NOD2",
+    "RS ID": "rs2066847",
+    "Effect Allele": "I"
+  },
+  {
+    "Gene": "MUC2",
+    "RS ID": "rs11825977",
+    "Effect Allele": "Adecreased"
+  },
+  {
+    "Gene": "MUC2",
+    "RS ID": "rs2856111",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MUC2",
+    "RS ID": "rs7396030",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MUC5AC",
+    "RS ID": "rs868903",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MUC5AC",
+    "RS ID": "rs16866419",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MUC5AC",
+    "RS ID": "rs75401036",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MUC5AC",
+    "RS ID": "rs2688513",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CLCA1",
+    "RS ID": "rs2734705",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CYP1A1",
+    "RS ID": "rs1048943",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CYP1A1",
+    "RS ID": "rs2606345",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP1A1",
+    "RS ID": "rs2472297",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP1A2",
+    "RS ID": "rs12720461",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP1A2",
+    "RS ID": "rs72547517",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP1A2",
+    "RS ID": "rs72547515",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP2A6",
+    "RS ID": "rs1801272",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP2A6",
+    "RS ID": "rs5031017",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP2A6",
+    "RS ID": "rs5031016",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CYP2A6",
+    "RS ID": "rs28399444",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "POR",
+    "RS ID": "rs1057868",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP2A6",
+    "RS ID": "rs28399453",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP2B6",
+    "RS ID": "rs3745274",
+    "Effect Allele": "TDecreased"
+  },
+  {
+    "Gene": "CYP2B6",
+    "RS ID": "rs2279343",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CYP2B6",
+    "RS ID": "rs28399499",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CYP2B6",
+    "RS ID": "rs3211371",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP2B6",
+    "RS ID": "rs12721655",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CYP2C8",
+    "RS ID": "rs10509681",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CYP2C8",
+    "RS ID": "rs11572103",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP2C8",
+    "RS ID": "rs1058930",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CYP2C8",
+    "RS ID": "rs7909236",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP2C9",
+    "RS ID": "rs1799853",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP2C9",
+    "RS ID": "rs1057910",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CYP2C9",
+    "RS ID": "rs2256871",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CYP2C9",
+    "RS ID": "rs9332131",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "CYP2C9",
+    "RS ID": "rs28371685",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP2C19",
+    "RS ID": "rs4986893",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP2C19",
+    "RS ID": "rs12248560",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP2D6",
+    "RS ID": "rs28371725",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP2D6",
+    "RS ID": "rs1135824",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CYP2D6",
+    "RS ID": "rs1135840",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CYP3A4",
+    "RS ID": "rs4987161",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CYP3A4",
+    "RS ID": "rs4986909",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP3A4",
+    "RS ID": "rs4986910",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CYP3A4",
+    "RS ID": "rs4986907",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP3A5",
+    "RS ID": "rs776746",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CYP3A5",
+    "RS ID": "rs28365083",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP3A5",
+    "RS ID": "rs55817950",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP3A5",
+    "RS ID": "rs28383479",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP3A5",
+    "RS ID": "rs41279854",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP3A5",
+    "RS ID": "rs56244447",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP3A4",
+    "RS ID": "rs28371759",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CYP3A4",
+    "RS ID": "rs2242480",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP2E1",
+    "RS ID": "rs3813867",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CYP2E1",
+    "RS ID": "rs2515641",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP2J2",
+    "RS ID": "rs199717190",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP2J2",
+    "RS ID": "rs1155002",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SOD1",
+    "RS ID": "rs2070424",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SOD1",
+    "RS ID": "i5000864",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SOD1",
+    "RS ID": "i5048521",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SOD1",
+    "RS ID": "rs10432782",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SOD1",
+    "RS ID": "rs121912436",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SOD1",
+    "RS ID": "rs121912431",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "UGT1A6",
+    "RS ID": "rs17863783",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "UGT1A8",
+    "RS ID": "rs6714486",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "UGT1A1",
+    "RS ID": "rs8330",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "UGT2B15",
+    "RS ID": "rs1902023",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NFE2L2",
+    "RS ID": "rs6726395",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "NFE2L2",
+    "RS ID": "rs13001694",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "NFE2L2",
+    "RS ID": "rs1806649",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NFE2L2",
+    "RS ID": "rs35652124",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "NAT1",
+    "RS ID": "rs4986782",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NAT1",
+    "RS ID": "rs15561",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NAT1",
+    "RS ID": "rs6586714",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NAT2",
+    "RS ID": "rs1495741",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "NQO1",
+    "RS ID": "rs10517",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SULT1A1",
+    "RS ID": "rs1042028",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SULT1A1",
+    "RS ID": "i6018900",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SULT1A1",
+    "RS ID": "rs1801030",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SULT1A1",
+    "RS ID": "rs1042157",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SULT2A1",
+    "RS ID": "rs2547231",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SULT1C4",
+    "RS ID": "rs1402467",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SULT1E1",
+    "RS ID": "rs3736599",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP2B6",
+    "RS ID": "rs3745274",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HSPA1L",
+    "RS ID": "rs2227956",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "COX2",
+    "RS ID": "rs5277",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CAT",
+    "RS ID": "rs769217",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "UGT1A1",
+    "RS ID": "rs34983651",
+    "Effect Allele": "I"
+  },
+  {
+    "Gene": "SULT1A1",
+    "RS ID": "rs9282861",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "BChE",
+    "RS ID": "rs1799807",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "BChE",
+    "RS ID": "rs28933389",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "BChE",
+    "RS ID": "rs28933390",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "BChE",
+    "RS ID": "rs2668207",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "OPRM1",
+    "RS ID": "rs10485057",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "OPRM1",
+    "RS ID": "rs2281617",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "OPRM1",
+    "RS ID": "rs510769",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CHRNA4",
+    "RS ID": "rs1044396",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "BCHE",
+    "RS ID": "rs1803274",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PON1",
+    "RS ID": "rs662",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "Inter-gen",
+    "RS ID": "rs4242382",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "AS3MT",
+    "RS ID": "rs3740393",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "XPC",
+    "RS ID": "rs2228001",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ADRA1A",
+    "RS ID": "rs1048101",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IL13",
+    "RS ID": "rs20541",
+    "Effect Allele": "Ahigher"
+  },
+  {
+    "Gene": "CAT",
+    "RS ID": "rs1001179",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GCLM",
+    "RS ID": "rs41303970",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CPOX4",
+    "RS ID": "rs1131857",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CYP3A5",
+    "RS ID": "rs776746",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "UGT1A9",
+    "RS ID": "rs3832043",
+    "Effect Allele": "I"
+  },
+  {
+    "Gene": "ALAD",
+    "RS ID": "rs1800435",
+    "Effect Allele": "Gpossible"
+  },
+  {
+    "Gene": "DPYD",
+    "RS ID": "rs3918290",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "DPYD",
+    "RS ID": "rs55886062",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "DPYD",
+    "RS ID": "rs1801160",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "DPYD",
+    "RS ID": "rs67376798",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "DPYD",
+    "RS ID": "rs75017182",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GSS",
+    "RS ID": "rs121909307",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GSR",
+    "RS ID": "rs8190955",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GSR",
+    "RS ID": "rs2978663",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GGT1",
+    "RS ID": "rs5751901",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "GGT1",
+    "RS ID": "rs4820599",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GCGL",
+    "RS ID": "rs17883901",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GCGL",
+    "RS ID": "rs2301022",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GCGL",
+    "RS ID": "rs17883718",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GPX1",
+    "RS ID": "rs1050450",
+    "Effect Allele": "Aower"
+  },
+  {
+    "Gene": "GPX1",
+    "RS ID": "rs1800668",
+    "Effect Allele": "Aincreased"
+  },
+  {
+    "Gene": "GPX4",
+    "RS ID": "rs713041",
+    "Effect Allele": "Tneeds"
+  },
+  {
+    "Gene": "GSTM1",
+    "RS ID": "rs366631",
+    "Effect Allele": "Adeletion"
+  },
+  {
+    "Gene": "GSTM5",
+    "RS ID": "rs3754446",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "XPC",
+    "RS ID": "rs2228000",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "XPG",
+    "RS ID": "rs873601",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP1B1",
+    "RS ID": "rs1056827",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ESR1",
+    "RS ID": "rs2234693",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CCND1",
+    "RS ID": "rs9344",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FASN",
+    "RS ID": "rs4247357",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP19A1",
+    "RS ID": "rs4646",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HSD17B1",
+    "RS ID": "rs676387",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP1B1",
+    "RS ID": "rs1800440",
+    "Effect Allele": "Cdecreased"
+  },
+  {
+    "Gene": "SHBG",
+    "RS ID": "rs12150660",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SHBG",
+    "RS ID": "rs6258",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SHBG",
+    "RS ID": "rs6259",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SHBG",
+    "RS ID": "rs1799941",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FAM9B",
+    "RS ID": "rs5934505",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "LIN28B",
+    "RS ID": "rs7759938",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "FSHB",
+    "RS ID": "rs10835638",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SHBG",
+    "RS ID": "rs727428",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TSHR",
+    "RS ID": "rs1991517",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TSHR",
+    "RS ID": "rs121908866",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PDE8B",
+    "RS ID": "rs4704397",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PDE8B",
+    "RS ID": "rs6885099",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FOXE1",
+    "RS ID": "rs7850258",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "FOXE1",
+    "RS ID": "rs965513",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TSHR",
+    "RS ID": "rs3783938",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TSHR",
+    "RS ID": "rs12101255",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TSHR",
+    "RS ID": "rs179247",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TPO",
+    "RS ID": "rs2071403",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "DIO1",
+    "RS ID": "rs2235544",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "DIO1",
+    "RS ID": "rs11206244",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "DIO2",
+    "RS ID": "rs225014",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SERPINA7",
+    "RS ID": "rs28933689",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SERPINA7",
+    "RS ID": "rs2234036",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "THRB",
+    "RS ID": "rs28933408",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NR1H2",
+    "RS ID": "rs2695121",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NR1H2",
+    "RS ID": "rs17373080",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "THRB",
+    "RS ID": "rs121918690",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "THRB",
+    "RS ID": "i5003332",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "PGR",
+    "RS ID": "rs1042838",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "PGR",
+    "RS ID": "rs471767",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PGR",
+    "RS ID": "rs1042839",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PGR",
+    "RS ID": "rs10895068",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP17A1",
+    "RS ID": "rs4919687",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP17A1",
+    "RS ID": "rs6162",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CYP17A1",
+    "RS ID": "rs11191548",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CYP17A1",
+    "RS ID": "rs104894154",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP17A1",
+    "RS ID": "rs104894153",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP17A1",
+    "RS ID": "i5001478",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP17A1",
+    "RS ID": "i5001486",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP17A1",
+    "RS ID": "rs104894148",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CYP17A1",
+    "RS ID": "rs61754278",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP17A1",
+    "RS ID": "i5001477",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TACR3",
+    "RS ID": "rs77322567",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CYP1B1",
+    "RS ID": "rs1800440",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "PPARD",
+    "RS ID": "rs2267668",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PPARD",
+    "RS ID": "rs1053049",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "PPARD",
+    "RS ID": "rs2016520",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "AMPD1",
+    "RS ID": "rs17602729",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ACTN3",
+    "RS ID": "rs1815739",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CNR1",
+    "RS ID": "rs6454672",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "LEPR",
+    "RS ID": "rs12405556",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "GABRA3",
+    "RS ID": "rs8036270",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "AGTR2",
+    "RS ID": "rs11091046",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "AGT",
+    "RS ID": "rs699",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MSTN",
+    "RS ID": "rs1805086",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TTN",
+    "RS ID": "rs10497520",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "COL5A1",
+    "RS ID": "rs12722",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MIR608",
+    "RS ID": "rs4919510",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "BMP4",
+    "RS ID": "rs2761884",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FCRL3",
+    "RS ID": "rs7528684",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "GDF5",
+    "RS ID": "i6011281",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GDF5",
+    "RS ID": "rs143383",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "BDNF",
+    "RS ID": "rs4923460",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "BDNF",
+    "RS ID": "rs6265",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CHRNA5",
+    "RS ID": "rs16969968",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CPT1B",
+    "RS ID": "rs5770917",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FGF5",
+    "RS ID": "rs16998073",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "POU3F2",
+    "RS ID": "rs12206087",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "PPARGC1A",
+    "RS ID": "rs3774923",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "PPARGC1A",
+    "RS ID": "rs10028665",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SMAD3",
+    "RS ID": "rs17228058",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TBX3",
+    "RS ID": "rs2384550",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TDRD9",
+    "RS ID": "rs10149470",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ABCC11",
+    "RS ID": "rs17822931",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ABCC11",
+    "RS ID": "rs17822471",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MC1R",
+    "RS ID": "rs2228479",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "OR5A1",
+    "RS ID": "rs6591536",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "OR10A2",
+    "RS ID": "rs72921001",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "inter-gene",
+    "RS ID": "rs4481887",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "OR7D4",
+    "RS ID": "rs2878329",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "OR7D4",
+    "RS ID": "rs61729907",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "OR7G3",
+    "RS ID": "rs10414255",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "OR7D4",
+    "RS ID": "i4000501",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MC1R",
+    "RS ID": "rs1805005",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "STXBP5L",
+    "RS ID": "rs322458",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "STXBP5L",
+    "RS ID": "rs470647",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "AIFM2",
+    "RS ID": "rs16927253",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TRPV1",
+    "RS ID": "rs222741",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TRPV1",
+    "RS ID": "rs222747",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TAS2R19",
+    "RS ID": "rs10772420",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TAS2R14",
+    "RS ID": "rs3741843",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TAS1R3",
+    "RS ID": "rs35744813",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TAS1R3",
+    "RS ID": "rs307355",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TAS2R4",
+    "RS ID": "rs2234001",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "inter-gene",
+    "RS ID": "rs1998076",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "inter-gene",
+    "RS ID": "rs2223841",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "inter-gene",
+    "RS ID": "rs925391",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "inter-gene",
+    "RS ID": "rs6945541",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "AR",
+    "RS ID": "rs10521339",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "AR",
+    "RS ID": "rs6625163",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "EDA2R",
+    "RS ID": "rs1385699",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "EDA2R",
+    "RS ID": "rs1511061",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "C1orf127",
+    "RS ID": "rs12565727",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SLC14A2",
+    "RS ID": "rs10502861",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MAPT-AS1",
+    "RS ID": "rs12373124",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "LINC01432",
+    "RS ID": "rs1160312",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "VDR",
+    "RS ID": "rs731236",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TAS2R16",
+    "RS ID": "rs846664",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TAS2R16",
+    "RS ID": "rs6466849",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TAS1R2",
+    "RS ID": "rs35874116",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "TAS1R3",
+    "RS ID": "rs307355",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "FOXC3",
+    "RS ID": "rs34221221",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FOXC2",
+    "RS ID": "rs104894516",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "FOXC2",
+    "RS ID": "rs61753346",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "FOXC2",
+    "RS ID": "rs1035550",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "OR2M7",
+    "RS ID": "rs4481887",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "OPN1LW",
+    "RS ID": "i5005855",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "OPN1LW",
+    "RS ID": "i5005856",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "OPN1SW",
+    "RS ID": "rs104894031",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "OPN1SW",
+    "RS ID": "rs104894033",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "OPN2",
+    "RS ID": "rs104893768",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "OPN2",
+    "RS ID": "rs104893769",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ATF6",
+    "RS ID": "rs796065053",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "OPN1LW",
+    "RS ID": "rs121434621",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "OPN1LW",
+    "RS ID": "rs104894913",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "KIF1A",
+    "RS ID": "rs59733750",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "DPEP1",
+    "RS ID": "rs164741",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "MITF",
+    "RS ID": "rs149617956",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC44A4",
+    "RS ID": "rs521977",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HRH2",
+    "RS ID": "rs2963854",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "LPP",
+    "RS ID": "rs9815073",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "STAT6",
+    "RS ID": "rs3024971",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "LINC00299",
+    "RS ID": "rs3102960",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CFTR",
+    "RS ID": "rs113993960",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "PRM1",
+    "RS ID": "rs2301365",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "LIG4",
+    "RS ID": "rs1805388",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TGFB3",
+    "RS ID": "rs2284792",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "FSHR",
+    "RS ID": "rs6165",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "FSHR",
+    "RS ID": "rs6166",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HLA-DRA",
+    "RS ID": "rs3129878",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "CFTR",
+    "RS ID": "i3000001",
+    "Effect Allele": "D"
+  },
+  {
+    "Gene": "LHCGR",
+    "RS ID": "rs13405728",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "LHCGR",
+    "RS ID": "rs2293275",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IL17A",
+    "RS ID": "rs763780",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SMAD3",
+    "RS ID": "rs17293443",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MTHFR",
+    "RS ID": "rs868014",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ADAMTS19",
+    "RS ID": "rs246246",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "HLAF",
+    "RS ID": "rs2523393",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IGF1R",
+    "RS ID": "rs2229765",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TP53",
+    "RS ID": "rs1042522",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "IMPK",
+    "RS ID": "rs6481383",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IL-6",
+    "RS ID": "rs2069837",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "KL",
+    "RS ID": "rs9536314",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "KL",
+    "RS ID": "rs3752472",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "KL",
+    "RS ID": "rs650439",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ATG16L1",
+    "RS ID": "rs2241880",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "ATG16L1",
+    "RS ID": "rs10210302",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "ATG5",
+    "RS ID": "rs573775",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "ATG5",
+    "RS ID": "rs6568431",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "IRGM",
+    "RS ID": "rs13361189",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "IRGM",
+    "RS ID": "rs10065172",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "IRGM",
+    "RS ID": "rs4958847",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TERT",
+    "RS ID": "rs10069690",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TERT",
+    "RS ID": "rs2736100",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TERT",
+    "RS ID": "rs2853669",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "TERT",
+    "RS ID": "rs2736122",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TERT",
+    "RS ID": "rs2242652",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "TERT",
+    "RS ID": "rs2736108",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TERC",
+    "RS ID": "rs10936599",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "NAF1",
+    "RS ID": "rs7675998",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "OBFC1",
+    "RS ID": "rs9420907",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "NAMPT",
+    "RS ID": "rs61330082",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "BST1",
+    "RS ID": "rs4698412",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "CD38",
+    "RS ID": "rs1800561",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "CD38",
+    "RS ID": "rs1130169",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "NAMPT",
+    "RS ID": "rs1319501",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "AGER",
+    "RS ID": "rs2070600",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "AGER",
+    "RS ID": "rs1800624",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "AGER",
+    "RS ID": "rs184003",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "GLO1",
+    "RS ID": "rs1130534",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "HSPA1L",
+    "RS ID": "rs2763979",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HSPA1L",
+    "RS ID": "rs1043618",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "HSPA1L",
+    "RS ID": "rs2075800",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "HSPA5",
+    "RS ID": "rs391957",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "TRAP1",
+    "RS ID": "rs113476582",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "SIRT3",
+    "RS ID": "rs11555236",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SIRT3",
+    "RS ID": "rs185277566",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "SIRT3",
+    "RS ID": "rs28365927",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SIRT3",
+    "RS ID": "rs3782118",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "MTOR",
+    "RS ID": "rs2536",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "MTOR",
+    "RS ID": "rs2295080",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "MTOR",
+    "RS ID": "rs1883965",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "RPTOR",
+    "RS ID": "rs1062935",
+    "Effect Allele": "C"
+  },
+  {
+    "Gene": "DEPTOR",
+    "RS ID": "rs4871827",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "mLST8",
+    "RS ID": "rs26865",
+    "Effect Allele": "G"
+  },
+  {
+    "Gene": "CYP3A4",
+    "RS ID": "rs35599367",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC22A1",
+    "RS ID": "rs622342",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "SLC22A1",
+    "RS ID": "rs12208357",
+    "Effect Allele": "T"
+  },
+  {
+    "Gene": "SLC22A2",
+    "RS ID": "rs316019",
+    "Effect Allele": "A"
+  },
+  {
+    "Gene": "BPIFB4",
+    "RS ID": "rs2070325",
+    "Effect Allele": "G"
+  }
+]

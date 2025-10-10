@@ -29,12 +29,13 @@ export function determineZygosity(
   }
 
   // Find reference data for this RS ID
-  const reference = alleleReference.find(ref => ref.rsId.toUpperCase() === rsId.toUpperCase());
+  const reference = alleleReference.find(ref => ref["RS ID"].toUpperCase() === rsId.toUpperCase());
 
-  // Check if wild type (both alleles match wild allele)
+  // Check if wild type (neither allele matches the effect allele)
   if (reference) {
-    const wild = reference.wildAllele.toUpperCase();
-    if (allele1 === wild && allele2 === wild) {
+    const effectAllele = reference["Effect Allele"].toUpperCase();
+    // Wild type: neither allele is the effect allele
+    if (allele1 !== effectAllele && allele2 !== effectAllele) {
       return 'Wild';
     }
   }
@@ -91,8 +92,7 @@ export function getSNPResults(
  */
 export function transformTemplate(
   htmlContent: string,
-  snpResults: Map<string, SNPResult>,
-  hideWild: boolean
+  snpResults: Map<string, SNPResult>
 ): string {
   const parser = new DOMParser();
   const doc = parser.parseFromString(htmlContent, 'text/html');
@@ -162,7 +162,7 @@ export function transformTemplate(
     node.parentNode?.replaceChild(span, node);
   }
 
-  // Filter out SNP subsections where all RS IDs are Data Missing or Wild
+  // Filter out SNP subsections where all RS IDs are Data Missing or Wild (always filtered)
   const listItems = doc.querySelectorAll('li.c1.li-bullet-0, li[class*="li-bullet"]');
   listItems.forEach(li => {
     const text = li.textContent || '';

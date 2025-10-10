@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import { FileUpload } from './components/FileUpload';
 import { TemplateInput } from './components/TemplateInput';
-import { AlleleReferenceTable } from './components/AlleleReferenceTable';
 import { ReportOutput } from './components/ReportOutput';
 import { parseGeneticDataFile } from './utils/geneticDataParser';
 import {
@@ -22,16 +21,15 @@ function App() {
   const [alleleReference, setAlleleReference] = useState<AlleleData[]>([]);
   const [transformedHtml, setTransformedHtml] = useState<string>('');
   const [summaries, setSummaries] = useState<SectionSummary[]>([]);
-  const [hideWild, setHideWild] = useState<boolean>(false);
   const [isProcessing, setIsProcessing] = useState<boolean>(false);
   const [error, setError] = useState<string>('');
 
   // Load allele reference data on mount
   useEffect(() => {
-    fetch('/allele_data.json')
+    fetch('/genes_rs_effect.json')
       .then(res => res.json())
       .then(data => setAlleleReference(data))
-      .catch(err => console.error('Failed to load allele reference data:', err));
+      .catch(err => console.error('Failed to load gene effect data:', err));
   }, []);
 
   const handleGeneticFileSelect = async (file: File) => {
@@ -77,8 +75,8 @@ function App() {
       // Get SNP results
       const snpResults = getSNPResults(rsIds, geneticData, alleleReference);
 
-      // Transform template
-      const transformed = transformTemplate(templateContent, snpResults, hideWild);
+      // Transform template (automatically filters out non-variant subsections)
+      const transformed = transformTemplate(templateContent, snpResults);
 
       // Calculate summaries
       const sectionSummaries = calculateSectionSummaries(templateContent, snpResults);
@@ -153,16 +151,6 @@ function App() {
           <div className="control-panel">
             <h2>Step 3: Generate Report</h2>
             <div className="generate-section">
-              <div className="toggle-option">
-                <label>
-                  <input
-                    type="checkbox"
-                    checked={hideWild}
-                    onChange={(e) => setHideWild(e.target.checked)}
-                  />
-                  Hide Wild Type SNP subsections
-                </label>
-              </div>
               <button
                 onClick={handleGenerateReport}
                 disabled={!geneticData || !templateContent || isProcessing}
@@ -178,13 +166,6 @@ function App() {
               ⚠️ {error}
             </div>
           )}
-        </section>
-
-        <section className="reference-section">
-          <AlleleReferenceTable
-            alleleData={alleleReference}
-            onUpdate={setAlleleReference}
-          />
         </section>
 
         {transformedHtml && (
