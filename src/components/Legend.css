@@ -1,0 +1,241 @@
+.legend-toggle {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 12px 24px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.legend-toggle:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.5);
+}
+
+.legend-toggle.collapsed {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.6);
+  }
+}
+
+.legend-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 320px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.legend-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 2px solid #f0f0f0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px 12px 0 0;
+}
+
+.legend-header h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.legend-close {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.legend-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.legend-content {
+  padding: 16px 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.legend-item:last-child {
+  margin-bottom: 0;
+}
+
+.legend-icon {
+  font-size: 24px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.legend-icon.homozygous {
+  color: red;
+  font-weight: bold;
+}
+
+.legend-icon.heterozygous {
+  color: #b8860b;
+}
+
+.legend-icon.wild {
+  color: black;
+}
+
+.legend-icon.missing {
+  color: grey;
+}
+
+.legend-text {
+  flex: 1;
+}
+
+.legend-text strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.legend-text p {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.legend-footer {
+  padding: 12px 20px;
+  background: #f8f9ff;
+  border-top: 1px solid #e5e7eb;
+  border-radius: 0 0 12px 12px;
+}
+
+.legend-footer small {
+  font-size: 11px;
+  color: #667eea;
+  display: block;
+  line-height: 1.4;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .legend-container,
+  .legend-toggle {
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .legend-container {
+    width: calc(100vw - 30px);
+    max-width: 320px;
+  }
+}
+import React from 'react';
+import './Legend.css';
+
+interface LegendProps {
+  isVisible: boolean;
+  onToggle: () => void;
+}
+
+export const Legend: React.FC<LegendProps> = ({ isVisible, onToggle }) => {
+  if (!isVisible) {
+    return (
+      <button className="legend-toggle collapsed" onClick={onToggle} title="Show Legend">
+        ℹ️ Legend
+      </button>
+    );
+  }
+
+  return (
+    <div className="legend-container">
+      <div className="legend-header">
+        <h4>📖 SNP Annotation Legend</h4>
+        <button className="legend-close" onClick={onToggle} title="Hide Legend">
+          ✕
+        </button>
+      </div>
+      <div className="legend-content">
+        <div className="legend-item">
+          <span className="legend-icon homozygous">☁️</span>
+          <div className="legend-text">
+            <strong>Homozygous (Red)</strong>
+            <p>Both alleles are the problem variant</p>
+          </div>
+        </div>
+        <div className="legend-item">
+          <span className="legend-icon heterozygous">☁</span>
+          <div className="legend-text">
+            <strong>Heterozygous (Yellow)</strong>
+            <p>One allele is the problem variant</p>
+          </div>
+        </div>
+        <div className="legend-item">
+          <span className="legend-icon wild">⚪</span>
+          <div className="legend-text">
+            <strong>Wild Type (Black)</strong>
+            <p>Neither allele is the problem variant</p>
+          </div>
+        </div>
+        <div className="legend-item">
+          <span className="legend-icon missing">❓</span>
+          <div className="legend-text">
+            <strong>Data Missing (Grey)</strong>
+            <p>No genetic data available for this SNP</p>
+          </div>
+        </div>
+      </div>
+      <div className="legend-footer">
+        <small>💡 Tip: Click on section names in Grand Summary to jump to that section</small>
+      </div>
+    </div>
+  );
+};
+

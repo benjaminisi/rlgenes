@@ -3,6 +3,7 @@ import './App.css';
 import { FileUpload } from './components/FileUpload';
 import { TemplateInput } from './components/TemplateInput';
 import { ReportOutput } from './components/ReportOutput';
+import { Legend } from './components/Legend';
 import { parseGeneticDataFile } from './utils/geneticDataParser';
 import {
   extractRSIds,
@@ -27,6 +28,7 @@ function App() {
   const [summaries, setSummaries] = useState<SectionSummary[]>([]);
   const [isProcessing, setIsProcessing] = useState<boolean>(false);
   const [error, setError] = useState<string>('');
+  const [showLegend, setShowLegend] = useState<boolean>(true);
 
   // Load allele reference data on mount
   useEffect(() => {
@@ -35,6 +37,24 @@ function App() {
       .then(data => setAlleleReference(data))
       .catch(err => console.error('Failed to load allele reference data:', err));
   }, []);
+
+  // Save preferences to localStorage
+  useEffect(() => {
+    localStorage.setItem('showLegend', JSON.stringify(showLegend));
+  }, [showLegend]);
+
+  // Load preferences from localStorage
+  useEffect(() => {
+    const savedShowLegend = localStorage.getItem('showLegend');
+    if (savedShowLegend !== null) {
+      setShowLegend(JSON.parse(savedShowLegend));
+    }
+  }, []);
+
+  // Calculate step completion
+  const step1Complete = !!templateContent;
+  const step2Complete = !!geneticData && Object.keys(geneticData).length > 0;
+  const step3Complete = !!transformedHtml;
 
   const handleGeneticFileSelect = async (file: File) => {
     setGeneticDataFile(file);
@@ -199,6 +219,30 @@ function App() {
         <p>Automate the personalization of genetic data explanation templates</p>
       </header>
 
+      {/* Progress Tracker */}
+      <div className="progress-tracker">
+        <div className={`progress-step ${step1Complete ? 'complete' : ''}`}>
+          <div className="step-circle">
+            {step1Complete ? '✓' : '1'}
+          </div>
+          <div className="step-label">Upload Template</div>
+        </div>
+        <div className={`progress-line ${step1Complete ? 'complete' : ''}`}></div>
+        <div className={`progress-step ${step2Complete ? 'complete' : ''}`}>
+          <div className="step-circle">
+            {step2Complete ? '✓' : '2'}
+          </div>
+          <div className="step-label">Upload Data</div>
+        </div>
+        <div className={`progress-line ${step2Complete ? 'complete' : ''}`}></div>
+        <div className={`progress-step ${step3Complete ? 'complete' : ''}`}>
+          <div className="step-circle">
+            {step3Complete ? '✓' : '3'}
+          </div>
+          <div className="step-label">Generate Report</div>
+        </div>
+      </div>
+
       <main>
         <section className="controls">
           <div className="control-panel">
@@ -273,6 +317,11 @@ function App() {
           </section>
         )}
       </main>
+
+      {/* Legend Component */}
+      {transformedHtml && (
+        <Legend isVisible={showLegend} onToggle={() => setShowLegend(!showLegend)} />
+      )}
 
       <footer>
         <p>
