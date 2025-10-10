@@ -111,13 +111,69 @@ export function getSNPResults(
 
 /**
  * Transforms template content by replacing RS IDs with formatted results
+ * and populating metadata fields
  */
 export function transformTemplate(
   htmlContent: string,
-  snpResults: Map<string, SNPResult>
+  snpResults: Map<string, SNPResult>,
+  genomeFilename?: string,
+  genomeDate?: string,
+  grandSummaryHTML?: string
 ): string {
   const parser = new DOMParser();
   const doc = parser.parseFromString(htmlContent, 'text/html');
+
+  // Populate metadata fields
+  const reportDate = new Date().toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+
+  // Find the first heading (title) and insert metadata after it
+  let titleElement = null;
+  for (let i = 1; i <= 6; i++) {
+    titleElement = doc.querySelector(`h${i}`);
+    if (titleElement) break;
+  }
+
+  // Create and insert warning, metadata, and grand summary after the title
+  if (titleElement) {
+    // Create warning message
+    const warningDiv = doc.createElement('div');
+    warningDiv.style.cssText = 'text-align: center; margin: 20px 0; padding: 20px; background-color: #fee; border: 3px solid #c00; border-radius: 8px;';
+    warningDiv.innerHTML = '<h2 style="color: #c00; font-size: 28px; font-weight: bold; margin: 0;">PRELIMINARY -- DETERMINATIONS ARE INCORRECT</h2>';
+
+    // Create metadata section
+    const metadataDiv = doc.createElement('div');
+    metadataDiv.style.cssText = 'background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 8px; border-left: 4px solid #667eea;';
+
+    const metadataItems: string[] = [];
+
+    if (genomeFilename) {
+      metadataItems.push(`<p style="margin: 5px 0;"><strong>Genome File:</strong> ${genomeFilename}</p>`);
+    }
+
+    if (genomeDate) {
+      metadataItems.push(`<p style="margin: 5px 0;"><strong>Genome Date:</strong> ${genomeDate}</p>`);
+    }
+
+    metadataItems.push(`<p style="margin: 5px 0;"><strong>Report Generated:</strong> ${reportDate}</p>`);
+
+    metadataDiv.innerHTML = metadataItems.join('');
+
+    // Insert warning first, then metadata, then grand summary after the title element
+    titleElement.parentNode?.insertBefore(warningDiv, titleElement.nextSibling);
+    titleElement.parentNode?.insertBefore(metadataDiv, warningDiv.nextSibling);
+
+    // Insert grand summary if provided
+    if (grandSummaryHTML) {
+      const grandSummaryDiv = doc.createElement('div');
+      grandSummaryDiv.id = 'grand-summary';
+      grandSummaryDiv.innerHTML = grandSummaryHTML;
+      titleElement.parentNode?.insertBefore(grandSummaryDiv, metadataDiv.nextSibling);
+    }
+  }
 
   // Helper function to create section ID from section name
   const getSectionId = (sectionName: string) => {

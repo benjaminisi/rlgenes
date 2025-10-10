@@ -32,9 +32,18 @@ function App() {
 
   // Load allele reference data on mount
   useEffect(() => {
-    fetch('/allele_data.json')
+    fetch('/genes_rs_effect.json')
       .then(res => res.json())
-      .then(data => setAlleleReference(data))
+      .then(data => {
+        // Transform the data structure to match AlleleData interface
+        const transformedData = data.map((item: any) => ({
+          rsId: item['RS ID'],
+          problemAllele: item['Effect Allele'],
+          wildAllele: '', // Not provided in source data
+          confirmationUrl: '' // Not provided in source data
+        }));
+        setAlleleReference(transformedData);
+      })
       .catch(err => console.error('Failed to load allele reference data:', err));
   }, []);
 
@@ -112,11 +121,21 @@ function App() {
       // Get SNP results
       const snpResults = getSNPResults(rsIds, geneticData, alleleReference);
 
-      // Transform template (automatically filters out non-variant subsections)
-      const transformed = transformTemplate(templateContent, snpResults);
-
       // Calculate summaries
       const sectionSummaries = calculateSectionSummaries(templateContent, snpResults);
+
+      // Generate Grand Summary HTML
+      const grandSummaryHTML = generateGrandSummaryHTML(sectionSummaries);
+
+      // Transform template (automatically filters out non-variant subsections)
+      // Pass genome filename, date, and grand summary for insertion after metadata
+      const transformed = transformTemplate(
+        templateContent,
+        snpResults,
+        geneticDataFile?.name,
+        geneticDataDate,
+        grandSummaryHTML
+      );
 
       // Insert summaries into template
       const withSummaries = insertSummaries(transformed, sectionSummaries);
@@ -138,9 +157,7 @@ function App() {
   };
 
   const handleDownload = () => {
-    // Create a complete HTML document with Grand Summary at the top
-    const grandSummaryHTML = generateGrandSummaryHTML(summaries);
-    const dateInfo = geneticDataDate ? `<p><strong>Client raw genome dated:</strong> ${geneticDataDate}</p>` : '';
+    // Create a complete HTML document - Grand Summary is now embedded in transformedHtml
     const completeHTML = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -185,11 +202,6 @@ function App() {
   </style>
 </head>
 <body>
-  <h1>🧬 ${templateTitle}</h1>
-  <p><strong>Generated:</strong> ${new Date().toLocaleString()}</p>
-  ${dateInfo}
-  ${grandSummaryHTML}
-  <hr style="margin: 30px 0; border: none; border-top: 2px solid #e5e7eb;">
   ${transformedHtml}
 </body>
 </html>`;
