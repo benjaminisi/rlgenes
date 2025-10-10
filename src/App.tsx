@@ -29,6 +29,7 @@ function App() {
   const [isProcessing, setIsProcessing] = useState<boolean>(false);
   const [error, setError] = useState<string>('');
   const [showLegend, setShowLegend] = useState<boolean>(true);
+  const [showDetailedAnnotations, setShowDetailedAnnotations] = useState<boolean>(false);
 
   // Load allele reference data on mount
   useEffect(() => {
@@ -36,9 +37,10 @@ function App() {
       .then(res => res.json())
       .then(data => {
         // Transform the data structure to match AlleleData interface
-        const transformedData = data.map((item: any) => ({
+        const transformedData = data.map((item: { 'RS ID': string; 'Effect Allele': string; 'Gene': string }) => ({
           rsId: item['RS ID'],
           problemAllele: item['Effect Allele'],
+          gene: item['Gene'], // Add gene information
           wildAllele: '', // Not provided in source data
           confirmationUrl: '' // Not provided in source data
         }));
@@ -50,13 +52,18 @@ function App() {
   // Save preferences to localStorage
   useEffect(() => {
     localStorage.setItem('showLegend', JSON.stringify(showLegend));
-  }, [showLegend]);
+    localStorage.setItem('showDetailedAnnotations', JSON.stringify(showDetailedAnnotations));
+  }, [showLegend, showDetailedAnnotations]);
 
   // Load preferences from localStorage
   useEffect(() => {
     const savedShowLegend = localStorage.getItem('showLegend');
     if (savedShowLegend !== null) {
       setShowLegend(JSON.parse(savedShowLegend));
+    }
+    const savedShowDetailedAnnotations = localStorage.getItem('showDetailedAnnotations');
+    if (savedShowDetailedAnnotations !== null) {
+      setShowDetailedAnnotations(JSON.parse(savedShowDetailedAnnotations));
     }
   }, []);
 
@@ -68,7 +75,9 @@ function App() {
   const handleGeneticFileSelect = async (file: File) => {
     setGeneticDataFile(file);
     setError('');
-    // Clear previous report when new file is uploaded
+    // Clear previous genetic data and report immediately when new file is uploaded
+    setGeneticData(null);
+    setGeneticDataDate(undefined);
     setTransformedHtml('');
     setSummaries([]);
 
@@ -134,7 +143,8 @@ function App() {
         snpResults,
         geneticDataFile?.name,
         geneticDataDate,
-        grandSummaryHTML
+        grandSummaryHTML,
+        showDetailedAnnotations // Pass the showDetailedAnnotations state
       );
 
       // Insert summaries into template
@@ -284,6 +294,20 @@ function App() {
           <div className="control-panel">
             <h2>Step 3: Generate Report</h2>
             <div className="generate-section">
+              <div style={{ marginBottom: '15px' }}>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer' }}>
+                  <input
+                    type="checkbox"
+                    checked={showDetailedAnnotations}
+                    onChange={(e) => setShowDetailedAnnotations(e.target.checked)}
+                    style={{ cursor: 'pointer', width: '18px', height: '18px' }}
+                  />
+                  <span>Show detailed annotations (alleles, effect allele, gene)</span>
+                </label>
+                <p style={{ marginLeft: '28px', fontSize: '0.9em', color: '#666', marginTop: '5px' }}>
+                  When enabled, Homozygous and Heterozygous annotations will include the allele pair, effect allele, and associated gene.
+                </p>
+              </div>
               <button
                 onClick={handleGenerateReport}
                 disabled={!canGenerate}
