@@ -14,6 +14,23 @@ export const ReportOutput: React.FC<ReportOutputProps> = ({
   onDownload,
   onCopy
 }) => {
+  // Sort summaries by homozygous percentage (highest first)
+  const sortedSummaries = [...summaries].sort((a, b) => b.homozygousPercent - a.homozygousPercent);
+
+  // Helper function to create section ID from section name
+  const getSectionId = (sectionName: string) => {
+    return 'section-' + sectionName.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  };
+
+  // Helper function to scroll to section
+  const scrollToSection = (sectionName: string) => {
+    const sectionId = getSectionId(sectionName);
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div className="report-output">
       <div className="report-header">
@@ -28,7 +45,7 @@ export const ReportOutput: React.FC<ReportOutputProps> = ({
         </div>
       </div>
 
-      {summaries.length > 0 && (
+      {sortedSummaries.length > 0 && (
         <div className="grand-summary">
           <h3>Grand Summary</h3>
           <table className="summary-table">
@@ -43,9 +60,20 @@ export const ReportOutput: React.FC<ReportOutputProps> = ({
               </tr>
             </thead>
             <tbody>
-              {summaries.map((summary, index) => (
+              {sortedSummaries.map((summary, index) => (
                 <tr key={index}>
-                  <td><strong>{summary.sectionName}</strong></td>
+                  <td>
+                    <a
+                      href={`#${getSectionId(summary.sectionName)}`}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        scrollToSection(summary.sectionName);
+                      }}
+                      style={{ cursor: 'pointer', color: '#667eea', textDecoration: 'none', fontWeight: 'bold' }}
+                    >
+                      {summary.sectionName}
+                    </a>
+                  </td>
                   <td>{summary.totalCount}</td>
                   <td>{summary.heterozygousCount} ({summary.heterozygousPercent.toFixed(1)}%)</td>
                   <td style={{ color: 'red', fontWeight: 'bold' }}>

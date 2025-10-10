@@ -8,11 +8,25 @@ import type { FileFormatInfo } from '../types';
 export function detectFileFormat(fileContent: string): FileFormatInfo | null {
   const lines = fileContent.split('\n').slice(0, 30); // Increased to 30 lines to handle more comments
 
-  // Find the first non-comment line (data or header)
+  // Find the header line - either a line starting with "# rsid" or first non-comment line
   let headerLineIndex = -1;
+  let isCommentHeader = false;
+
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i].trim();
-    if (!line.startsWith('#') && line.length > 0) {
+
+    // Check if this is a comment line that contains column headers
+    if (line.startsWith('#') && (line.includes('rsid') || line.includes('chromosome'))) {
+      const headerCheck = line.substring(1).trim().toLowerCase();
+      if (headerCheck.startsWith('rsid') || headerCheck.includes('\trsid') || headerCheck.includes(',rsid')) {
+        headerLineIndex = i;
+        isCommentHeader = true;
+        break;
+      }
+    }
+
+    // Otherwise look for first non-comment line
+    if (!line.startsWith('#') && line.length > 0 && headerLineIndex === -1) {
       headerLineIndex = i;
       break;
     }
@@ -22,7 +36,12 @@ export function detectFileFormat(fileContent: string): FileFormatInfo | null {
     return null; // No header found
   }
 
-  const headerLine = lines[headerLineIndex].trim();
+  let headerLine = lines[headerLineIndex].trim();
+
+  // Remove leading # if this is a comment header
+  if (isCommentHeader && headerLine.startsWith('#')) {
+    headerLine = headerLine.substring(1).trim();
+  }
 
   // Determine delimiter
   let delimiter = '\t';
@@ -34,7 +53,7 @@ export function detectFileFormat(fileContent: string): FileFormatInfo | null {
 
   // Look for rsid column
   const rsIdColumnIndex = headerParts.findIndex(h =>
-    h === 'rsid' || h === 'rs id' || h === 'snp' || h === '#rsid'
+    h === 'rsid' || h === 'rs id' || h === 'snp'
   );
 
   if (rsIdColumnIndex === -1) {

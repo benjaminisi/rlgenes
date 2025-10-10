@@ -97,6 +97,20 @@ export function transformTemplate(
   const parser = new DOMParser();
   const doc = parser.parseFromString(htmlContent, 'text/html');
 
+  // Helper function to create section ID from section name
+  const getSectionId = (sectionName: string) => {
+    return 'section-' + sectionName.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  };
+
+  // Add IDs to all h3 section headings for linking
+  const headings = doc.querySelectorAll('h3');
+  headings.forEach(heading => {
+    const sectionName = heading.textContent?.trim() || '';
+    if (sectionName && !sectionName.toLowerCase().includes('intro')) {
+      heading.setAttribute('id', getSectionId(sectionName));
+    }
+  });
+
   // Process all text nodes to replace RS IDs
   const walker = document.createTreeWalker(
     doc.body,
