@@ -3,6 +3,7 @@ export interface AlleleData {
   wildAllele: string;
   problemAllele: string;
   confirmationUrl: string;
+  gene?: string; // Gene associated with this RS ID
 }
 
 export interface GeneticData {
@@ -31,6 +32,8 @@ export interface SNPResult {
   rsId: string;
   zygosity: Zygosity;
   alleles: string;
+  effectAllele?: string; // The effect allele for this RS ID
+  gene?: string; // The gene associated with this RS ID
 }
 
 export interface SectionSummary {

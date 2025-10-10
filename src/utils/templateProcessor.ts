@@ -83,11 +83,16 @@ export function getSNPResults(
   for (const rsId of rsIds) {
     const data = geneticData[rsId.toUpperCase()];
 
+    // Find reference data for this RS ID
+    const reference = alleleReference.find(ref => ref.rsId.toUpperCase() === rsId.toUpperCase());
+
     if (!data) {
       results.set(rsId.toUpperCase(), {
         rsId,
         zygosity: 'Data Missing',
-        alleles: '--'
+        alleles: '--',
+        effectAllele: reference?.problemAllele,
+        gene: reference?.gene
       });
       continue;
     }
@@ -102,7 +107,9 @@ export function getSNPResults(
     results.set(rsId.toUpperCase(), {
       rsId,
       zygosity,
-      alleles: `${data.allele1}${data.allele2}`
+      alleles: `${data.allele1}${data.allele2}`,
+      effectAllele: reference?.problemAllele,
+      gene: reference?.gene
     });
   }
 
@@ -118,7 +125,8 @@ export function transformTemplate(
   snpResults: Map<string, SNPResult>,
   genomeFilename?: string,
   genomeDate?: string,
-  grandSummaryHTML?: string
+  grandSummaryHTML?: string,
+  showDetailedAnnotations: boolean = false
 ): string {
   const parser = new DOMParser();
   const doc = parser.parseFromString(htmlContent, 'text/html');
@@ -220,14 +228,26 @@ export function transformTemplate(
           return `<span style="color: grey;">${match} [Data Missing]</span>`;
         }
 
-        const { zygosity } = result;
+        const { zygosity, alleles, effectAllele, gene } = result;
+
+        // Build detailed annotation string if enabled
+        let detailedInfo = '';
+        if (showDetailedAnnotations && (zygosity === 'Homozygous' || zygosity === 'Heterozygous')) {
+          const parts: string[] = [];
+          if (alleles) parts.push(`Alleles: ${alleles}`);
+          if (effectAllele) parts.push(`Effect: ${effectAllele}`);
+          if (gene) parts.push(`Gene: ${gene}`);
+          if (parts.length > 0) {
+            detailedInfo = ` <span style="font-size: 0.85em; color: #666;">(${parts.join(', ')})</span>`;
+          }
+        }
 
         if (zygosity === 'Homozygous') {
           // Red text with filled cloud icon for Homozygous
-          return `${match} <span style="color: red; font-weight: bold;">☁️ Homozygous</span>`;
+          return `${match} <span style="color: red; font-weight: bold;">☁️ Homozygous</span>${detailedInfo}`;
         } else if (zygosity === 'Heterozygous') {
           // Darker yellow text (#b8860b - dark goldenrod) with outline cloud icon for Heterozygous
-          return `${match} <span style="color: #b8860b; font-weight: normal;">☁ Heterozygous</span>`;
+          return `${match} <span style="color: #b8860b; font-weight: normal;">☁ Heterozygous</span>${detailedInfo}`;
         } else if (zygosity === 'Wild') {
           return `${match} <span style="color: black;">Wild</span>`;
         } else if (zygosity === 'Data Missing') {

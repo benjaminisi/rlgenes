@@ -201,12 +201,16 @@ describe('getSNPResults', () => {
     expect(results.get('RS4880')).toEqual({
       rsId: 'RS4880',
       zygosity: 'Homozygous',
-      alleles: 'CC'
+      alleles: 'CC',
+      effectAllele: 'C',
+      gene: undefined
     });
     expect(results.get('RS1050450')).toEqual({
       rsId: 'RS1050450',
       zygosity: 'Heterozygous',
-      alleles: 'CT'
+      alleles: 'CT',
+      effectAllele: 'T',
+      gene: undefined
     });
   });
 
@@ -217,7 +221,9 @@ describe('getSNPResults', () => {
     expect(results.get('RS999999')).toEqual({
       rsId: 'RS999999',
       zygosity: 'Data Missing',
-      alleles: '--'
+      alleles: '--',
+      effectAllele: undefined,
+      gene: undefined
     });
   });
 
