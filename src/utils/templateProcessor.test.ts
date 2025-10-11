@@ -387,11 +387,13 @@ describe('generateGrandSummaryHTML', () => {
       homozygousCount: 10,
       wildCount: 3,
       missingCount: 2,
+      referenceMissingCount: 0,
       totalCount: 20,
       heterozygousPercent: 25,
       homozygousPercent: 50,
       wildPercent: 15,
-      missingPercent: 10
+      missingPercent: 10,
+      referenceMissingPercent: 0
     },
     {
       sectionName: 'Detoxification',
@@ -399,11 +401,13 @@ describe('generateGrandSummaryHTML', () => {
       homozygousCount: 3,
       wildCount: 5,
       missingCount: 0,
+      referenceMissingCount: 0,
       totalCount: 10,
       heterozygousPercent: 20,
       homozygousPercent: 30,
       wildPercent: 50,
-      missingPercent: 0
+      missingPercent: 0,
+      referenceMissingPercent: 0
     }
   ];
 

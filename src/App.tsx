@@ -15,7 +15,7 @@ import {
   generateGrandSummaryHTML,
   extractTemplateTitle
 } from './utils/templateProcessor';
-import type { GeneticData, AlleleData, SectionSummary } from './types';
+import type { GeneticData, AlleleData } from './types';
 
 function App() {
   const [geneticDataFile, setGeneticDataFile] = useState<File | null>(null);
@@ -25,11 +25,11 @@ function App() {
   const [templateTitle, setTemplateTitle] = useState<string>('Genetic Report');
   const [alleleReference, setAlleleReference] = useState<AlleleData[]>([]);
   const [transformedHtml, setTransformedHtml] = useState<string>('');
-  const [summaries, setSummaries] = useState<SectionSummary[]>([]);
   const [isProcessing, setIsProcessing] = useState<boolean>(false);
   const [error, setError] = useState<string>('');
   const [showLegend, setShowLegend] = useState<boolean>(true);
   const [showDetailedAnnotations, setShowDetailedAnnotations] = useState<boolean>(false);
+  const [showAllSubsections, setShowAllSubsections] = useState<boolean>(false);
 
   // Load allele reference data on mount
   useEffect(() => {
@@ -79,7 +79,6 @@ function App() {
     setGeneticData(null);
     setGeneticDataDate(undefined);
     setTransformedHtml('');
-    setSummaries([]);
 
     try {
       const result = await parseGeneticDataFile(file);
@@ -101,7 +100,6 @@ function App() {
     setError('');
     // Clear previous report when new template is uploaded
     setTransformedHtml('');
-    setSummaries([]);
     // Extract title from template
     const title = extractTemplateTitle(content);
     setTemplateTitle(title);
@@ -133,18 +131,18 @@ function App() {
       // Calculate summaries
       const sectionSummaries = calculateSectionSummaries(templateContent, snpResults);
 
-      // Generate Grand Summary HTML
-      const grandSummaryHTML = generateGrandSummaryHTML(sectionSummaries);
+      // Generate Grand Summary HTML with showDetailedAnnotations parameter
+      const grandSummaryHTML = generateGrandSummaryHTML(sectionSummaries, showDetailedAnnotations);
 
-      // Transform template (automatically filters out non-variant subsections)
-      // Pass genome filename, date, and grand summary for insertion after metadata
+      // Transform template with both showDetailedAnnotations and showAllSubsections parameters
       const transformed = transformTemplate(
         templateContent,
         snpResults,
         geneticDataFile?.name,
         geneticDataDate,
         grandSummaryHTML,
-        showDetailedAnnotations // Pass the showDetailedAnnotations state
+        showDetailedAnnotations,
+        showAllSubsections
       );
 
       // Insert summaries into template
@@ -154,7 +152,6 @@ function App() {
       const sanitized = sanitizeHTML(withSummaries);
 
       setTransformedHtml(sanitized);
-      setSummaries(sectionSummaries);
 
       console.log('Report generated successfully');
     } catch (err) {
@@ -185,6 +182,17 @@ function App() {
     }
     h1, h2, h3, h4 {
       color: #1f2937;
+    }
+    /* Preserve original template styling */
+    li {
+      margin-bottom: 15px;
+    }
+    strong {
+      font-weight: bold;
+    }
+    /* Ensure bolded text stays bold */
+    b, strong, .bold {
+      font-weight: bold !important;
     }
     table {
       border-collapse: collapse;
@@ -308,6 +316,20 @@ function App() {
                   When enabled, Homozygous and Heterozygous annotations will include the allele pair, effect allele, and associated gene.
                 </p>
               </div>
+              <div style={{ marginBottom: '15px' }}>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer' }}>
+                  <input
+                    type="checkbox"
+                    checked={showAllSubsections}
+                    onChange={(e) => setShowAllSubsections(e.target.checked)}
+                    style={{ cursor: 'pointer', width: '18px', height: '18px' }}
+                  />
+                  <span>Show all subsections (including non-variant)</span>
+                </label>
+                <p style={{ marginLeft: '28px', fontSize: '0.9em', color: '#666', marginTop: '5px' }}>
+                  When enabled, the report will include all subsections from the template, not just those with genetic variants.
+                </p>
+              </div>
               <button
                 onClick={handleGenerateReport}
                 disabled={!canGenerate}
@@ -345,8 +367,6 @@ function App() {
           <section className="output-section">
             <ReportOutput
               transformedHtml={transformedHtml}
-              summaries={summaries}
-              templateTitle={templateTitle}
               onDownload={handleDownload}
               onCopy={handleCopy}
             />
