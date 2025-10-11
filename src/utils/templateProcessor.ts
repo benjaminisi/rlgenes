@@ -343,21 +343,22 @@ export function transformTemplate(
 
   // Filter out SNP subsections based on showAllSubsections parameter
   if (!showAllSubsections) {
-    // Original behavior: filter out subsections where all RS IDs are Data Missing or Wild
+    // Only include subsections that have at least one Homozygous or Heterozygous RS ID
     const listItems = doc.querySelectorAll('li.c1.li-bullet-0, li[class*="li-bullet"]');
     listItems.forEach(li => {
       const text = li.textContent || '';
       const rsIds = extractRSIds(text);
 
       if (rsIds.length > 0) {
-        // Check if all RS IDs are either Data Missing or Wild
-        const allNonVariant = rsIds.every(rsId => {
+        // Check if there's at least one Homozygous or Heterozygous RS ID
+        const hasVariant = rsIds.some(rsId => {
           const result = snpResults.get(rsId.toUpperCase());
-          return result?.zygosity === 'Wild' || result?.zygosity === 'Data Missing';
+          return result?.zygosity === 'Homozygous' || result?.zygosity === 'Heterozygous';
         });
 
-        // Remove the subsection if all are non-variant
-        if (allNonVariant) {
+        // Remove the subsection if it has NO Homozygous or Heterozygous variants
+        // (only combinations of Wild, Data Missing, and Reference Missing)
+        if (!hasVariant) {
           (li as HTMLElement).style.display = 'none';
         }
       }
@@ -373,37 +374,27 @@ export function transformTemplate(
 
     // Only bold if this list item contains RS IDs (is a SNP subsection)
     if (rsIds.length > 0) {
-      // Get the first text node or find the first line
-      const firstChild = li.firstChild;
-      if (firstChild && firstChild.nodeType === Node.TEXT_NODE) {
-        const textContent = firstChild.textContent || '';
-        // Find the first line break or take the whole text if no break
-        const firstLineEnd = textContent.indexOf('\n');
-        const firstLine = firstLineEnd !== -1 ? textContent.substring(0, firstLineEnd) : textContent;
+      // Bold the first line, Gene names, and RS IDs
+      const innerHTML = li.innerHTML;
 
-        if (firstLine.trim()) {
-          // Wrap the first line in a strong tag
-          const boldSpan = doc.createElement('strong');
-          boldSpan.textContent = firstLine;
+      // First, bold any Gene names that appear at the start (e.g., "MTHFR", "COMT", etc.)
+      // Look for uppercase gene names (2-10 letters) at the beginning or after whitespace
+      let modifiedHTML = innerHTML.replace(/^(\s*)([A-Z]{2,10})(\s*[-–—:])/g, '$1<strong>$2</strong>$3');
 
-          // Replace the first text node
-          if (firstLineEnd !== -1) {
-            const remainingText = doc.createTextNode(textContent.substring(firstLineEnd));
-            li.insertBefore(boldSpan, firstChild);
-            li.replaceChild(remainingText, firstChild);
-          } else {
-            li.replaceChild(boldSpan, firstChild);
-          }
-        }
-      } else {
-        // If the first child is not a text node, wrap all direct text content in bold
-        // This handles cases where the content might already have some HTML
-        const innerHTML = li.innerHTML;
-        const firstLineMatch = innerHTML.match(/^([^<\n]+)/);
-        if (firstLineMatch) {
-          li.innerHTML = innerHTML.replace(/^([^<\n]+)/, '<strong>$1</strong>');
+      // Bold RS IDs (RS followed by digits)
+      modifiedHTML = modifiedHTML.replace(/\b(RS\d+)\b/gi, '<strong>$1</strong>');
+
+      // Bold the first line up to the first newline or period followed by space
+      const firstLineMatch = modifiedHTML.match(/^([^.\n]+[.]?\s*)/);
+      if (firstLineMatch && !modifiedHTML.startsWith('<strong>')) {
+        const firstLine = firstLineMatch[1];
+        // Only wrap if not already wrapped in strong tags
+        if (!firstLine.includes('<strong>')) {
+          modifiedHTML = modifiedHTML.replace(/^([^.\n]+[.]?\s*)/, '<strong>$1</strong>');
         }
       }
+
+      li.innerHTML = modifiedHTML;
     }
   });
 

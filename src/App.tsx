@@ -33,8 +33,14 @@ function App() {
 
   // Load allele reference data on mount
   useEffect(() => {
-    fetch('/genes_rs_effect.json')
-      .then(res => res.json())
+    // Use relative path that works with Vite's base configuration
+    fetch(`${import.meta.env.BASE_URL}genes_rs_effect.json`)
+      .then(res => {
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.json();
+      })
       .then(data => {
         // Transform the data structure to match AlleleData interface
         const transformedData = data.map((item: { 'RS ID': string; 'Effect Allele': string; 'Gene': string }) => ({
