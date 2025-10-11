@@ -26,7 +26,7 @@ export interface FileFormatInfo {
   skipLines: number;
 }
 
-export type Zygosity = 'Homozygous' | 'Heterozygous' | 'Wild' | 'Data Missing';
+export type Zygosity = 'Homozygous' | 'Heterozygous' | 'Wild' | 'Data Missing' | 'Reference Missing';
 
 export interface SNPResult {
   rsId: string;
@@ -42,9 +42,11 @@ export interface SectionSummary {
   homozygousCount: number;
   wildCount: number;
   missingCount: number;
+  referenceMissingCount: number;
   totalCount: number;
   heterozygousPercent: number;
   homozygousPercent: number;
   wildPercent: number;
   missingPercent: number;
+  referenceMissingPercent: number;
 }

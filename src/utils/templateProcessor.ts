@@ -34,6 +34,13 @@ export function extractRSIds(content: string): string[] {
 
 /**
  * Determines zygosity based on alleles and allele reference data
+ *
+ * Definitions:
+ * - Homozygous: Both alleles match the effect allele
+ * - Heterozygous: Only one allele matches the effect allele
+ * - Wild: Neither allele matches the effect allele
+ * - Data Missing: One or both alleles are missing or invalid
+ * - Reference Missing: No effect allele available to compare against
  */
 export function determineZygosity(
   allele1: string,
@@ -53,21 +60,33 @@ export function determineZygosity(
   // Find reference data for this RS ID
   const reference = alleleReference.find(ref => ref.rsId.toUpperCase() === rsId.toUpperCase());
 
-  // Check if wild type (neither allele matches the problem allele)
-  if (reference) {
-    const problemAllele = reference.problemAllele.toUpperCase();
-    // Wild type: neither allele is the problem allele
-    if (normalizedAllele1 !== problemAllele && normalizedAllele2 !== problemAllele) {
+  // If we have a valid effect allele, use it to determine zygosity
+  if (reference?.problemAllele && reference.problemAllele.trim() !== '') {
+    const effectAllele = reference.problemAllele.toUpperCase();
+
+    const allele1MatchesEffect = normalizedAllele1 === effectAllele;
+    const allele2MatchesEffect = normalizedAllele2 === effectAllele;
+
+    // Homozygous: Both alleles match the effect allele
+    if (allele1MatchesEffect && allele2MatchesEffect) {
+      return 'Homozygous';
+    }
+    // Heterozygous: Only one allele matches the effect allele
+    else if (allele1MatchesEffect || allele2MatchesEffect) {
+      return 'Heterozygous';
+    }
+    // Wild type: Neither allele matches the effect allele
+    else {
       return 'Wild';
     }
   }
 
-  // Determine homo/heterozygous based on alleles
-  if (normalizedAllele1 === normalizedAllele2) {
-    return 'Homozygous';
-  } else {
-    return 'Heterozygous';
-  }
+  // No valid effect allele - cannot determine Homozygous/Heterozygous/Wild
+  // This happens when:
+  // - Effect allele is empty string
+  // - Effect allele is undefined
+  // - RS ID is not in the reference at all
+  return 'Reference Missing';
 }
 
 /**
@@ -126,7 +145,8 @@ export function transformTemplate(
   genomeFilename?: string,
   genomeDate?: string,
   grandSummaryHTML?: string,
-  showDetailedAnnotations: boolean = false
+  showDetailedAnnotations: boolean = false,
+  showAllSubsections: boolean = false
 ): string {
   const parser = new DOMParser();
   const doc = parser.parseFromString(htmlContent, 'text/html');
@@ -267,11 +287,25 @@ export function transformTemplate(
 
         // Build detailed annotation string if enabled
         let detailedInfo = '';
-        if (showDetailedAnnotations && (zygosity === 'Homozygous' || zygosity === 'Heterozygous')) {
+        if (showDetailedAnnotations) {
           const parts: string[] = [];
-          if (alleles) parts.push(`Alleles: ${alleles}`);
-          if (effectAllele) parts.push(`Effect: ${effectAllele}`);
-          if (gene) parts.push(`Gene: ${gene}`);
+
+          // For Homozygous, Heterozygous, and Wild: show alleles, effect allele, and gene
+          if (zygosity === 'Homozygous' || zygosity === 'Heterozygous' || zygosity === 'Wild') {
+            if (alleles) parts.push(`Alleles: ${alleles}`);
+            if (effectAllele) parts.push(`Effect: ${effectAllele}`);
+            if (gene) parts.push(`Gene: ${gene}`);
+          }
+          // For Reference Missing: show genome alleles (but no effect allele since it's missing)
+          else if (zygosity === 'Reference Missing') {
+            if (alleles) parts.push(`Alleles: ${alleles}`);
+          }
+          // For Data Missing: show effect allele and gene (but no alleles since data is missing)
+          else if (zygosity === 'Data Missing') {
+            if (effectAllele) parts.push(`Effect: ${effectAllele}`);
+            if (gene) parts.push(`Gene: ${gene}`);
+          }
+
           if (parts.length > 0) {
             detailedInfo = ` <span style="font-size: 0.85em; color: #666;">(${parts.join(', ')})</span>`;
           }
@@ -284,9 +318,11 @@ export function transformTemplate(
           // Darker yellow text (#b8860b - dark goldenrod) with outline cloud icon for Heterozygous
           return `${match} <span style="color: #b8860b; font-weight: normal;">☁ Heterozygous</span>${detailedInfo}`;
         } else if (zygosity === 'Wild') {
-          return `${match} <span style="color: black;">Wild</span>`;
+          return `${match} <span style="color: black;">Wild</span>${detailedInfo}`;
         } else if (zygosity === 'Data Missing') {
-          return `<span style="color: grey;">${match} [Data Missing]</span>`;
+          return `<span style="color: grey;">${match} [Data Missing]</span>${detailedInfo}`;
+        } else if (zygosity === 'Reference Missing') {
+          return `<span style="color: grey;">${match} [Reference Missing]</span>${detailedInfo}`;
         }
 
         return match;
@@ -305,25 +341,115 @@ export function transformTemplate(
     node.parentNode?.replaceChild(span, node);
   }
 
-  // Filter out SNP subsections where all RS IDs are Data Missing or Wild (always filtered)
-  const listItems = doc.querySelectorAll('li.c1.li-bullet-0, li[class*="li-bullet"]');
-  listItems.forEach(li => {
+  // Filter out SNP subsections based on showAllSubsections parameter
+  if (!showAllSubsections) {
+    // Original behavior: filter out subsections where all RS IDs are Data Missing or Wild
+    const listItems = doc.querySelectorAll('li.c1.li-bullet-0, li[class*="li-bullet"]');
+    listItems.forEach(li => {
+      const text = li.textContent || '';
+      const rsIds = extractRSIds(text);
+
+      if (rsIds.length > 0) {
+        // Check if all RS IDs are either Data Missing or Wild
+        const allNonVariant = rsIds.every(rsId => {
+          const result = snpResults.get(rsId.toUpperCase());
+          return result?.zygosity === 'Wild' || result?.zygosity === 'Data Missing';
+        });
+
+        // Remove the subsection if all are non-variant
+        if (allNonVariant) {
+          (li as HTMLElement).style.display = 'none';
+        }
+      }
+    });
+  }
+  // If showAllSubsections is true, all subsections are shown with their RS IDs already annotated
+
+  // Bold the entire first line of every SNP subsection (list items with RS IDs)
+  const allListItems = doc.querySelectorAll('li.c1.li-bullet-0, li[class*="li-bullet"]');
+  allListItems.forEach(li => {
     const text = li.textContent || '';
     const rsIds = extractRSIds(text);
 
+    // Only bold if this list item contains RS IDs (is a SNP subsection)
     if (rsIds.length > 0) {
-      // Check if all RS IDs are either Data Missing or Wild
-      const allNonVariant = rsIds.every(rsId => {
-        const result = snpResults.get(rsId.toUpperCase());
-        return result?.zygosity === 'Wild' || result?.zygosity === 'Data Missing';
-      });
+      // Get the first text node or find the first line
+      const firstChild = li.firstChild;
+      if (firstChild && firstChild.nodeType === Node.TEXT_NODE) {
+        const textContent = firstChild.textContent || '';
+        // Find the first line break or take the whole text if no break
+        const firstLineEnd = textContent.indexOf('\n');
+        const firstLine = firstLineEnd !== -1 ? textContent.substring(0, firstLineEnd) : textContent;
 
-      // Remove the subsection if all are non-variant
-      if (allNonVariant) {
-        (li as HTMLElement).style.display = 'none';
+        if (firstLine.trim()) {
+          // Wrap the first line in a strong tag
+          const boldSpan = doc.createElement('strong');
+          boldSpan.textContent = firstLine;
+
+          // Replace the first text node
+          if (firstLineEnd !== -1) {
+            const remainingText = doc.createTextNode(textContent.substring(firstLineEnd));
+            li.insertBefore(boldSpan, firstChild);
+            li.replaceChild(remainingText, firstChild);
+          } else {
+            li.replaceChild(boldSpan, firstChild);
+          }
+        }
+      } else {
+        // If the first child is not a text node, wrap all direct text content in bold
+        // This handles cases where the content might already have some HTML
+        const innerHTML = li.innerHTML;
+        const firstLineMatch = innerHTML.match(/^([^<\n]+)/);
+        if (firstLineMatch) {
+          li.innerHTML = innerHTML.replace(/^([^<\n]+)/, '<strong>$1</strong>');
+        }
       }
     }
   });
+
+  // Format special text patterns: "SNPs:" (bold), "Follow-up Labs:", "Recommended Labs:" and "Recommended Actions:" (italic)
+  // This needs to be done after RS ID replacements
+  const allTextNodes = doc.createTreeWalker(doc.body, NodeFilter.SHOW_TEXT, null);
+  const textNodesToFormat: Array<{ node: Node; newHTML: string }> = [];
+
+  let textNode = allTextNodes.nextNode();
+  while (textNode) {
+    let text = textNode.textContent || '';
+    let modified = false;
+
+    // Make "SNPs:" bold (case-insensitive)
+    if (/\bSNPs:\s*/i.test(text)) {
+      text = text.replace(/(\bSNPs:\s*)/gi, '<strong>$1</strong>');
+      modified = true;
+    }
+
+    // Make "Follow-up Labs:", "Recommended Labs:" and "Recommended Actions:" italic (case-insensitive)
+    if (/\bFollow-up\s+Labs:\s*/i.test(text)) {
+      text = text.replace(/(\bFollow-up\s+Labs:\s*)/gi, '<em>$1</em>');
+      modified = true;
+    }
+    if (/\bRecommended\s+Labs:\s*/i.test(text)) {
+      text = text.replace(/(\bRecommended\s+Labs:\s*)/gi, '<em>$1</em>');
+      modified = true;
+    }
+    if (/\bRecommended\s+Actions:\s*/i.test(text)) {
+      text = text.replace(/(\bRecommended\s+Actions:\s*)/gi, '<em>$1</em>');
+      modified = true;
+    }
+
+    if (modified) {
+      textNodesToFormat.push({ node: textNode, newHTML: text });
+    }
+
+    textNode = allTextNodes.nextNode();
+  }
+
+  // Apply text formatting
+  for (const { node, newHTML } of textNodesToFormat) {
+    const span = doc.createElement('span');
+    span.innerHTML = newHTML;
+    node.parentNode?.replaceChild(span, node);
+  }
 
   return doc.body.innerHTML;
 }
@@ -372,6 +498,7 @@ export function calculateSectionSummaries(
     let homozygousCount = 0;
     let wildCount = 0;
     let missingCount = 0;
+    let referenceMissingCount = 0;
 
     rsIds.forEach(rsId => {
       const result = snpResults.get(rsId.toUpperCase());
@@ -389,6 +516,9 @@ export function calculateSectionSummaries(
           case 'Data Missing':
             missingCount++;
             break;
+          case 'Reference Missing':
+            referenceMissingCount++;
+            break;
         }
       }
     });
@@ -401,11 +531,13 @@ export function calculateSectionSummaries(
       homozygousCount,
       wildCount,
       missingCount,
+      referenceMissingCount,
       totalCount,
       heterozygousPercent: (heterozygousCount / totalCount) * 100,
       homozygousPercent: (homozygousCount / totalCount) * 100,
       wildPercent: (wildCount / totalCount) * 100,
-      missingPercent: (missingCount / totalCount) * 100
+      missingPercent: (missingCount / totalCount) * 100,
+      referenceMissingPercent: (referenceMissingCount / totalCount) * 100
     });
   });
 
@@ -436,7 +568,8 @@ export function insertSummaries(
         while (currentElement && currentElement.tagName !== 'H3') {
           const text = currentElement.textContent || '';
 
-          if (text.includes('Summary Placeholder') || text.includes('Summary Block')) {
+          // Case-insensitive check for Summary Placeholder or Summary Block
+          if (text.toLowerCase().includes('summary placeholder') || text.toLowerCase().includes('summary block')) {
             // Create summary HTML
             const summaryHTML = `
               <div style="background-color: #f0f0f0; padding: 15px; margin: 10px 0; border-radius: 5px;">
@@ -483,7 +616,7 @@ export function sanitizeHTML(html: string): string {
 /**
  * Generates Grand Summary HTML table with section links
  */
-export function generateGrandSummaryHTML(summaries: SectionSummary[]): string {
+export function generateGrandSummaryHTML(summaries: SectionSummary[], showDetailedAnnotations: boolean = false): string {
   // Sort summaries by homozygous percentage (highest first)
   const sortedSummaries = [...summaries].sort((a, b) => b.homozygousPercent - a.homozygousPercent);
 
@@ -495,8 +628,9 @@ export function generateGrandSummaryHTML(summaries: SectionSummary[]): string {
       heterozygousCount: acc.heterozygousCount + summary.heterozygousCount,
       wildCount: acc.wildCount + summary.wildCount,
       missingCount: acc.missingCount + summary.missingCount,
+      referenceMissingCount: acc.referenceMissingCount + summary.referenceMissingCount,
     }),
-    { totalSNPs: 0, homozygousCount: 0, heterozygousCount: 0, wildCount: 0, missingCount: 0 }
+    { totalSNPs: 0, homozygousCount: 0, heterozygousCount: 0, wildCount: 0, missingCount: 0, referenceMissingCount: 0 }
   );
 
   const snpsWithData = grandTotals.totalSNPs - grandTotals.missingCount;
@@ -528,6 +662,11 @@ export function generateGrandSummaryHTML(summaries: SectionSummary[]): string {
         <td style="color: grey;">
           ${summary.missingCount} (${summary.missingPercent.toFixed(1)}%)
         </td>
+        ${showDetailedAnnotations ? `
+        <td style="color: orange;">
+          ${summary.referenceMissingCount} (${summary.referenceMissingPercent.toFixed(1)}%)
+        </td>
+        ` : ''}
       </tr>
     `;
   }).join('');
@@ -550,6 +689,7 @@ export function generateGrandSummaryHTML(summaries: SectionSummary[]): string {
             <th style="padding: 12px; text-align: left; border-bottom: 2px solid #e5e7eb; font-weight: 600;">Heterozygous</th>
             <th style="padding: 12px; text-align: left; border-bottom: 2px solid #e5e7eb; font-weight: 600;">Wild Type</th>
             <th style="padding: 12px; text-align: left; border-bottom: 2px solid #e5e7eb; font-weight: 600;">Data Missing</th>
+            ${showDetailedAnnotations ? '<th style="padding: 12px; text-align: left; border-bottom: 2px solid #e5e7eb; font-weight: 600;">Reference Missing</th>' : ''}
           </tr>
         </thead>
         <tbody>
