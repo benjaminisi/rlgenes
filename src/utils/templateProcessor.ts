@@ -365,7 +365,49 @@ export function transformTemplate(
   }
   // If showAllSubsections is true, all subsections are shown with their RS IDs already annotated
 
-  // Format special text patterns: "SNPs:" (bold), "Recommended Labs:" and "Recommended Actions:" (italic)
+  // Bold the entire first line of every SNP subsection (list items with RS IDs)
+  const allListItems = doc.querySelectorAll('li.c1.li-bullet-0, li[class*="li-bullet"]');
+  allListItems.forEach(li => {
+    const text = li.textContent || '';
+    const rsIds = extractRSIds(text);
+
+    // Only bold if this list item contains RS IDs (is a SNP subsection)
+    if (rsIds.length > 0) {
+      // Get the first text node or find the first line
+      const firstChild = li.firstChild;
+      if (firstChild && firstChild.nodeType === Node.TEXT_NODE) {
+        const textContent = firstChild.textContent || '';
+        // Find the first line break or take the whole text if no break
+        const firstLineEnd = textContent.indexOf('\n');
+        const firstLine = firstLineEnd !== -1 ? textContent.substring(0, firstLineEnd) : textContent;
+
+        if (firstLine.trim()) {
+          // Wrap the first line in a strong tag
+          const boldSpan = doc.createElement('strong');
+          boldSpan.textContent = firstLine;
+
+          // Replace the first text node
+          if (firstLineEnd !== -1) {
+            const remainingText = doc.createTextNode(textContent.substring(firstLineEnd));
+            li.insertBefore(boldSpan, firstChild);
+            li.replaceChild(remainingText, firstChild);
+          } else {
+            li.replaceChild(boldSpan, firstChild);
+          }
+        }
+      } else {
+        // If the first child is not a text node, wrap all direct text content in bold
+        // This handles cases where the content might already have some HTML
+        const innerHTML = li.innerHTML;
+        const firstLineMatch = innerHTML.match(/^([^<\n]+)/);
+        if (firstLineMatch) {
+          li.innerHTML = innerHTML.replace(/^([^<\n]+)/, '<strong>$1</strong>');
+        }
+      }
+    }
+  });
+
+  // Format special text patterns: "SNPs:" (bold), "Follow-up Labs:", "Recommended Labs:" and "Recommended Actions:" (italic)
   // This needs to be done after RS ID replacements
   const allTextNodes = doc.createTreeWalker(doc.body, NodeFilter.SHOW_TEXT, null);
   const textNodesToFormat: Array<{ node: Node; newHTML: string }> = [];
@@ -381,7 +423,11 @@ export function transformTemplate(
       modified = true;
     }
 
-    // Make "Recommended Labs:" and "Recommended Actions:" italic (case-insensitive)
+    // Make "Follow-up Labs:", "Recommended Labs:" and "Recommended Actions:" italic (case-insensitive)
+    if (/\bFollow-up\s+Labs:\s*/i.test(text)) {
+      text = text.replace(/(\bFollow-up\s+Labs:\s*)/gi, '<em>$1</em>');
+      modified = true;
+    }
     if (/\bRecommended\s+Labs:\s*/i.test(text)) {
       text = text.replace(/(\bRecommended\s+Labs:\s*)/gi, '<em>$1</em>');
       modified = true;
