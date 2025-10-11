@@ -147,14 +147,14 @@ describe('determineZygosity', () => {
   });
 
   describe('Unknown RS ID handling', () => {
-    it('should return Homozygous for matching alleles when RS ID not in reference', () => {
+    it('should return Reference Missing for matching alleles when RS ID not in reference', () => {
       const result = determineZygosity('A', 'A', 'RS999999', alleleReference);
-      expect(result).toBe('Homozygous');
+      expect(result).toBe('Reference Missing');
     });
 
-    it('should return Heterozygous for different alleles when RS ID not in reference', () => {
+    it('should return Reference Missing for different alleles when RS ID not in reference', () => {
       const result = determineZygosity('A', 'G', 'RS999999', alleleReference);
-      expect(result).toBe('Heterozygous');
+      expect(result).toBe('Reference Missing');
     });
   });
 
@@ -235,12 +235,12 @@ describe('getSNPResults', () => {
     expect(results.has('RS1050450')).toBe(true);
   });
 
-  it('should correctly determine Wild type', () => {
+  it('should correctly determine Reference Missing when RS ID not in reference', () => {
     const rsIds = ['RS713041'];
     const results = getSNPResults(rsIds, geneticData, alleleReference);
 
-    // RS713041 has G/G but no reference data, so it should be Homozygous
-    expect(results.get('RS713041')?.zygosity).toBe('Homozygous');
+    // RS713041 has G/G but no reference data, so it should be Reference Missing
+    expect(results.get('RS713041')?.zygosity).toBe('Reference Missing');
   });
 });
 

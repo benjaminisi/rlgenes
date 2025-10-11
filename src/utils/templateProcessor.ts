@@ -34,6 +34,13 @@ export function extractRSIds(content: string): string[] {
 
 /**
  * Determines zygosity based on alleles and allele reference data
+ *
+ * Definitions:
+ * - Homozygous: Both alleles match the effect allele
+ * - Heterozygous: Only one allele matches the effect allele
+ * - Wild: Neither allele matches the effect allele
+ * - Data Missing: One or both alleles are missing or invalid
+ * - Reference Missing: No effect allele available to compare against
  */
 export function determineZygosity(
   allele1: string,
@@ -53,21 +60,33 @@ export function determineZygosity(
   // Find reference data for this RS ID
   const reference = alleleReference.find(ref => ref.rsId.toUpperCase() === rsId.toUpperCase());
 
-  // Check if wild type (neither allele matches the problem allele)
-  if (reference) {
-    const problemAllele = reference.problemAllele.toUpperCase();
-    // Wild type: neither allele is the problem allele
-    if (normalizedAllele1 !== problemAllele && normalizedAllele2 !== problemAllele) {
+  // If we have a valid effect allele, use it to determine zygosity
+  if (reference?.problemAllele && reference.problemAllele.trim() !== '') {
+    const effectAllele = reference.problemAllele.toUpperCase();
+
+    const allele1MatchesEffect = normalizedAllele1 === effectAllele;
+    const allele2MatchesEffect = normalizedAllele2 === effectAllele;
+
+    // Homozygous: Both alleles match the effect allele
+    if (allele1MatchesEffect && allele2MatchesEffect) {
+      return 'Homozygous';
+    }
+    // Heterozygous: Only one allele matches the effect allele
+    else if (allele1MatchesEffect || allele2MatchesEffect) {
+      return 'Heterozygous';
+    }
+    // Wild type: Neither allele matches the effect allele
+    else {
       return 'Wild';
     }
   }
 
-  // Determine homo/heterozygous based on alleles
-  if (normalizedAllele1 === normalizedAllele2) {
-    return 'Homozygous';
-  } else {
-    return 'Heterozygous';
-  }
+  // No valid effect allele - cannot determine Homozygous/Heterozygous/Wild
+  // This happens when:
+  // - Effect allele is empty string
+  // - Effect allele is undefined
+  // - RS ID is not in the reference at all
+  return 'Reference Missing';
 }
 
 /**
@@ -287,6 +306,8 @@ export function transformTemplate(
           return `${match} <span style="color: black;">Wild</span>`;
         } else if (zygosity === 'Data Missing') {
           return `<span style="color: grey;">${match} [Data Missing]</span>`;
+        } else if (zygosity === 'Reference Missing') {
+          return `<span style="color: grey;">${match} [Reference Missing]</span>`;
         }
 
         return match;
@@ -372,6 +393,7 @@ export function calculateSectionSummaries(
     let homozygousCount = 0;
     let wildCount = 0;
     let missingCount = 0;
+    let referenceMissingCount = 0;
 
     rsIds.forEach(rsId => {
       const result = snpResults.get(rsId.toUpperCase());
@@ -389,6 +411,9 @@ export function calculateSectionSummaries(
           case 'Data Missing':
             missingCount++;
             break;
+          case 'Reference Missing':
+            referenceMissingCount++;
+            break;
         }
       }
     });
@@ -401,11 +426,13 @@ export function calculateSectionSummaries(
       homozygousCount,
       wildCount,
       missingCount,
+      referenceMissingCount,
       totalCount,
       heterozygousPercent: (heterozygousCount / totalCount) * 100,
       homozygousPercent: (homozygousCount / totalCount) * 100,
       wildPercent: (wildCount / totalCount) * 100,
-      missingPercent: (missingCount / totalCount) * 100
+      missingPercent: (missingCount / totalCount) * 100,
+      referenceMissingPercent: (referenceMissingCount / totalCount) * 100
     });
   });
 

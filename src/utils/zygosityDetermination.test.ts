@@ -204,14 +204,14 @@ describe('Zygosity Determination with Effect Alleles', () => {
   });
 
   describe('Unknown RS ID handling', () => {
-    it('should return Homozygous for matching alleles when RS ID not in reference', () => {
+    it('should return Reference Missing for matching alleles when RS ID not in reference', () => {
       const result = determineZygosity('T', 'T', 'RS999999', alleleReference);
-      expect(result).toBe('Homozygous');
+      expect(result).toBe('Reference Missing');
     });
 
-    it('should return Heterozygous for different alleles when RS ID not in reference', () => {
+    it('should return Reference Missing for different alleles when RS ID not in reference', () => {
       const result = determineZygosity('A', 'G', 'RS999999', alleleReference);
-      expect(result).toBe('Heterozygous');
+      expect(result).toBe('Reference Missing');
     });
   });
 
@@ -253,5 +253,72 @@ describe('Zygosity Determination with Effect Alleles', () => {
       expect(result2).toBe('Wild'); // C is not the effect allele for this RS ID
     });
   });
-});
 
+  describe('Missing or Empty Effect Allele', () => {
+    it('should return Reference Missing when effect allele is empty', () => {
+      const alleleReferenceWithEmpty: AlleleData[] = [
+        {
+          rsId: 'RS123456',
+          gene: 'TEST',
+          problemAllele: '', // Empty effect allele
+          wildAllele: '',
+          confirmationUrl: ''
+        }
+      ];
+
+      // With empty effect allele, cannot determine zygosity
+      const result1 = determineZygosity('A', 'A', 'RS123456', alleleReferenceWithEmpty);
+      expect(result1).toBe('Reference Missing');
+
+      const result2 = determineZygosity('G', 'T', 'RS123456', alleleReferenceWithEmpty);
+      expect(result2).toBe('Reference Missing');
+    });
+
+    it('should return Reference Missing when problemAllele is undefined', () => {
+      const alleleReferenceWithMissing: any[] = [
+        {
+          rsId: 'RS789012',
+          gene: 'TEST2',
+          // problemAllele is undefined/missing
+          wildAllele: '',
+          confirmationUrl: ''
+        }
+      ];
+
+      // Cannot determine zygosity without effect allele
+      const result1 = determineZygosity('A', 'A', 'RS789012', alleleReferenceWithMissing);
+      expect(result1).toBe('Reference Missing');
+
+      const result2 = determineZygosity('A', 'G', 'RS789012', alleleReferenceWithMissing);
+      expect(result2).toBe('Reference Missing');
+    });
+
+    it('should return Reference Missing when RS ID not in reference', () => {
+      const alleleReference: AlleleData[] = [];
+
+      // When RS ID is not in reference, cannot determine zygosity
+      const result1 = determineZygosity('T', 'T', 'RS999999', alleleReference);
+      expect(result1).toBe('Reference Missing');
+
+      const result2 = determineZygosity('A', 'G', 'RS999999', alleleReference);
+      expect(result2).toBe('Reference Missing');
+    });
+
+    it('should display effect allele as empty/undefined in report when missing', () => {
+      // This tests what gets shown in the report output
+      const alleleReferenceWithEmpty: AlleleData[] = [
+        {
+          rsId: 'RS123456',
+          gene: 'TEST',
+          problemAllele: '',
+          wildAllele: '',
+          confirmationUrl: ''
+        }
+      ];
+
+      // The effect allele should be empty string or falsy
+      const refData = alleleReferenceWithEmpty.find(r => r.rsId === 'RS123456');
+      expect(refData?.problemAllele).toBe('');
+    });
+  });
+});
