@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { sl202601html } from './content/sl/sl202601html';
 import './App.css';
 import { FileUpload } from './components/FileUpload';
 import { TemplateInput } from './components/TemplateInput';
@@ -6,14 +7,14 @@ import { ReportOutput } from './components/ReportOutput';
 import { Legend } from './components/Legend';
 import { parseGeneticDataFile } from './utils/geneticDataParser';
 import {
-  extractRSIds,
-  getSNPResults,
-  transformTemplate,
-  calculateSectionSummaries,
-  insertSummaries,
-  sanitizeHTML,
-  generateGrandSummaryHTML,
-  extractTemplateTitle
+    extractRSIdsWithRiskAlleles,
+    getSNPResults,
+    transformTemplate,
+    calculateSectionSummaries,
+    insertSummaries,
+    sanitizeHTML,
+    generateGrandSummaryHTML,
+    extractTemplateTitle,
 } from './utils/templateProcessor';
 import type { GeneticData, AlleleData } from './types';
 
@@ -28,8 +29,9 @@ function App() {
   const [isProcessing, setIsProcessing] = useState<boolean>(false);
   const [error, setError] = useState<string>('');
   const [showLegend, setShowLegend] = useState<boolean>(true);
-  const [showDetailedAnnotations, setShowDetailedAnnotations] = useState<boolean>(false);
-  const [showAllSubsections, setShowAllSubsections] = useState<boolean>(false);
+  const [showDetailedAnnotations, setShowDetailedAnnotations] = useState<boolean>(true);
+  const [showAllSubsections, setShowAllSubsections] = useState<boolean>(true);
+  const [hasCannedTemplate, setHasCannedTemplate] = useState<boolean>(false);
 
   // Load allele reference data on mount
   useEffect(() => {
@@ -128,11 +130,11 @@ function App() {
 
     try {
       // Extract RS IDs from template
-      const rsIds = extractRSIds(templateContent);
+      const {rsIds, rsIdToRiskAllele: riskAlleleOverrides} = extractRSIdsWithRiskAlleles(templateContent);
       console.log(`Found ${rsIds.length} unique RS IDs in template`);
 
       // Get SNP results
-      const snpResults = getSNPResults(rsIds, geneticData, alleleReference);
+      const snpResults = getSNPResults(rsIds, geneticData, riskAlleleOverrides, alleleReference);
 
       // Calculate summaries
       const sectionSummaries = calculateSectionSummaries(templateContent, snpResults);
@@ -248,6 +250,15 @@ function App() {
   // Determine if Generate button should be enabled
   const canGenerate = geneticData && Object.keys(geneticData).length > 0 && templateContent && !isProcessing;
 
+    useEffect(() => {
+        const params = new URLSearchParams(window.location.search);
+
+        if (params.has("sl202601")) {
+            setHasCannedTemplate(true);
+            handleTemplateLoad(sl202601html);
+        }
+    }, []);
+
   return (
     <div className="app">
       <header>
@@ -280,14 +291,19 @@ function App() {
       </div>
 
       <main>
-        <section className="controls">
-          <div className="control-panel">
-            <h2>Step 1: Upload Template</h2>
-            <TemplateInput
-              onTemplateLoad={handleTemplateLoad}
-              currentTemplate={templateContent}
-            />
-          </div>
+          <section className="controls">
+              {hasCannedTemplate ?
+                  <div>
+                  </div>
+                  :
+                  <div className="control-panel">
+                      <h2>Step 1: Upload Template</h2>
+                      <TemplateInput
+                          onTemplateLoad={handleTemplateLoad}
+                          currentTemplate={templateContent}
+                      />
+                  </div>
+              }
 
           <div className="control-panel">
             <h2>Step 2: Upload Genetic Data</h2>
