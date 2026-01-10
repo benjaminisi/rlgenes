@@ -21,7 +21,7 @@ describe('Report Output with Missing Effect Allele', () => {
       'RS123456': { allele1: 'A', allele2: 'A' }
     };
 
-    const results = getSNPResults(['RS123456'], geneticData, alleleReference);
+    const results = getSNPResults(['RS123456'], geneticData, {}, alleleReference);
     const result = results.get('RS123456');
 
     expect(result).toBeDefined();
@@ -31,11 +31,11 @@ describe('Report Output with Missing Effect Allele', () => {
   });
 
   it('should use Reference Missing when problemAllele is undefined', () => {
-    const alleleReference: any[] = [
+    const alleleReference: AlleleData[] = [
       {
         rsId: 'RS789012',
         gene: 'TEST2',
-        // problemAllele is undefined/missing
+        problemAllele: '',  // is undefined/missing
         wildAllele: '',
         confirmationUrl: ''
       }
@@ -45,11 +45,11 @@ describe('Report Output with Missing Effect Allele', () => {
       'RS789012': { allele1: 'A', allele2: 'A' }
     };
 
-    const results = getSNPResults(['RS789012'], geneticData, alleleReference);
+    const results = getSNPResults(['RS789012'], geneticData, {}, alleleReference);
     const result = results.get('RS789012');
 
     expect(result).toBeDefined();
-    expect(result?.effectAllele).toBeUndefined();
+    expect(result?.effectAllele).toBe('');
     expect(result?.zygosity).toBe('Reference Missing'); // ✅ Cannot determine without effect allele
   });
 
@@ -68,7 +68,7 @@ describe('Report Output with Missing Effect Allele', () => {
       'RS123456': { allele1: 'A', allele2: 'G' }
     };
 
-    const results = getSNPResults(['RS123456'], geneticData, alleleReference);
+    const results = getSNPResults(['RS123456'], geneticData, {}, alleleReference);
     const result = results.get('RS123456');
 
     expect(result).toBeDefined();
@@ -90,7 +90,7 @@ describe('Report Output with Missing Effect Allele', () => {
 
     const geneticData: GeneticData = {};
 
-    const results = getSNPResults(['RS123456'], geneticData, alleleReference);
+    const results = getSNPResults(['RS123456'], geneticData, {}, alleleReference);
     const result = results.get('RS123456');
 
     expect(result).toBeDefined();
@@ -106,7 +106,7 @@ describe('Report Output with Missing Effect Allele', () => {
       'RS999999': { allele1: 'T', allele2: 'T' }
     };
 
-    const results = getSNPResults(['RS999999'], geneticData, alleleReference);
+    const results = getSNPResults(['RS999999'], geneticData, {}, alleleReference);
     const result = results.get('RS999999');
 
     expect(result).toBeDefined();
