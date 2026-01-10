@@ -65,107 +65,107 @@ describe('determineZygosity', () => {
 
   describe('Homozygous detection', () => {
     it('should return Homozygous when both alleles match and are the problem allele', () => {
-      const result = determineZygosity('C', 'C', 'RS4880', alleleReference);
+      const result = determineZygosity('C', 'C', 'RS4880', {}, alleleReference);
       expect(result).toBe('Homozygous');
     });
 
     it('should return Homozygous for different RS ID with problem allele', () => {
-      const result = determineZygosity('T', 'T', 'RS1050450', alleleReference);
+      const result = determineZygosity('T', 'T', 'RS1050450', {}, alleleReference);
       expect(result).toBe('Homozygous');
     });
 
     it('should return Homozygous for third RS ID with problem allele', () => {
-      const result = determineZygosity('A', 'A', 'RS713041', alleleReference);
+      const result = determineZygosity('A', 'A', 'RS713041', {}, alleleReference);
       expect(result).toBe('Homozygous');
     });
   });
 
   describe('Heterozygous detection', () => {
     it('should return Heterozygous when alleles differ and one is problem allele', () => {
-      const result = determineZygosity('T', 'C', 'RS4880', alleleReference);
+      const result = determineZygosity('T', 'C', 'RS4880', {}, alleleReference);
       expect(result).toBe('Heterozygous');
     });
 
     it('should return Heterozygous when alleles are reversed', () => {
-      const result = determineZygosity('C', 'T', 'RS4880', alleleReference);
+      const result = determineZygosity('C', 'T', 'RS4880', {}, alleleReference);
       expect(result).toBe('Heterozygous');
     });
 
     it('should return Heterozygous for RS1050450 with mixed alleles', () => {
-      const result = determineZygosity('C', 'T', 'RS1050450', alleleReference);
+      const result = determineZygosity('C', 'T', 'RS1050450', {}, alleleReference);
       expect(result).toBe('Heterozygous');
     });
 
     it('should return Heterozygous for RS713041 with mixed alleles', () => {
-      const result = determineZygosity('G', 'A', 'RS713041', alleleReference);
+      const result = determineZygosity('G', 'A', 'RS713041', {}, alleleReference);
       expect(result).toBe('Heterozygous');
     });
   });
 
   describe('Wild type detection', () => {
     it('should return Wild when neither allele is the problem allele', () => {
-      const result = determineZygosity('T', 'T', 'RS4880', alleleReference);
+      const result = determineZygosity('T', 'T', 'RS4880', {}, alleleReference);
       expect(result).toBe('Wild');
     });
 
     it('should return Wild for RS1050450 with wild alleles', () => {
-      const result = determineZygosity('C', 'C', 'RS1050450', alleleReference);
+      const result = determineZygosity('C', 'C', 'RS1050450', {}, alleleReference);
       expect(result).toBe('Wild');
     });
 
     it('should return Wild for RS713041 with wild alleles', () => {
-      const result = determineZygosity('G', 'G', 'RS713041', alleleReference);
+      const result = determineZygosity('G', 'G', 'RS713041', {}, alleleReference);
       expect(result).toBe('Wild');
     });
   });
 
   describe('Data Missing detection', () => {
     it('should return Data Missing when allele1 is missing', () => {
-      const result = determineZygosity('-', 'C', 'RS4880', alleleReference);
+      const result = determineZygosity('-', 'C', 'RS4880', {}, alleleReference);
       expect(result).toBe('Data Missing');
     });
 
     it('should return Data Missing when allele2 is missing', () => {
-      const result = determineZygosity('C', '-', 'RS4880', alleleReference);
+      const result = determineZygosity('C', '-', 'RS4880', {}, alleleReference);
       expect(result).toBe('Data Missing');
     });
 
     it('should return Data Missing when both alleles are missing', () => {
-      const result = determineZygosity('-', '-', 'RS4880', alleleReference);
+      const result = determineZygosity('-', '-', 'RS4880', {}, alleleReference);
       expect(result).toBe('Data Missing');
     });
 
     it('should return Data Missing when allele1 is empty string', () => {
-      const result = determineZygosity('', 'C', 'RS4880', alleleReference);
+      const result = determineZygosity('', 'C', 'RS4880', {}, alleleReference);
       expect(result).toBe('Data Missing');
     });
 
     it('should return Data Missing when allele2 is empty string', () => {
-      const result = determineZygosity('C', '', 'RS4880', alleleReference);
+      const result = determineZygosity('C', '', 'RS4880', {}, alleleReference);
       expect(result).toBe('Data Missing');
     });
   });
 
   describe('Unknown RS ID handling', () => {
     it('should return Reference Missing for matching alleles when RS ID not in reference', () => {
-      const result = determineZygosity('A', 'A', 'RS999999', alleleReference);
+      const result = determineZygosity('A', 'A', 'RS999999', {}, alleleReference);
       expect(result).toBe('Reference Missing');
     });
 
     it('should return Reference Missing for different alleles when RS ID not in reference', () => {
-      const result = determineZygosity('A', 'G', 'RS999999', alleleReference);
+      const result = determineZygosity('A', 'G', 'RS999999', {}, alleleReference);
       expect(result).toBe('Reference Missing');
     });
   });
 
   describe('Case sensitivity', () => {
     it('should handle lowercase alleles correctly', () => {
-      const result = determineZygosity('c', 'c', 'RS4880', alleleReference);
+      const result = determineZygosity('c', 'c', 'RS4880', {}, alleleReference);
       expect(result).toBe('Homozygous');
     });
 
     it('should handle mixed case RS IDs', () => {
-      const result = determineZygosity('C', 'C', 'rs4880', alleleReference);
+      const result = determineZygosity('C', 'C', 'rs4880', {}, alleleReference);
       expect(result).toBe('Homozygous');
     });
   });
@@ -195,7 +195,7 @@ describe('getSNPResults', () => {
 
   it('should get SNP results for multiple RS IDs', () => {
     const rsIds = ['RS4880', 'RS1050450'];
-    const results = getSNPResults(rsIds, geneticData, alleleReference);
+    const results = getSNPResults(rsIds, geneticData, {}, alleleReference);
 
     expect(results.size).toBe(2);
     expect(results.get('RS4880')).toEqual({
@@ -216,7 +216,7 @@ describe('getSNPResults', () => {
 
   it('should return Data Missing for RS IDs not in genetic data', () => {
     const rsIds = ['RS999999'];
-    const results = getSNPResults(rsIds, geneticData, alleleReference);
+    const results = getSNPResults(rsIds, geneticData, {}, alleleReference);
 
     expect(results.get('RS999999')).toEqual({
       rsId: 'RS999999',
@@ -229,7 +229,7 @@ describe('getSNPResults', () => {
 
   it('should handle mixed case RS IDs', () => {
     const rsIds = ['rs4880', 'RS1050450'];
-    const results = getSNPResults(rsIds, geneticData, alleleReference);
+    const results = getSNPResults(rsIds, geneticData, {}, alleleReference);
 
     expect(results.has('RS4880')).toBe(true);
     expect(results.has('RS1050450')).toBe(true);
@@ -237,7 +237,7 @@ describe('getSNPResults', () => {
 
   it('should correctly determine Reference Missing when RS ID not in reference', () => {
     const rsIds = ['RS713041'];
-    const results = getSNPResults(rsIds, geneticData, alleleReference);
+    const results = getSNPResults(rsIds, geneticData, {}, alleleReference);
 
     // RS713041 has G/G but no reference data, so it should be Reference Missing
     expect(results.get('RS713041')?.zygosity).toBe('Reference Missing');
