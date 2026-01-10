@@ -19,17 +19,60 @@ export function extractTemplateTitle(htmlContent: string): string {
   return 'Genetic Report'; // Default fallback
 }
 
+/** * Extracts all RS IDs from template content */ export function extractRSIds(content: string): string[] {
+    const rsIdPattern = /\bRS\d+\b/gi;
+    const matches = content.match(rsIdPattern);
+    if (!matches) return []; // Remove duplicates and convert to uppercase
+    return [...new Set(matches.map(id => id.toUpperCase()))];
+}
+
+export interface ExtractedRSData {
+    rsIds: string[];
+    rsIdToRiskAllele: Record<string, AlleleData>;
+}
+
 /**
- * Extracts all RS IDs from template content
+ * Extracts all RS IDs from template content and
+ * maps RS IDs to risk alleles when "(wild > risk)"
+ * appears on the same line.
  */
-export function extractRSIds(content: string): string[] {
-  const rsIdPattern = /\bRS\d+\b/gi;
-  const matches = content.match(rsIdPattern);
+export function extractRSIdsWithRiskAlleles(content: string): ExtractedRSData {
+    const rsIdPattern = /\bRS(\d+)\b/gi;
+    const allelePattern = /\(([ACTG])\s*&gt;\s*([ACTG])\)/i;
 
-  if (!matches) return [];
+    const rsIdSet = new Set<string>();
+    const rsIdToRiskAllele: Record<string, AlleleData> = {};
 
-  // Remove duplicates and convert to uppercase
-  return [...new Set(matches.map(id => id.toUpperCase()))];
+    const lines = content.split(/\r?\n/);
+
+    for (const line of lines) {
+        const alleleMatch = line.match(allelePattern);
+        const wildAllele = alleleMatch?.[1] ?? '-';
+        const riskAllele = alleleMatch?.[2] ?? '-';
+
+        let rsMatch: RegExpExecArray | null;
+        while ((rsMatch = rsIdPattern.exec(line)) !== null) {
+            const rsId = `RS${rsMatch[1]}`.toUpperCase();
+            rsIdSet.add(rsId);
+
+            if (riskAllele) {
+                rsIdToRiskAllele[rsId] = {
+                    rsId,
+                    wildAllele,
+                    problemAllele: riskAllele,
+                    confirmationUrl: 'http://example.comm',
+                    gene: undefined, // Gene associated with this RS ID
+                };
+            }
+        }
+
+        rsIdPattern.lastIndex = 0; // reset for next line
+    }
+
+    return {
+        rsIds: [...rsIdSet],
+        rsIdToRiskAllele
+    };
 }
 
 /**
@@ -46,6 +89,7 @@ export function determineZygosity(
   allele1: string,
   allele2: string,
   rsId: string,
+  riskAlleleOverrides: Record<string, AlleleData>,
   alleleReference: AlleleData[]
 ): Zygosity {
   // Check if data is missing
@@ -58,7 +102,7 @@ export function determineZygosity(
   const normalizedAllele2 = allele2.toUpperCase();
 
   // Find reference data for this RS ID
-  const reference = alleleReference.find(ref => ref.rsId.toUpperCase() === rsId.toUpperCase());
+  const reference = riskAlleleOverrides[rsId] || alleleReference.find(ref => ref.rsId.toUpperCase() === rsId.toUpperCase());
 
   // If we have a valid effect allele, use it to determine zygosity
   if (reference?.problemAllele && reference.problemAllele.trim() !== '') {
@@ -95,6 +139,7 @@ export function determineZygosity(
 export function getSNPResults(
   rsIds: string[],
   geneticData: GeneticData,
+  riskAlleleOverrides: Record<string, AlleleData>,
   alleleReference: AlleleData[]
 ): Map<string, SNPResult> {
   const results = new Map<string, SNPResult>();
@@ -102,8 +147,10 @@ export function getSNPResults(
   for (const rsId of rsIds) {
     const data = geneticData[rsId.toUpperCase()];
 
+    const overrideReference = riskAlleleOverrides[rsId];
     // Find reference data for this RS ID
-    const reference = alleleReference.find(ref => ref.rsId.toUpperCase() === rsId.toUpperCase());
+    const reference = overrideReference
+      || alleleReference.find(ref => ref.rsId.toUpperCase() === rsId.toUpperCase());
 
     if (!data) {
       results.set(rsId.toUpperCase(), {
@@ -120,6 +167,7 @@ export function getSNPResults(
       data.allele1,
       data.allele2,
       rsId,
+      riskAlleleOverrides,
       alleleReference
     );
 
