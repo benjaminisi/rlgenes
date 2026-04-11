@@ -18,6 +18,7 @@ import {
 } from './utils/templateProcessor';
 import type { GeneticData, AlleleData } from './types';
 import {sl202602html} from "./content/sl/sl202602html.ts";
+import {sl202604html} from "./content/sl/sl202604html.ts";
 
 function App() {
   const [geneticDataFile, setGeneticDataFile] = useState<File | null>(null);
@@ -260,6 +261,9 @@ function App() {
         } else if (params.has("sl202602")) {
             setHasCannedTemplate(true);
             handleTemplateLoad(sl202602html);
+        } else if (params.has("sl202604")) {
+            setHasCannedTemplate(true);
+            handleTemplateLoad(sl202604html);
         }
     }, []);
 
