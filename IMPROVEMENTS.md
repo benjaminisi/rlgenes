@@ -57,6 +57,13 @@
 
 ## ⚡ Functionality Improvements
 
+#### David. **Search & Filter**
+```typescript
+// Search within report
+- Load template directly from Google
+- Remember last used template and genome filed
+```
+
 ### High Priority
 
 #### 1. **Search & Filter**

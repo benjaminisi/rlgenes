@@ -1,5 +1,5 @@
 import DOMPurify from 'dompurify';
-import type { GeneticData, AlleleData, SNPResult, Zygosity, SectionSummary } from '../types';
+import type { GeneticData, AlleleData, SNPResult, Zygosity, SectionSummary, GeneToRSIDMap } from '../types';
 
 /**
  * Extracts the first header (h1, h2, etc.) from HTML content to use as the report title
@@ -17,6 +17,61 @@ export function extractTemplateTitle(htmlContent: string): string {
   }
 
   return 'Genetic Report'; // Default fallback
+}
+
+/**
+ * Injects RS IDs into the "High-Impact SNPs & Functional Role" section
+ * based on the provided gene-to-RSID mapping. This is done before RS ID extraction.
+ */
+export function injectGeneRSIDs(htmlContent: string, geneToRSIDMap: GeneToRSIDMap): string {
+  if (geneToRSIDMap.size === 0) return htmlContent;
+
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(htmlContent, 'text/html');
+
+  const allHeadings = Array.from(doc.querySelectorAll('h1, h2, h3, h4, h5, h6'));
+  allHeadings.forEach((heading) => {
+    const headingText = heading.textContent?.trim() || '';
+    // Use a more relaxed match since it might say "Functional Notes" or "Functional Role"
+    if (headingText.includes('High-Impact SNPs')) {
+      let curr = heading.nextElementSibling;
+      while (curr && !/^H[1-6]$/.test(curr.tagName)) {
+        if (curr.tagName === 'UL' || curr.tagName === 'OL') {
+          const lis = curr.querySelectorAll('li');
+          lis.forEach((li) => {
+            const liText = li.textContent || '';
+            // Get the text before the first dash or colon
+            const textBeforeDash = liText.split(/[-–—:]/)[0];
+            // Extract the very first word
+            const firstWord = textBeforeDash.trim().split(/[\s]+/)[0];
+
+            if (firstWord) {
+              const rsIds = geneToRSIDMap.get(firstWord);
+              if (rsIds && rsIds.length > 0) {
+                // Check which RS IDs are not already in the text
+                const missingRsIds = rsIds.filter(id => !liText.toUpperCase().includes(id.toUpperCase()));
+                if (missingRsIds.length > 0) {
+                  const rsIdText = ` (${missingRsIds.map(id => id.toUpperCase()).join(', ')})`;
+                  
+                  // Inject the text after the first child element (e.g. the span with the gene name)
+                  // or just replace it in the text content if no elements exist.
+                  const firstElement = li.firstElementChild;
+                  if (firstElement) {
+                    firstElement.insertAdjacentText('afterend', rsIdText);
+                  } else {
+                    li.innerHTML = li.innerHTML.replace(firstWord, firstWord + rsIdText);
+                  }
+                }
+              }
+            }
+          });
+        }
+        curr = curr.nextElementSibling;
+      }
+    }
+  });
+
+  return doc.body.innerHTML;
 }
 
 /** * Extracts all RS IDs from template content */ export function extractRSIds(content: string): string[] {
@@ -47,15 +102,15 @@ export function extractRSIdsWithRiskAlleles(content: string): ExtractedRSData {
 
     for (const line of lines) {
         const alleleMatch = line.match(allelePattern);
-        const wildAllele = alleleMatch?.[1] ?? '-';
-        const riskAllele = alleleMatch?.[2] ?? '-';
+        const wildAllele = alleleMatch?.[1];
+        const riskAllele = alleleMatch?.[2];
 
         let rsMatch: RegExpExecArray | null;
         while ((rsMatch = rsIdPattern.exec(line)) !== null) {
             const rsId = `RS${rsMatch[1]}`.toUpperCase();
             rsIdSet.add(rsId);
 
-            if (riskAllele) {
+            if (wildAllele && riskAllele) {
                 rsIdToRiskAllele[rsId] = {
                     rsId,
                     wildAllele,

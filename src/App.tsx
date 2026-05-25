@@ -15,8 +15,9 @@ import {
     sanitizeHTML,
     generateGrandSummaryHTML,
     extractTemplateTitle,
+    injectGeneRSIDs,
 } from './utils/templateProcessor';
-import type { GeneticData, AlleleData } from './types';
+import type { GeneticData, AlleleData, CompendiumTopic, GeneToRSIDMap } from './types';
 import {sl202602html} from "./content/sl/sl202602html.ts";
 import {sl202604html} from "./content/sl/sl202604html.ts";
 import {sl202605html} from "./content/sl/sl202605html.ts";
@@ -35,11 +36,18 @@ function App() {
   const [showDetailedAnnotations, setShowDetailedAnnotations] = useState<boolean>(true);
   const [showAllSubsections, setShowAllSubsections] = useState<boolean>(true);
   const [hasCannedTemplate, setHasCannedTemplate] = useState<boolean>(false);
+  const [isPending2026, setIsPending2026] = useState<boolean>(false);
+  const [geneToRSIDMap, setGeneToRSIDMap] = useState<GeneToRSIDMap>(new Map());
 
   // Load allele reference data on mount
   useEffect(() => {
-    // Use relative path that works with Vite's base configuration
-    fetch(`${import.meta.env.BASE_URL}genes_rs_effect.json`)
+    const params = new URLSearchParams(window.location.search);
+    const isLegacyMode = params.get("rl") === "2025";
+    const dataUrl = isLegacyMode 
+      ? `${import.meta.env.BASE_URL}genes_rs_effect.json` 
+      : `${import.meta.env.BASE_URL}genes_compendium.json`;
+
+    fetch(dataUrl)
       .then(res => {
         if (!res.ok) {
           throw new Error(`HTTP error! status: ${res.status}`);
@@ -47,15 +55,58 @@ function App() {
         return res.json();
       })
       .then(data => {
-        // Transform the data structure to match AlleleData interface
-        const transformedData = data.map((item: { 'RS ID': string; 'Effect Allele': string; 'Gene': string }) => ({
-          rsId: item['RS ID'],
-          problemAllele: item['Effect Allele'],
-          gene: item['Gene'], // Add gene information
-          wildAllele: '', // Not provided in source data
-          confirmationUrl: '' // Not provided in source data
-        }));
-        setAlleleReference(transformedData);
+        if (isLegacyMode) {
+          // Transform the data structure to match AlleleData interface
+          const transformedData = data.map((item: { 'RS ID': string; 'Effect Allele': string; 'Gene': string }) => ({
+            rsId: item['RS ID'],
+            problemAllele: item['Effect Allele'],
+            gene: item['Gene'], // Add gene information
+            wildAllele: '', // Not provided in source data
+            confirmationUrl: '' // Not provided in source data
+          }));
+          setAlleleReference(transformedData);
+          setGeneToRSIDMap(new Map());
+          console.log("Loaded " + transformedData.length + " reference alleles (Legacy Mode)");
+        } else {
+          // Parse compendium
+          const transformedData: AlleleData[] = [];
+          const geneMap = new Map<string, string[]>();
+
+          data.forEach((topic: CompendiumTopic) => {
+            topic.genes.forEach(geneItem => {
+              transformedData.push({
+                rsId: geneItem['RS ID'],
+                problemAllele: geneItem['Effect Allele'],
+                gene: geneItem.Gene,
+                wildAllele: '',
+                confirmationUrl: ''
+              });
+
+              // Add to geneMap
+              const geneName = geneItem.Gene;
+              const rsId = geneItem['RS ID'];
+
+              // Add full name
+              if (!geneMap.has(geneName)) geneMap.set(geneName, []);
+              if (!geneMap.get(geneName)!.includes(rsId)) {
+                geneMap.get(geneName)!.push(rsId);
+              }
+
+              // Add base name (first word) if different
+              const baseName = geneName.split(' ')[0];
+              if (baseName !== geneName) {
+                if (!geneMap.has(baseName)) geneMap.set(baseName, []);
+                if (!geneMap.get(baseName)!.includes(rsId)) {
+                  geneMap.get(baseName)!.push(rsId);
+                }
+              }
+            });
+          });
+
+          setAlleleReference(transformedData);
+          setGeneToRSIDMap(geneMap);
+          console.log(`Loaded ${transformedData.length} reference alleles and ${geneMap.size} gene mappings (Compendium Mode)`);
+        }
       })
       .catch(err => console.error('Failed to load allele reference data:', err));
   }, []);
@@ -132,22 +183,27 @@ function App() {
     setError('');
 
     try {
+      // 1. Inject RS IDs into template based on gene map
+      const enrichedTemplateContent = geneToRSIDMap.size > 0 
+        ? injectGeneRSIDs(templateContent, geneToRSIDMap)
+        : templateContent;
+
       // Extract RS IDs from template
-      const {rsIds, rsIdToRiskAllele: riskAlleleOverrides} = extractRSIdsWithRiskAlleles(templateContent);
+      const {rsIds, rsIdToRiskAllele: riskAlleleOverrides} = extractRSIdsWithRiskAlleles(enrichedTemplateContent);
       console.log(`Found ${rsIds.length} unique RS IDs in template`);
 
       // Get SNP results
       const snpResults = getSNPResults(rsIds, geneticData, riskAlleleOverrides, alleleReference);
 
       // Calculate summaries
-      const sectionSummaries = calculateSectionSummaries(templateContent, snpResults);
+      const sectionSummaries = calculateSectionSummaries(enrichedTemplateContent, snpResults);
 
       // Generate Grand Summary HTML with showDetailedAnnotations parameter
       const grandSummaryHTML = generateGrandSummaryHTML(sectionSummaries, showDetailedAnnotations);
 
       // Transform template with both showDetailedAnnotations and showAllSubsections parameters
       const transformed = transformTemplate(
-        templateContent,
+        enrichedTemplateContent,
         snpResults,
         geneticDataFile?.name,
         geneticDataDate,
@@ -258,16 +314,26 @@ function App() {
 
         if (params.has("sl202601")) {
             setHasCannedTemplate(true);
+            setIsPending2026(false);
             handleTemplateLoad(sl202601html);
         } else if (params.has("sl202602")) {
             setHasCannedTemplate(true);
+            setIsPending2026(false);
             handleTemplateLoad(sl202602html);
         } else if (params.has("sl202604")) {
             setHasCannedTemplate(true);
+            setIsPending2026(false);
             handleTemplateLoad(sl202604html);
         } else if (params.has("sl202605")) {
             setHasCannedTemplate(true);
+            setIsPending2026(false);
             handleTemplateLoad(sl202605html);
+        } else if (params.get("rl") === "2025") {
+            setHasCannedTemplate(false);
+            setIsPending2026(false);
+        } else {
+            setHasCannedTemplate(false);
+            setIsPending2026(true);
         }
     }, []);
 
@@ -304,10 +370,9 @@ function App() {
 
       <main>
           <section className="controls">
-              {hasCannedTemplate ?
-                  <div>
-                  </div>
-                  :
+              {hasCannedTemplate ? (
+                  <div></div>
+              ) : (
                   <div className="control-panel">
                       <h2>Step 1: Upload Template</h2>
                       <TemplateInput
@@ -315,7 +380,7 @@ function App() {
                           currentTemplate={templateContent}
                       />
                   </div>
-              }
+              )}
 
           <div className="control-panel">
             <h2>Step 2: Upload Genetic Data</h2>
@@ -373,17 +438,23 @@ function App() {
               </button>
               {!canGenerate && !isProcessing && (
                 <div className="requirements-message">
-                  {!templateContent && !geneticData && (
-                    <p>📋 Please upload both a template file and a genetic data file to generate a report.</p>
-                  )}
-                  {!templateContent && geneticData && (
-                    <p>📋 Please upload a template file to generate a report.</p>
-                  )}
-                  {templateContent && !geneticData && (
-                    <p>🧬 Please upload a genetic data file to generate a report.</p>
-                  )}
-                  {templateContent && geneticData && Object.keys(geneticData).length === 0 && (
-                    <p>⚠️ The uploaded genetic data file contains no valid markers. Please check your file.</p>
+                  {isPending2026 ? (
+                    <p>⚠️ Default 2026 template is pending. Please use <a href="?rl=2025" style={{ color: '#2563eb', textDecoration: 'underline' }}>?rl=2025</a> to upload a 2025 format template, or wait for the 2026 template configuration.</p>
+                  ) : (
+                    <>
+                      {!templateContent && !geneticData && (
+                        <p>📋 Please upload both a template file and a genetic data file to generate a report.</p>
+                      )}
+                      {!templateContent && geneticData && (
+                        <p>📋 Please upload a template file to generate a report.</p>
+                      )}
+                      {templateContent && !geneticData && (
+                        <p>🧬 Please upload a genetic data file to generate a report.</p>
+                      )}
+                      {templateContent && geneticData && Object.keys(geneticData).length === 0 && (
+                        <p>⚠️ The uploaded genetic data file contains no valid markers. Please check your file.</p>
+                      )}
+                    </>
                   )}
                 </div>
               )}
