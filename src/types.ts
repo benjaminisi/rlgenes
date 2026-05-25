@@ -6,6 +6,22 @@ export interface AlleleData {
   gene?: string; // Gene associated with this RS ID
 }
 
+export interface CompendiumGeneItem {
+  Gene: string;
+  "RS ID": string;
+  "Effect Allele": string;
+}
+
+export interface CompendiumTopic {
+  Topic: string;
+  ArticleName: string;
+  ArticleLink: string;
+  genes: CompendiumGeneItem[];
+}
+
+export type GeneToRSIDMap = Map<string, string[]>;
+
+
 export interface GeneticData {
   [rsId: string]: {
     allele1: string;
