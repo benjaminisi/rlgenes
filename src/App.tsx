@@ -21,6 +21,7 @@ import type { GeneticData, AlleleData, CompendiumTopic, GeneToRSIDMap } from './
 import {sl202602html} from "./content/sl/sl202602html.ts";
 import {sl202604html} from "./content/sl/sl202604html.ts";
 import {sl202605html} from "./content/sl/sl202605html.ts";
+import {sl202606html} from "./content/sl/sl202606html.ts";
 
 function App() {
   const [geneticDataFile, setGeneticDataFile] = useState<File | null>(null);
@@ -328,6 +329,10 @@ function App() {
             setHasCannedTemplate(true);
             setIsPending2026(false);
             handleTemplateLoad(sl202605html);
+        } else if (params.has("sl202606")) {
+            setHasCannedTemplate(true);
+            setIsPending2026(false);
+            handleTemplateLoad(sl202606html);
         } else if (params.get("rl") === "2025") {
             setHasCannedTemplate(false);
             setIsPending2026(false);
