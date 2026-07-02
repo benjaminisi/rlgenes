@@ -22,6 +22,7 @@ import {sl202602html} from "./content/sl/sl202602html.ts";
 import {sl202604html} from "./content/sl/sl202604html.ts";
 import {sl202605html} from "./content/sl/sl202605html.ts";
 import {sl202606html} from "./content/sl/sl202606html.ts";
+import {sj4rl202607html} from "./content/sl/sj4rl202607html.ts";
 
 function App() {
   const [geneticDataFile, setGeneticDataFile] = useState<File | null>(null);
@@ -43,9 +44,10 @@ function App() {
   // Load allele reference data on mount
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const isLegacyMode = params.get("rl") === "2025";
+    const sjMode2607 = params.get("sj") === "2607";
+    const isLegacyMode = params.get("rl") === "2025" || sjMode2607;
     const dataUrl = isLegacyMode 
-      ? `${import.meta.env.BASE_URL}genes_rs_effect.json` 
+      ? `${import.meta.env.BASE_URL}genes_rs_effect_sl202607.json`
       : `${import.meta.env.BASE_URL}genes_compendium.json`;
 
     fetch(dataUrl)
@@ -336,6 +338,10 @@ function App() {
         } else if (params.get("rl") === "2025") {
             setHasCannedTemplate(false);
             setIsPending2026(false);
+        } else if (params.get("sj") === "2607") {
+            setHasCannedTemplate(true);
+            setIsPending2026(false);
+            handleTemplateLoad(sj4rl202607html);
         } else {
             setHasCannedTemplate(false);
             setIsPending2026(true);
