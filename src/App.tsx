@@ -23,6 +23,7 @@ import {sl202604html} from "./content/sl/sl202604html.ts";
 import {sl202605html} from "./content/sl/sl202605html.ts";
 import {sl202606html} from "./content/sl/sl202606html.ts";
 import {sj4rl202607html} from "./content/sl/sj4rl202607html.ts";
+import {rl20260709html} from "./content/rl/rl20260709html.ts";
 
 function App() {
   const [geneticDataFile, setGeneticDataFile] = useState<File | null>(null);
@@ -313,9 +314,15 @@ function App() {
   const canGenerate = geneticData && Object.keys(geneticData).length > 0 && templateContent && !isProcessing;
 
     useEffect(() => {
-        const params = new URLSearchParams(window.location.search);
-
-        if (params.has("sl202601")) {
+        // This parses the full URL string directly, ignoring how React handles the search object
+        const currentUrl = new URL(window.location.href);
+        const params = currentUrl.searchParams;
+        // old: const params = new URLSearchParams(window.location.search);
+        if (params.has("rl20260709")) {
+            setHasCannedTemplate(true);
+            setIsPending2026(false);
+            handleTemplateLoad(rl20260709html);
+        } else if (params.has("sl202601")) {
             setHasCannedTemplate(true);
             setIsPending2026(false);
             handleTemplateLoad(sl202601html);
