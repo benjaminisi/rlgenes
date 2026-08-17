@@ -4980,57 +4980,57 @@
     "Effect Allele": "A"
   },
   {
-    "Gene": "CIAS1",
+    "Gene": "NLRP3",
     "RS ID": "rs35829419",
     "Effect Allele": "A"
   },
   {
-    "Gene": "CIAS1",
+    "Gene": "NLRP3",
     "RS ID": "rs1539019",
     "Effect Allele": "A"
   },
   {
-    "Gene": "CIAS1",
+    "Gene": "NLRP3",
     "RS ID": "rs10754558",
     "Effect Allele": "C"
   },
   {
-    "Gene": "CIAS1",
+    "Gene": "NLRP3",
     "RS ID": "rs3806265",
     "Effect Allele": "C"
   },
   {
-    "Gene": "CIAS1",
+    "Gene": "NLRP3",
     "RS ID": "rs10733113",
     "Effect Allele": "A"
   },
   {
-    "Gene": "CIAS1",
+    "Gene": "NLRP3",
     "RS ID": "rs12048215",
     "Effect Allele": "G"
   },
   {
-    "Gene": "CIAS1",
+    "Gene": "NLRP3",
     "RS ID": "i5007539",
     "Effect Allele": "G"
   },
   {
-    "Gene": "CIAS1",
+    "Gene": "NLRP3",
     "RS ID": "rs28937896",
     "Effect Allele": "C"
   },
   {
-    "Gene": "CIAS1",
+    "Gene": "NLRP3",
     "RS ID": "rs121908147",
     "Effect Allele": "A"
   },
   {
-    "Gene": "CIAS1",
+    "Gene": "NLRP3",
     "RS ID": "rs121908150",
     "Effect Allele": "T"
   },
   {
-    "Gene": "CIAS1",
+    "Gene": "NLRP3",
     "RS ID": "rs121908148",
     "Effect Allele": "G"
   },
@@ -5178,11 +5178,6 @@
     "Gene": "CTLA4",
     "RS ID": "rs3087243",
     "Effect Allele": "Gincreased"
-  },
-  {
-    "Gene": "NLRP3",
-    "RS ID": "rs121908147",
-    "Effect Allele": "A"
   },
   {
     "Gene": "TRPM8",
