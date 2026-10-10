@@ -26,3 +26,6 @@ dist-ssr
 # proprietary file
 public/SNPreporttemplateDRAFT.html
 public/SNPreporttemplate.html
+*.html
+!index.html
+

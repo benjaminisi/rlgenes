@@ -66,3 +66,17 @@ export interface SectionSummary {
   missingPercent: number;
   referenceMissingPercent: number;
 }
+
+export interface EncryptedTemplatePayload {
+  id: string;
+  title?: string;
+  version: 1;
+  algorithm: 'AES-GCM-256';
+  kdf: 'PBKDF2-SHA256';
+  iterations: number;
+  salt: string; // Base64
+  iv: string; // Base64
+  ciphertext: string; // Base64
+  createdAt: string; // ISO 8601
+}
+

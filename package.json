@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "encrypt-template": "node scripts/encrypt-template.mjs"
   },
   "dependencies": {
     "dompurify": "^3.2.7",
